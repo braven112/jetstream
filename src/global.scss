@@ -1,0 +1,15 @@
+// Auro WCSS v5
+@import '@aurodesignsystem/design-tokens/dist/tokens/SCSSVariables';
+@import "@aurodesignsystem/webcorestylesheets/src/breakpoints";
+@import '@aurodesignsystem/webcorestylesheets/src/fonts';
+@import "@aurodesignsystem/webcorestylesheets/src/normalize";
+@import "@aurodesignsystem/webcorestylesheets/src/essentials";
+@import "@aurodesignsystem/webcorestylesheets/src/utilityClasses";
+
+// Auro WCSS v4 legacy
+@import '@alaskaairux/design-tokens/dist/tokens/SCSSVariables';
+@import "@alaskaairux/webcorestylesheets/dist/breakpoints";
+@import '@alaskaairux/webcorestylesheets/dist/fonts';
+@import "@alaskaairux/webcorestylesheets/dist/normalize";
+@import "@alaskaairux/webcorestylesheets/dist/essentials";
+@import "@alaskaairux/webcorestylesheets/dist/utilityClasses";

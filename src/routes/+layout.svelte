@@ -2,8 +2,10 @@
 	import { browser } from '$app/environment';
 	import { page } from '$app/stores';
 	import { webVitals } from '$lib/vitals';
-	import Header from './Header.svelte';
-	import './styles.css';
+	import SideNav from './SideNav.svelte';
+
+	import '../global.css';
+	import '../global.scss';
 
 	/** @type {import('./$types').LayoutServerData} */
 	export let data;
@@ -18,50 +20,41 @@
 </script>
 
 <div class="app">
-	<Header />
+	<!-- <Header /> -->
 
-	<main>
-		<slot />
-	</main>
+	<div class="main-container">
+		<sidenav class="sidenav">
+			<SideNav />
+		</sidenav>
 
-	<footer>
+		<main>
+			<slot />
+		</main>
+	</div>
+
+	<!-- <footer>
 		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
+	</footer> -->
 </div>
 
-<style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
-
+<style scoped>
 	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
 		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
+		max-width: unset;
+		overflow: auto;
+		scroll-behavior: smooth;
+		padding: 16px;
 	}
 
-	footer {
+	.main-container {
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
+		height: 100vh;
 	}
 
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
+	.sidenav {
+		background-color: #eee;
+		padding: 16px;
+		overflow: auto;
+		resize: horizontal;
 	}
 </style>

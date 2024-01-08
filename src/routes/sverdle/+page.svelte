@@ -92,7 +92,7 @@
 	<meta name="description" content="A Wordle clone written in SvelteKit" />
 </svelte:head>
 
-<h1 class="visually-hidden">Sverdle</h1>
+<h2 class="visually-hidden">Sverdle</h2>
 
 <form
 	method="POST"

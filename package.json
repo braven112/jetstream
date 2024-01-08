@@ -13,6 +13,10 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
+		"@aurodesignsystem/auro-accordion": "^3.0.1",
+		"@aurodesignsystem/auro-button": "^7.2.2",
+		"@aurodesignsystem/auro-icon": "^4.1.0",
+		"@aurodesignsystem/auro-sidenav": "^1.0.1",
 		"@fontsource/fira-mono": "^4.5.10",
 		"@neoconfetti/svelte": "^1.0.0",
 		"@playwright/test": "^1.28.1",
@@ -24,6 +28,7 @@
 		"eslint-plugin-svelte": "^2.26.0",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.8.1",
+		"sass": "^1.69.7",
 		"svelte": "^3.54.0",
 		"svelte-check": "^3.0.1",
 		"typescript": "^5.0.0",
@@ -31,5 +36,9 @@
 		"vitest": "^0.25.3",
 		"web-vitals": "^3.3.1"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@alaskaairux/webcorestylesheets": "^3.7.3",
+		"@aurodesignsystem/webcorestylesheets": "^5.0.5"
+	}
 }

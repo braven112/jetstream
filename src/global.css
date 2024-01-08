@@ -1,0 +1,8 @@
+/* Auro WCSS v5 */
+@import '@aurodesignsystem/design-tokens/dist/tokens/CSSCustomProperties.css';
+
+/* Auro WCSS v4 legacy */
+@import '@alaskaairux/design-tokens/dist/tokens/CSSCustomProperties.css';
+
+@import 'https://cdn.jsdelivr.net/npm/@aurodesignsystem/webcorestylesheets@latest/dist/elementDemoStyles.css';
+/* @import 'https://cdn.jsdelivr.net/npm/@aurodesignsystem/webcorestylesheets@latest/dist/demoWrapper.css'; */
