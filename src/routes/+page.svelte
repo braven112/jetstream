@@ -7,6 +7,9 @@
 	import Header from "../components/Header.svelte";
 	import Hyperlink from "../components/Hyperlink.svelte";
 	import Icon from "../components/Icon.svelte";
+	import Table from "../components/Table.svelte";
+	import Radio from "../components/Radio.svelte";
+	import Skeleton from "../components/Skeleton.svelte";
 </script>
 
 <svelte:head>
@@ -176,6 +179,103 @@
 		</div>
 	</section>
 	
+</section>
+
+<section class="component-container">
+	<h2>Auro Radio</h2>
+	<h4 id="auro-radio-default">Radio Default</h4>
+	<div class="exampleWrapper">
+		<Radio id="radio1" label="Yes" name="radioDemo" value="yes"></Radio>
+	</div>
+
+	<h4 id="auro-radio-default-group">Radio Default Group</h4>
+	<div class="exampleWrapper">
+		<auro-radio-group>
+			<span slot="legend">Form label goes here</span>
+			<Radio id="radio28" label="Yes" name="radioDemo" value="yes"></Radio>
+			<Radio id="radio29" label="No" name="radioDemo" value="no"></Radio>
+			<Radio id="radio30" label="Maybe" name="radioDemo" value="maybe"></Radio>
+		</auro-radio-group>
+	</div>
+
+	<h4 id="auro-radio-disabled-group">Radio Disabled Group</h4>
+	<div class="exampleWrapper">
+		<auro-radio-group disabled>
+			<span slot="legend">Form label goes here</span>
+			<Radio id="radio13" label="Yes" name="radioDemo" value="yes"></Radio>
+			<Radio id="radio14" label="No" name="radioDemo" value="no"></Radio>
+			<Radio id="radio15" label="Maybe" name="radioDemo" value="maybe"></Radio>
+		</auro-radio-group>
+	</div>
+
+	<h4 id="auro-radio-disabled-single">Radio Disabled Single</h4>
+	<div class="exampleWrapper">
+		<auro-radio-group>
+			<span slot="legend">Form label goes here</span>
+			<Radio id="radio10" label="Yes" name="radioDemo" value="yes"></Radio>
+			<Radio id="radio11" label="No" name="radioDemo" value="no" disabled></Radio>
+			<Radio id="radio12" label="Maybe" name="radioDemo" value="maybe"></Radio>
+		</auro-radio-group>
+	</div>
+
+	<h4 id="auro-radio-error">Radio Error</h4>
+	<div class="exampleWrapper">
+		<auro-radio-group error="There is an error with this form entry">
+			<span slot="legend">Form label goes here</span>
+			<Radio id="radio19" label="Yes" name="radioDemo" value="yes"></Radio>
+			<Radio id="radio20" label="No" name="radioDemo" value="no"></Radio>
+			<Radio id="radio21" label="Maybe" name="radioDemo" value="maybe"></Radio>
+		</auro-radio-group>
+	</div>
+
+	<h4 id="auro-radio-horizontal-group">Radio Horizontal Group</h4>
+	<div class="exampleWrapper">
+		<auro-radio-group horizontal>
+			<span slot="legend">Form label goes here</span>
+			<Radio id="radio22" label="Yes" name="radioDemo" value="yes"></Radio>
+			<Radio id="radio23" label="No" name="radioDemo" value="no"></Radio>
+			<Radio id="radio24" label="Maybe" name="radioDemo" value="maybe"></Radio>
+		</auro-radio-group>
+	</div>
+</section>
+
+<section class="component-container">
+	<h2>Auro Skeleton</h2>
+	<h4 id="auro-skeleton-circle">Circle</h4>
+	<div class="exampleWrapper">
+		<Skeleton shape="circle" style="width: 40px; height: 40px"></Skeleton>
+		<Skeleton shape="circle" style="width: 100px; height: 100px"></Skeleton>
+		<Skeleton shape="circle" style="width: 300px; height: 300px"></Skeleton>
+	</div>
+
+	<h4 id="auro-skeleton-oval">Oval</h4>
+	<div class="exampleWrapper">
+		<Skeleton shape="oval" style="width: 80px; height: 40px"></Skeleton>
+		<Skeleton shape="oval" style="width: 200px; height: 100px"></Skeleton>
+		<Skeleton shape="oval" style="width: 600px; height: 300px"></Skeleton>
+	</div>
+
+	<h4 id="auro-skeleton-rectangle">Rectangle</h4>
+	<div class="exampleWrapper">
+		<Skeleton shape="rectangle" style="width: 100px; height: 50px"></Skeleton>
+		<Skeleton shape="rectangle" style="width: 400px; height: 150px"></Skeleton>
+		<Skeleton shape="rectangle" style="width: 800px; height: 300px"></Skeleton>
+	</div>
+
+	<h4 id="auro-skeleton-table">Table</h4>
+	<div class="exampleWrapper">
+		<Skeleton>
+		</Skeleton>
+	</div>
+</section>
+
+<section class="component-container">
+	<h2>Auro Table</h2>
+	<h4 id="auro-table">Basic Table</h4>
+	<div class="exampleWrapper">
+		<Table>
+		</Table>
+	</div>
 </section>
 
 <style>

@@ -20,6 +20,9 @@
 		"@aurodesignsystem/auro-header": "^2.1.0",
 		"@aurodesignsystem/auro-icon": "^4.1.0",
 		"@aurodesignsystem/auro-sidenav": "^1.0.1",
+		"@aurodesignsystem/auro-table": "^2.0.1",
+		"@aurodesignsystem/auro-skeleton": "^2.0.1",
+		"@aurodesignsystem/auro-radio": "^2.0.1",
 		"@fontsource/fira-mono": "^4.5.10",
 		"@neoconfetti/svelte": "^1.0.0",
 		"@playwright/test": "^1.28.1",
@@ -42,6 +45,7 @@
 	"type": "module",
 	"dependencies": {
 		"@alaskaairux/webcorestylesheets": "^3.7.3",
+		"@aurodesignsystem/auro-toast": "^1.0.1",
 		"@aurodesignsystem/webcorestylesheets": "^5.0.5"
 	}
 }

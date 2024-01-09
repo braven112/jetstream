@@ -696,8 +696,8 @@ export default [
     heading: 'Auro Table',
     items: [
       {
-        href: "/#auro-table",
-        label: "Basic Tale"
+        href: "/#c",
+        label: "Basic Table"
       }
     ]
   },
