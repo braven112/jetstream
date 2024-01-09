@@ -1,7 +1,11 @@
 <script>
 	import Accordion from "../components/Accordion.svelte";
 	import AccordionGroup from "../components/AccordionGroup.svelte";
+	import Avatar from "../components/Avatar.svelte";
+	import Background from "../components/Background.svelte";
 	import Button from "../components/Button.svelte";
+	import Header from "../components/Header.svelte";
+	import Hyperlink from "../components/Hyperlink.svelte";
 	import Icon from "../components/Icon.svelte";
 </script>
 
@@ -95,12 +99,15 @@
 		</div>
 	</section>
 
-	<!-- <section class="component-container">
-		<h2>Auro Hyperlink</h2>
-		<h4 id="auro-accordion-basic">Basic</h4>
+	<section class="component-container">
+		<h2 id="auro-hyperlink">Auro Hyperlink</h2>
 		<div class="exampleWrapper">
+			This is
+			<Hyperlink href="https://www.alaskaair.com">
+				This is Auro Hyperlink
+			</Hyperlink>.
 		</div>
-	</section> -->
+	</section>
 
 	<section class="component-container">
 		<h2>Auro Accordion</h2>
@@ -133,6 +140,39 @@
 					</Accordion>
 				{/each}
 			</AccordionGroup>
+		</div>
+	</section>
+
+	<section class="component-container">
+		<h2 id="auro-avatar">Auro Avatar</h2>
+		<div class="exampleWrapper">
+			<Avatar></Avatar>
+		</div>
+	</section>
+
+	<section class="component-container">
+		<h2 id="auro-background">Auro Background</h2>
+		<div class="exampleWrapper">
+			<auro-background bg="url(https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2) center center/cover no-repeat">
+				<div style="color: var(--ds-color-text-primary-default); display: flex; flex-direction: column; align-items: center; justify-content: center;">
+					<auro-header level="2" display="600">View all destinations</auro-header>
+					<auro-hyperlink cta href="#">See where we fly</auro-hyperlink>
+				</div>
+			</auro-background>
+			<!-- <Background bg="url('https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2') center center/cover no-repeat">
+				<div
+					style="
+						color: var(--ds-color-text-primary-default);
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						justify-content: center;
+					"
+				>
+					<Header level="2" display="600">View all destinations</Header>
+					<Hyperlink cta href="#">See where we fly</Hyperlink>
+				</div>
+			</Background> -->
 		</div>
 	</section>
 	
