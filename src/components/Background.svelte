@@ -3,7 +3,7 @@
 
 	import setAttribute from '$lib/setAttribute';
 
-  import '@aurodesignsystem/auro-background';
+  import 'https://cdn.jsdelivr.net/npm/@aurodesignsystem/auro-background@latest/dist/auro-background__bundled.js';
 
   export let bg = undefined;
 </script>
