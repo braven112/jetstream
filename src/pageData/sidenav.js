@@ -1,3 +1,4 @@
+// List of sidenav menus
 export default [
   {
     heading: 'Auro Button',

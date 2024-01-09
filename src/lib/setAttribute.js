@@ -1,5 +1,5 @@
 /**
- * This is utility function too enforce HTML attributes for CustomElement
+ * This is utility function to enforce HTML attributes for CustomElement
  * https://stackoverflow.com/questions/67181931/how-to-force-inline-html-attribute-in-svelte
  * @param {HTMLElement} node 
  * @param {*} payload - attr: attribute name, val: attribute value
