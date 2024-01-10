@@ -1,6 +1,9 @@
 {
 	"name": "sveltekit-2",
 	"version": "0.0.1",
+	"engines": {
+		"node": "^18 || ^20"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
