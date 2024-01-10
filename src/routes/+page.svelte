@@ -14,6 +14,13 @@
 	import Badge from "../components/Badge.svelte";
 	import Banner from "../components/Banner.svelte";
 	import AlaskaLogo from "../components/AlaskaLogo.svelte";
+	import Input from "../components/Input.svelte";
+	import Loader from "../components/Loader.svelte";
+	import Lockup from "../components/Lockup.svelte";
+	import Menu from "../components/Menu.svelte";
+	import Nav from "../components/Nav.svelte";
+	import Pane from "../components/Pane.svelte";
+	import Popover from "../components/Popover.svelte";
 
 	const basicTableData = {
 		headers: JSON.stringify(["","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]),
@@ -454,7 +461,442 @@
 				</Hyperlink>
 			</Banner>
 		</div>
-		
+	</section>
+
+	<section class="component-container">
+		<h2>Auro Input</h2>
+		<h4 id="auro-input-default">Default Input</h4>
+		<div class="exampleWrapper exampleWrapper--flex">
+			<Input id="demo1" style="width: 45%"></Input>
+			<Input id="demo2" style="width: 45%" bordered></Input>
+		</div>
+
+		<h4 id="auro-input-label">Label Input</h4>
+		<div class="exampleWrapper exampleWrapper--flex">
+			<Input id="demo3" style="width: 45%">
+				<span slot="label">Name</span>
+			</Input>
+			<Input id="demo4" bordered style="width: 45%">
+				<span slot="label">Name</span>
+				<span slot="helptext">Please enter your full name.</span>
+			</Input>
+		</div>
+
+		<h4 id="auro-input-dateMax">Date Max Input</h4>
+		<div class="exampleWrapper">
+			<Input id="demoMaxDate" style="width: 45%" type="month-day-year" max="03/25/2023" setCustomValidityRangeOverflow="The selected date is past the defined maximum date.">
+				<span slot="label">Choose a date</span>
+			</Input>
+		</div>
+
+		<h4 id="uro-input-dateMin">Date Min Input</h4>
+		<div class="exampleWrapper">
+			<Input id="demoMinDate" style="width: 45%" type="month-day-year" min="03/25/2023" setCustomValidityRangeUnderflow="The selected date is before the defined minimum date.">
+				<span slot="label">Choose a date</span>
+			</Input>
+		</div>
+
+		<h4 id="auro-input-borderless">Borderless Input</h4>
+		<div class="exampleWrapper">
+			<Input id="demoBorderless" borderless style="width: 45%">
+				<span slot="label">Name</span>
+				<span slot="helptext">Please enter your full name.</span>
+			</Input>
+		</div>
+
+		<h4 id="auro-input-numberMax">Number Max Input</h4>
+		<div class="exampleWrapper">
+			<Input id="demoMaxNumber" style="width: 45%" type="numeric" max="10" setCustomValidityRangeOverflow="The selected value is above the defined maximum.">
+				<span slot="label">Choose a number</span>
+			</Input>
+		</div>
+
+		<h4 id="auro-input-numberMin">Number Min Input</h4>
+		<div class="exampleWrapper">
+			<Input id="demoMinNumber" style="width: 45%" type="numeric" min="10" setCustomValidityRangeUnderflow="The selected value is below the defined minimum.">
+				<span slot="label">Choose a number</span>
+			</Input>
+		</div>
+
+		<h4 id="auro-input-pattern">Pattern Input</h4>
+		<div class="exampleWrapper exampleWrapper--flex">
+			<Input id="demo5" style="width: 45%" pattern="[a-z]{1,15}" spellcheck="false" setCustomValidityBadInput="Only contain lowercase letters w/no spaces">
+				<span slot="label">Username</span>
+				<span slot="helptext">Please enter a username.</span>
+			</Input>
+			<Input id="demo6" style="width: 45%" bordered pattern="[a-z]{1,15}" spellcheck="false" setCustomValidityBadInput="Only contain lowercase letters w/no spaces">
+				<span slot="label">Username</span>
+				<span slot="helptext">Please enter a username.</span>
+			</Input>
+		</div>
+
+		<h4 id="auro-input-placeholder">Placeholder Input</h4>
+		<div class="exampleWrapper exampleWrapper--flex">
+			<Input id="demo50" style="width: 45%" required placeholder="John Doe">
+				<span slot="label">Full name</span>
+			</Input>
+			<Input id="demo51" style="width: 45%" required bordered placeholder="John Doe">
+				<span slot="label">Full name</span>
+				<span slot="helptext">Please enter your full name.</span>
+			</Input>
+		</div>
+
+		<h4 id="auro-input-required">Required Input</h4>
+		<div class="exampleWrapper exampleWrapper--flex">
+			<Input id="demo5" style="width: 45%" required>
+				<span slot="label">Name</span>
+			</Input>
+			<Input id="demo6" style="width: 45%" required bordered>
+				<span slot="label">Name</span>
+				<span slot="helptext">Please enter your full name.</span>
+			</Input>
+		</div>
+	</section>
+
+	<section class="component-container">
+		<h2>Auro Loader</h2>
+		<h4 id="auro-loader-gallery">Loader Gallery</h4>
+		<div class="exampleWrapper">
+			<Loader ringworm md></Loader >
+			<Loader orbit md></Loader >
+			<Loader pulse md></Loader >
+			<Loader laser></Loader >
+		</div>
+
+		<h4 id="auro-loader-sizes">Loader Size</h4>
+		<div class="exampleWrapper">
+			<Loader ringworm></Loader >
+			<Loader ringworm sm></Loader >
+			<Loader ringworm md></Loader >
+			<Loader ringworm lg></Loader >
+			<Loader ringworm xl></Loader >
+		</div>
+
+		<h4 id="auro-loader-color">Loader Color</h4>
+		<div class="exampleWrapper">
+			<Loader pulse onlight md></Loader >
+		</div>
+
+		<h4 id="auro-loader-color-onDark">Loader onDark</h4>
+		<div class="exampleWrapper--ondark">
+			<Loader pulse ondark sm></Loader >
+			<Loader pulse white sm></Loader >
+		</div>
+
+		<h4 id="auro-loader-custom">Loader Custom</h4>
+		<div class="exampleWrapper">
+			<Loader style="color: pink" ringworm md></Loader >
+		</div>
+
+		<h4 id="auro-loader-custom-animation">Loader Animation</h4>
+		<div class="exampleWrapper">
+			<Loader style="animation-duration: 8s" ondark orbit lg></Loader >
+			<Loader style="animation-duration: 1s" white orbit xl></Loader >
+		</div>
+	</section>
+
+	<section class="component-container">
+		<h2>Auro Lockup</h2>
+		<h4 id="auro-lockup-default">Default</h4>
+		<div class="exampleWrapper">
+			<Lockup>
+				<span slot="title">Place title text here</span>
+				<span slot="subtitle">Place subtitle text here</span>
+			</Lockup>
+		</div>
+
+		<h4 id="auro-lockup-onDark">Ondark</h4>
+		<div class="exampleWrapper--ondark">
+			<Lockup ondark>
+				<span slot="title">Product Name</span>
+				<span slot="subtitle">Powered by Partner Name</span>
+			</Lockup>
+			<Lockup ondark oneworld></Lockup>
+		</div>
+
+		<h4 id="auro-lockup-one-logo">With One Logo</h4>
+		<div class="exampleWrapper">
+			<Lockup oneworld></Lockup>
+		</div>
+	</section>
+
+	<section class="component-container">
+		<h2>Auro Menu</h2>
+		<h4 id="auro-menu-default">Default</h4>
+		<div class="exampleWrapper">
+			<Menu>
+				<auro-menuoption value="stops">Stops</auro-menuoption>
+				<auro-menuoption value="price">Price</auro-menuoption>
+				<auro-menuoption value="duration">Duration</auro-menuoption>
+				<auro-menuoption value="departure">Departure</auro-menuoption>
+				<auro-menuoption value="arrival">Arrival</auro-menuoption>
+			</Menu>
+		</div>
+
+		<h4 id="auro-menu-disabled">Disabled</h4>
+		<div class="exampleWrapper--ondark">
+			<Menu disabled>
+				<auro-menuoption value="new tab">New tab</auro-menuoption>
+				<auro-menuoption value="new window">New window</auro-menuoption>
+				<auro-menuoption value="open file">Open file</auro-menuoption>
+				<auro-menuoption value="open location">Open location</auro-menuoption>
+				<hr>
+				<auro-menuoption value="close window">Close window</auro-menuoption>
+				<auro-menuoption value="close tab">Close tab</auro-menuoption>
+				<auro-menuoption value="save page as...">Save page as...</auro-menuoption>
+				<hr>
+				<auro-menuoption value="share">Share</auro-menuoption>
+				<hr>
+				<auro-menuoption value="print">Print</auro-menuoption>
+			</Menu>
+		</div>
+
+		<h4 id="auro-menu-scroll">Scroll</h4>
+		<div class="exampleWrapper">
+			<Menu id="alpha" style="max-height: 200px">
+				<auro-menuoption value="stops">Stops</auro-menuoption>
+				<auro-menuoption value="price">Price</auro-menuoption>
+				<auro-menuoption value="duration">Duration</auro-menuoption>
+				<hr>
+				<Menu id="beta">
+					<auro-menuoption value="apples">Apples</auro-menuoption>
+					<auro-menuoption value="oranges">Oranges</auro-menuoption>
+					<auro-menuoption value="pears">Pears</auro-menuoption>
+					<auro-menuoption value="grapes">Grapes</auro-menuoption>
+					<auro-menuoption value="kiwi">Kiwi</auro-menuoption>
+					<hr>
+					<Menu id="charlie">
+						<auro-menuoption value="person">Person</auro-menuoption>
+						<auro-menuoption value="woman">Woman</auro-menuoption>
+						<auro-menuoption value="man">Man</auro-menuoption>
+						<auro-menuoption value="camera">Camera</auro-menuoption>
+						<auro-menuoption value="tv">TV</auro-menuoption>
+					</Menu>
+				</Menu>
+				<hr>
+				<auro-menuoption value="departure">Departure</auro-menuoption>
+				<auro-menuoption value="arrival">Arrival</auro-menuoption>
+				<hr>
+				<Menu id="delta">
+					<auro-menuoption value="cars">Cars</auro-menuoption>
+					<auro-menuoption value="trucks">Trucks</auro-menuoption>
+					<auro-menuoption value="boats">Boats</auro-menuoption>
+					<auro-menuoption value="planes">Planes</auro-menuoption>
+					<auro-menuoption value="motorcycles">Motorcycles</auro-menuoption>
+				</Menu>
+			</Menu>
+		</div>
+
+		<h4 id="auro-menu-match-word">Match Word</h4>
+		<div class="exampleWrapper">
+			<Input id="matchWordInput" onChange="auroMenuMatchWordExample()" keyup="auroMenuMatchWordExample()" required>
+				<span slot="label">Enter a value to match in the menu</span>
+			</Input>
+			<br />
+			<Menu id="matchWordMenu">
+				<auro-menuoption value="stops">Stops</auro-menuoption>
+				<auro-menuoption value="price">Price</auro-menuoption>
+				<auro-menuoption value="duration">Duration</auro-menuoption>
+				<auro-menuoption value="departure">Departure</auro-menuoption>
+				<auro-menu>
+				<auro-menuoption value="apples">Apples</auro-menuoption>
+				<auro-menuoption value="oranges">Oranges</auro-menuoption>
+				<auro-menuoption value="peaches">Peaches</auro-menuoption>
+				</auro-menu>
+				<auro-menuoption value="arrival">Arrival</auro-menuoption>
+			</Menu>
+		</div>
+
+		<h4 id="auro-menu-nested">Nested Menu</h4>
+		<div class="exampleWrapper">
+			<Menu id="alpha">
+				<auro-menuoption value="stops">Stops</auro-menuoption>
+				<auro-menuoption value="price">Price</auro-menuoption>
+				<auro-menuoption value="duration">Duration</auro-menuoption>
+				<hr>
+				<Menu id="beta">
+					<auro-menuoption value="apples">Apples</auro-menuoption>
+					<auro-menuoption value="oranges">Oranges</auro-menuoption>
+					<auro-menuoption value="pears">Pears</auro-menuoption>
+					<auro-menuoption value="grapes">Grapes</auro-menuoption>
+					<auro-menuoption value="kiwi">Kiwi</auro-menuoption>
+					<hr>
+					<Menu id="charlie">
+						<auro-menuoption value="person">Person</auro-menuoption>
+						<auro-menuoption value="woman">Woman</auro-menuoption>
+						<auro-menuoption value="man">Man</auro-menuoption>
+						<auro-menuoption value="camera">Camera</auro-menuoption>
+						<auro-menuoption value="tv">TV</auro-menuoption>
+					</Menu>
+				</Menu>
+				<hr>
+				<auro-menuoption value="departure">Departure</auro-menuoption>
+				<auro-menuoption value="arrival">Arrival</auro-menuoption>
+				<hr>
+				<Menu id="delta">
+					<auro-menuoption value="cars">Cars</auro-menuoption>
+					<auro-menuoption value="trucks">Trucks</auro-menuoption>
+					<auro-menuoption value="boats">Boats</auro-menuoption>
+					<auro-menuoption value="planes">Planes</auro-menuoption>
+					<auro-menuoption value="motorcycles">Motorcycles</auro-menuoption>
+				</Menu>
+			</Menu>
+		</div>
+
+		<h4 id="auro-menu-noCheckmark">No Checkmark</h4>
+		<div class="exampleWrapper">
+			<Menu nocheckmark>
+				<auro-menuoption value="stops">Stops</auro-menuoption>
+				<auro-menuoption value="price">Price</auro-menuoption>
+				<auro-menuoption value="duration">Duration</auro-menuoption>
+				<hr>
+					<Menu>
+						<auro-menuoption value="apples">Apples</auro-menuoption>
+						<auro-menuoption value="oranges">Oranges</auro-menuoption>
+						<auro-menuoption value="pears">Pears</auro-menuoption>
+						<auro-menuoption value="grapes">Grapes</auro-menuoption>
+						<auro-menuoption value="kiwi">Kiwi</auro-menuoption>
+						<hr>
+						<Menu>
+							<auro-menuoption value="person">Person</auro-menuoption>
+							<auro-menuoption value="woman">Woman</auro-menuoption>
+							<auro-menuoption value="man">Man</auro-menuoption>
+							<auro-menuoption value="camera">Camera</auro-menuoption>
+							<auro-menuoption value="tv">TV</auro-menuoption>
+						</Menu>
+					</Menu>
+				<hr>
+				<auro-menuoption value="departure">Departure</auro-menuoption>
+				<auro-menuoption value="arrival">Arrival</auro-menuoption>
+				<hr>
+				<Menu>
+					<auro-menuoption value="cars">Cars</auro-menuoption>
+					<auro-menuoption value="trucks">Trucks</auro-menuoption>
+					<auro-menuoption value="boats">Boats</auro-menuoption>
+					<auro-menuoption value="planes">Planes</auro-menuoption>
+					<auro-menuoption value="motorcycles">Motorcycles</auro-menuoption>
+				</Menu>
+			</Menu>
+		</div>
+
+		<h4 id="auro-menu-preSelected">Preselected Option</h4>
+		<div class="exampleWrapper">
+			<Menu>
+				<auro-menuoption value="new tab">New tab</auro-menuoption>
+				<auro-menuoption value="new window" selected>New window</auro-menuoption>
+				<auro-menuoption value="open file">Open file</auro-menuoption>
+				<auro-menuoption value="open location">Open location</auro-menuoption>
+				<hr>
+				<auro-menuoption value="close window">Close window</auro-menuoption>
+				<auro-menuoption value="close tab" disabled>Close tab</auro-menuoption>
+				<auro-menuoption value="save page as...">Save page as...</auro-menuoption>
+				<hr>
+				<auro-menuoption value="share" disabled>Share</auro-menuoption>
+				<hr>
+				<auro-menuoption value="print">Print</auro-menuoption>
+			</Menu>
+		</div>
+
+		<h4 id="menu-restricted-long-option">Restricted long option</h4>
+		<div class="exampleWrapper">
+			<Menu style="width: 300px">
+				<auro-menuoption value="new tab">New tab</auro-menuoption>
+				<auro-menuoption value="new window">New window</auro-menuoption>
+				<auro-menuoption value="open file">Open file</auro-menuoption>
+				<auro-menuoption value="open location">Open location</auro-menuoption>
+				<hr>
+				<auro-menuoption value="close window">Close window</auro-menuoption>
+				<auro-menuoption value="close tab">Close tab</auro-menuoption>
+				<auro-menuoption value="save page as...">Save page as 'option_10_redevelopment_hover_scenario.png'</auro-menuoption>
+				<hr>
+				<auro-menuoption value="share">Share</auro-menuoption>
+				<hr>
+				<auro-menuoption value="print">Print</auro-menuoption>
+			</Menu>
+		</div>
+
+		<h4 id="auro-menu-with-disabled-state">With Disabled State</h4>
+		<div class="exampleWrapper">
+			<Menu>
+				<auro-menuoption value="new tab">New tab</auro-menuoption>
+				<auro-menuoption value="new window">New window</auro-menuoption>
+				<auro-menuoption value="open file">Open file</auro-menuoption>
+				<auro-menuoption value="open location">Open location</auro-menuoption>
+				<hr>
+				<auro-menuoption value="close window">Close window</auro-menuoption>
+				<auro-menuoption value="close tab" disabled>Close tab</auro-menuoption>
+				<auro-menuoption value="save page as...">Save page as...</auro-menuoption>
+				<hr>
+				<auro-menuoption value="share" disabled>Share</auro-menuoption>
+				<hr>
+				<auro-menuoption value="print">Print</auro-menuoption>
+			</Menu>
+		</div>
+
+		<h4 id="auro-menu-horizontal-separator">Horizontal Separator</h4>
+		<div class="exampleWrapper">
+			<Menu>
+				<auro-menuoption value="new tab">New tab</auro-menuoption>
+				<auro-menuoption value="new window">New window</auro-menuoption>
+				<auro-menuoption value="open file">Open file</auro-menuoption>
+				<auro-menuoption value="open location">Open location</auro-menuoption>
+				<hr>
+				<auro-menuoption value="close window">Close window</auro-menuoption>
+				<auro-menuoption value="close tab">Close tab</auro-menuoption>
+				<auro-menuoption value="save page as...">Save page as...</auro-menuoption>
+				<hr>
+				<auro-menuoption value="share">Share</auro-menuoption>
+				<hr>
+				<auro-menuoption value="print">Print</auro-menuoption>
+			</Menu>
+		</div>
+	</section>
+
+	<section class="component-container">
+		<h2>Auro Nav</h2>
+		<h4 id="auro-nav-basic">Default</h4>
+		<div class="exampleWrapper">
+			<Nav>
+				<auro-breadcrumb href="http://auro.alaskaair.com/components/auro/nav">Home</auro-breadcrumb>
+				<auro-breadcrumb href="http://auro.alaskaair.com/components/auro/nav">Level 2</auro-breadcrumb>
+				<auro-breadcrumb href="http://auro.alaskaair.com/components/auro/nav">Level 3</auro-breadcrumb>
+				<auro-breadcrumb href="http://auro.alaskaair.com/components/auro/nav">Level 4</auro-breadcrumb>
+				<auro-breadcrumb>Current</auro-breadcrumb>
+			</Nav>
+		</div>
+	</section>
+
+	<section class="component-container">
+		<h2>Auro Pane</h2>
+		<h4 id="auro-pane-basic">Basic Table</h4>
+		<div class="exampleWrapper">
+			<Pane date="2020-09-20"></Pane>
+			<Pane date="2020-09-21" selected></Pane>
+			<Pane date="2020-09-22" disabled></Pane>
+		</div>
+
+		<h4 id="auro-pane-date-price">Date and price</h4>
+		<div class="exampleWrapper">
+			<Pane date="2020-09-20" price="$500"></Pane>
+			<Pane date="2020-09-21" price="$501" selected="true"></Pane>
+			<Pane date="2020-09-22" price="$480" disabled="true"></Pane>
+		</div>
+
+		<h4 id="auro-pane-small">Small Size</h4>
+		<div class="exampleWrapper">
+			<Pane date="2020-09-20" price="$500" sm></Pane>
+			<Pane date="2020-09-21" price="$501" selected="true" sm></Pane>
+			<Pane date="2020-09-22" price="$480" disabled="true" sm></Pane>
+		</div>
+	</section>
+
+	<section class="component-container">
+		<h2>Auro Popover</h2>
+		<h4 id="auro-table">Basic Table</h4>
+		<div class="exampleWrapper">
+			<Table>
+			</Table>
+		</div>
 	</section>
 
 	<section class="component-container">
@@ -600,5 +1042,10 @@
     display: block;
     clear: both;
     background-color: black;
-}
+	}
+
+	.exampleWrapper--flex {
+		display: flex;
+		justify-content: space-between;
+	}
 </style>

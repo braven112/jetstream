@@ -530,14 +530,6 @@ export default [
       {
         href: "/#auro-menu-horizontal-separator",
         label: "Horizontal Separator"
-      },
-      {
-        href: "/#auro-menu-reset-menu",
-        label: "Reset Menu Action"
-      },
-      {
-        href: "/#auro-menu-custom-event",
-        label: "Reset Custom Event"
       }
     ]
   },
@@ -566,7 +558,7 @@ export default [
         label: "Display Date and Price"
       },
       {
-        href: "/#auro-popover-small",
+        href: "/#auro-pane-small",
         label: "Small Size"
       }
     ]

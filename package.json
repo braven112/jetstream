@@ -25,6 +25,13 @@
 		"@aurodesignsystem/auro-sidenav": "^1.0.1",
 		"@aurodesignsystem/auro-skeleton": "^2.0.1",
 		"@aurodesignsystem/auro-table": "^2.0.1",
+		"@alaskaairux/auro-popover": "^2.3.0",
+		"@aurodesignsystem/auro-pane": "^2.0.1",
+		"@aurodesignsystem/auro-menu": "^3.10.2",
+		"@aurodesignsystem/auro-lockup": "^2.0.2",
+		"@aurodesignsystem/auro-nav": "^1.1.1",
+		"@alaskaairux/auro-loader": "^1.1.1",
+		"@aurodesignsystem/auro-input": "^2.15.2",
 		"@fontsource/fira-mono": "^4.5.10",
 		"@neoconfetti/svelte": "^1.0.0",
 		"@playwright/test": "^1.28.1",
@@ -51,3 +58,4 @@
 		"@aurodesignsystem/webcorestylesheets": "^5.0.5"
 	}
 }
+ 
