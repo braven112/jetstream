@@ -19,4 +19,5 @@
   use:setAttribute={{attr: 'aria-label', val: ariaLabel}}
   >
   <slot></slot>
+  <slot name="icon"></slot>
 </auro-button>

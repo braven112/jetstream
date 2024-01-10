@@ -74,10 +74,6 @@ export default [
         label: "On Dark"
       },
       {
-        href: "/#auro-badge-basic",
-        label: "Basic"
-      },
-      {
         href: "/#auro-badge-colored",
         label: "Colored"
       },
