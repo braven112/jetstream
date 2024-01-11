@@ -37,6 +37,8 @@
 		"@aurodesignsystem/auro-sidenav": "^1.0.1",
 		"@aurodesignsystem/auro-skeleton": "^2.0.1",
 		"@aurodesignsystem/auro-table": "^2.0.1",
+		"@aurodesignsystem/auro-select": "^2.8.5",
+		"@aurodesignsystem/auro-dropdown": "^2.9.11",
 		"@fontsource/fira-mono": "^4.5.10",
 		"@neoconfetti/svelte": "^1.0.0",
 		"@playwright/test": "^1.28.1",

@@ -25,6 +25,9 @@
 	import Carousel from "../components/Carousel.svelte";
 	import CheckboxGroup from "../components/CheckboxGroup.svelte";
 	import Checkbox from "../components/Checkbox.svelte";
+	import Select from "../components/Select.svelte";
+	import Sidenav from "../components/Sidenav.svelte";
+	import Dropdown from "../components/Dropdown.svelte";
 
 	const basicTableData = {
 		headers: JSON.stringify(["","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]),
@@ -752,6 +755,50 @@
 	</section>
 
 	<section class="component-container">
+		<h2>Auro Dropdown</h2>
+		<h4 id="auro-dropdown-basic">Basic</h4>
+		<div class="exampleWrapper">
+			<Dropdown id="common" common aria-label="Label content for screen reader">
+				<div style="padding: var(--auro-size-sm);">
+					Lorem ipsum solar
+					<br />
+					<auro-button onclick="document.querySelector('#common').hide()">
+					Dismiss Dropdown
+					</auro-button>
+				</div>
+				<span slot="helpText">
+					Help text
+				</span>
+				<div slot="trigger">
+					Trigger
+				</div>
+			</Dropdown>
+		</div>
+
+		<h4 id="auro-dropdown-label">Label</h4>
+		<div class="exampleWrapper">
+			<Dropdown id="commonSlot" bordered rounded inset chevron>
+				<div style="padding: var(--auro-size-sm);">
+					Lorem ipsum solar
+					<br />
+					<auro-button onclick="document.querySelector('#commonSlot').hide()">
+					Dismiss Dropdown
+					</auro-button>
+				</div>
+				<span slot="helpText">
+					Help text
+				</span>
+				<span slot="label">
+					Element label (default text will be read by screen reader)
+				</span>
+				<div slot="trigger">
+					Trigger
+				</div>
+			</Dropdown>
+		</div>
+	</section>
+
+	<section class="component-container">
 		<h2>Auro Input</h2>
 		<h4 id="auro-input-default">Default Input</h4>
 		<div class="exampleWrapper exampleWrapper--flex">
@@ -1181,10 +1228,61 @@
 	<!-- TODO: UPDATE THIS STORY -->
 	<section class="component-container">
 		<h2>Auro Popover</h2>
-		<h4 id="auro-table">Basic Table</h4>
+		<h4 id="auro-popover-default">Default</h4>
 		<div class="exampleWrapper">
-			<Table>
-			</Table>
+			<Popover>
+				Top popover content!
+				<auro-button slot="trigger">Popover Test</auro-button>
+			</Popover>
+			
+			<!-- Using the placement=bottom attribute -->
+			<Popover placement="bottom">
+				Popover content!
+				<auro-button secondary slot="trigger">Popover Test</auro-button>
+			</Popover>
+		</div>
+
+		<h4 id="auro-popover-space">Add Space Popover</h4>
+		<div class="exampleWrapper">
+			<Popover addSpace>
+				Notice this popover is a little<br>further away from the trigger.
+				<auro-button slot="trigger">Popover w/additional space above</auro-button>
+			</Popover>
+			
+			<Popover placement="bottom" addSpace>
+				Notice this popover is a little<br>further away from the trigger.
+				<auro-button secondary slot="trigger">Popover w/additional space below</auro-button>
+			</Popover>
+		</div>
+
+		<h4 id="auro-popover-remove-space">Remove Space Popover</h4>
+		<div class="exampleWrapper">
+			<Popover removeSpace>
+				Notice this popover is a little<br>closer to the trigger.
+			
+				<!--
+					For elements like `auro-icon` that do not have a default tab-to state,
+					be sure to add `tabindex="0"` to the element when using `auro-popover`
+					otherwise users of assistive technology will not see the content.
+				-->
+				<auro-icon category="in-flight" name="plug" slot="trigger" tabindex="0"></auro-icon>
+			</Popover>
+		</div>
+
+		<h4 id="auro-popover-hyperlink">Remove Hyperlink Popover</h4>
+		<div class="exampleWrapper">
+			<Popover>
+				This works, but not recommended
+				<Hyperlink href="#" relative nav slot="trigger">hyperlink popover trigger</Hyperlink>
+			</Popover>
+		</div>
+
+		<h4 id="auro-popover-hyperlink-button">Hyperlink Role Button Popover</h4>
+		<div class="exampleWrapper">
+			<Popover>
+				Role button is recommended
+				<Hyperlink role="button" slot="trigger">hyperlink, role button</Hyperlink>
+			</Popover>
 		</div>
 	</section>
 
@@ -1247,6 +1345,142 @@
 	</section>
 
 	<section class="component-container">
+		<h2>Auro Select</h2>
+		<h4 id="auro-select-default">Default</h4>
+		<div class="exampleWrapper">
+			<Select>
+				<Menu>
+					<auro-menuoption value="stops">Stops</auro-menuoption>
+					<auro-menuoption value="price">Price</auro-menuoption>
+					<auro-menuoption value="duration">Duration</auro-menuoption>
+					<auro-menuoption value="departure">Departure</auro-menuoption>
+					<auro-menuoption value="arrival">Arrival</auro-menuoption>
+					<auro-menuoption value="prefer alaska">Prefer Alaska</auro-menuoption>
+				</Menu>
+			</Select>
+		</div>
+
+		<h4 id="auro-select-icons">Example with auro-icons in options</h4>
+		<div class="exampleWrapper">
+			<Select>
+				<Menu>
+					<auro-menuoption value="air">
+						<auro-icon label customColor category="health" name="air">Air</auro-icon>
+					</auro-menuoption>
+					<auro-menuoption value="covidtest">
+						<auro-icon label customColor category="health" name="covid-test">Covid Test</auro-icon>
+					</auro-menuoption>
+					<auro-menuoption value="health">
+						<auro-icon label customColor category="health" name="health">Health</auro-icon>
+					</auro-menuoption>
+					<auro-menuoption value="mask">
+						<auro-icon label customColor category="health" name="mask">Mask</auro-icon>
+					</auro-menuoption>
+					<auro-menuoption value="spraybottle">
+						<auro-icon label customColor category="health" name="spraybottle">Spray Bottle</auro-icon>
+					</auro-menuoption>
+				</Menu>
+			</Select>
+		</div>
+
+		<h4 id="auro-select-nested">Example with nested menus</h4>
+		<div class="exampleWrapper">
+			<Select>
+				<Menu>
+					<auro-menuoption value="stops">Stops</auro-menuoption>
+					<auro-menuoption value="price">Price</auro-menuoption>
+					<auro-menuoption value="duration">Duration</auro-menuoption>
+					<hr>
+					<Menu>
+						<auro-menuoption value="apples">Apples</auro-menuoption>
+						<auro-menuoption value="oranges">Oranges</auro-menuoption>
+						<auro-menuoption value="pears">Pears</auro-menuoption>
+						<auro-menuoption value="grapes">Grapes</auro-menuoption>
+						<auro-menuoption value="kiwi">Kiwi</auro-menuoption>
+						<hr>
+						<Menu>
+							<auro-menuoption value="person">Person</auro-menuoption>
+							<auro-menuoption value="woman">Woman</auro-menuoption>
+							<auro-menuoption value="man">Man</auro-menuoption>
+							<auro-menuoption value="camera">Camera</auro-menuoption>
+							<auro-menuoption value="tv">TV</auro-menuoption>
+						</Menu>
+					</Menu>
+					<hr>
+					<auro-menuoption value="departure">Departure</auro-menuoption>
+					<auro-menuoption value="arrival">Arrival</auro-menuoption>
+					<hr>
+					<Menu>
+						<auro-menuoption value="cars">Cars</auro-menuoption>
+						<auro-menuoption value="trucks">Trucks</auro-menuoption>
+						<auro-menuoption value="boats">Boats</auro-menuoption>
+						<auro-menuoption value="planes">Planes</auro-menuoption>
+						<auro-menuoption value="motorcycles">Motorcycles</auro-menuoption>
+					</Menu>
+				</Menu>
+			</Select>
+		</div>
+
+		<h4 id="auro-select-not-checkmark">Example with no checkmark</h4>
+		<div class="exampleWrapper">
+			<Select nocheckmark>
+				<Menu>
+					<auro-menuoption value="stops">Stops</auro-menuoption>
+					<auro-menuoption value="price">Price</auro-menuoption>
+					<auro-menuoption value="duration">Duration</auro-menuoption>
+					<auro-menuoption value="departure">Departure</auro-menuoption>
+					<auro-menuoption value="arrival">Arrival</auro-menuoption>
+					<auro-menuoption value="prefer alaska">Prefer Alaska</auro-menuoption>
+				</Menu>
+			</Select>
+		</div>
+
+		<h4 id="auro-select-label-text-slots">Label and help text slots</h4>
+		<div class="exampleWrapper">
+			<Select>
+				<span slot="label">Please choose a preference</span>
+				<span slot="helpText">Preferences are maintained for future use</span>
+				<Menu>
+					<auro-menuoption value="stops">Stops</auro-menuoption>
+					<auro-menuoption value="price">Price</auro-menuoption>
+					<auro-menuoption value="duration">Duration</auro-menuoption>
+					<auro-menuoption value="departure">Departure</auro-menuoption>
+					<auro-menuoption value="arrival">Arrival</auro-menuoption>
+					<auro-menuoption value="prefer alaska">Prefer Alaska</auro-menuoption>
+				</Menu>
+			</Select>
+		</div>
+
+		<h4 id="auro-select-error">Horizontal Group</h4>
+		<div class="exampleWrapper">
+			<Select error="Custom error message">
+				<Menu>
+					<auro-menuoption value="stops">Stops</auro-menuoption>
+					<auro-menuoption value="price">Price</auro-menuoption>
+					<auro-menuoption value="duration">Duration</auro-menuoption>
+					<auro-menuoption value="departure">Departure</auro-menuoption>
+					<auro-menuoption value="arrival">Arrival</auro-menuoption>
+					<auro-menuoption value="prefer alaska">Prefer Alaska</auro-menuoption>
+				</Menu>
+			</Select>
+		</div>
+
+		<h4 id="auro-select-disabled">Disabled state</h4>
+		<div class="exampleWrapper">
+			<Select disabled>
+				<Menu>
+					<auro-menuoption value="stops">Stops</auro-menuoption>
+					<auro-menuoption value="price">Price</auro-menuoption>
+					<auro-menuoption value="duration">Duration</auro-menuoption>
+					<auro-menuoption value="departure">Departure</auro-menuoption>
+					<auro-menuoption value="arrival">Arrival</auro-menuoption>
+					<auro-menuoption value="prefer alaska">Prefer Alaska</auro-menuoption>
+				</Menu>
+			</Select>
+		</div>
+	</section>
+
+	<section class="component-container">
 		<h2>Auro Skeleton</h2>
 		<h4 id="auro-skeleton-circle">Circle</h4>
 		<div class="exampleWrapper">
@@ -1296,6 +1530,28 @@
 						</tr>
 					</tbody>
 			</table>
+		</div>
+	</section>
+
+	<section class="component-container">
+		<h2>Auro Sidenav</h2>
+		<h4 id="auro-sidenav">Default</h4>
+		<div class="exampleWrapper">
+			<Sidenav>
+				<span slot="heading">Pet travel policies</span>
+				<auro-sidenavitem href="/content/travel-info/pets">Pet travel overview</auro-sidenavitem>
+				<auro-sidenavitem href="/content/travel-info/policies/pets-traveling-with-pets/pets-in-cabin">Pets in cabin</auro-sidenavitem>
+				<auro-sidenavitem href="/content/travel-info/policies/pets-traveling-with-pets/pets-in-baggage-compartment">Pets in baggage compartment</auro-sidenavitem>
+				<auro-sidenavitem href="/content/travel-info/policies/pets-traveling-hawaii">Traveling to Hawaii</auro-sidenavitem>
+				<auro-sidenavitem href="/content/travel-info/policies/pets-traveling-international" target="_blank">International travel with pets</auro-sidenavitem>
+				<auro-sidenavsection>
+					<span slot="trigger">FAQ</span>
+					<auro-sidenavitem href="/content/travel-info/policies/pets-traveling-with-pets/banfield-qa#safe-to-fly">Is it safe to fly with my pet?</auro-sidenavitem>
+					<auro-sidenavitem href="/content/travel-info/policies/pets-traveling-with-pets/banfield-qa#certain-breeds-prohibited">Why are certain breeds prohibited from flying in the cargo compartment?</auro-sidenavitem>
+					<auro-sidenavitem href="/content/travel-info/policies/pets-traveling-with-pets/banfield-qa#dog-info" target="_blank">Dogs</auro-sidenavitem>
+					<auro-sidenavitem href="/content/travel-info/policies/pets-traveling-with-pets/banfield-qa#cat-info" target="_blank">Cats</auro-sidenavitem>
+				</auro-sidenavsection>
+			</Sidenav>
 		</div>
 	</section>
 

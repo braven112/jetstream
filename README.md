@@ -21,6 +21,7 @@ _<small>(<b>21 of 34</b> components)</small>_
 - [x] Card
 - [x] Carousel
 - [x] Checkbox
+- [x] Dropdown
 - [x] Header
 - [x] Hyperlink
 - [x] Input
@@ -29,8 +30,11 @@ _<small>(<b>21 of 34</b> components)</small>_
 - [x] Menu
 - [x] Nav
 - [x] Pane
+- [x] Popover
 - [x] Radio
+- [x] Select
 - [x] Skeleton
+- [x] Sidenav
 - [x] Table
 
 

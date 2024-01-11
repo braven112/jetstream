@@ -11,6 +11,8 @@
   export let ondark = undefined;
   export let slot = undefined;
   export let nav = undefined;
+  export let relative = undefined;
+  export let role = undefined;
 </script>
 
 <auro-hyperlink
@@ -21,6 +23,8 @@
   use:setAttribute={{attr: 'ondark', val: ondark}}
   use:setAttribute={{attr: 'slot', val: slot}}
   use:setAttribute={{attr: 'nav', val: nav}}
+  use:setAttribute={{attr: 'relative', val: relative}}
+  use:setAttribute={{attr: 'role', val: role}}
   >
   <slot></slot>
 </auro-hyperlink>
