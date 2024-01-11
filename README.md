@@ -1,16 +1,42 @@
-# SvelteKit Demo app
+<mark style="background-color: yellow; font-weight: bold;">[WORK IN PROGRESS]</mark>
+# Jetstream Theme Demo Page
 
-The official demo app for SvelteKit, hosted on Vercel.
+A future showcase page of Auro components using the [Jetstream theme](https://github.com/Alaska-ITS/JetstreamDesignTokens/).
 
-## Deploy Your Own
+## Deployment
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fvercel%2Ftree%2Fmain%2Fexamples%2Fsveltekit-1&project-name=sveltekit-vercel&repository-name=sveltekit-vercel&demo-title=SvelteKit%20%2B%20Vercel&demo-url=https%3A%2F%2Fsveltekit-template.vercel.app%2F)
+Currently this site have also been deployed to Vercel at [https://jetstream-rouge.vercel.app/](https://jetstream-rouge.vercel.app/).
 
-_Live Example: https://sveltekit-template.vercel.app_
+## Current Status
 
-## Developing
+Below are the Auro components that are currently available in this showcase page.
+_<small>(<b>21 of 34</b> components)</small>_
+- [x] Accordion
+- [x] Avatar
+- [x] Background
+- [x] Back to Top
+- [x] Badge
+- [x] Banner
+- [x] Button
+- [x] Card
+- [x] Carousel
+- [x] Checkbox
+- [x] Header
+- [x] Hyperlink
+- [x] Input
+- [x] Loader
+- [x] Lockup
+- [x] Menu
+- [x] Nav
+- [x] Pane
+- [x] Radio
+- [x] Skeleton
+- [x] Table
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+## Development
+
+Once you've created a project and installed dependencies with `npm install`, start a development server:
 
 ```bash
 npm run dev
