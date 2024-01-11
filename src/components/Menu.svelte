@@ -6,7 +6,7 @@
 
   export let disabled = undefined;
   export let matchWord = undefined;
-  export let noCheckmark = undefined;
+  export let nocheckmark = undefined;
   export let optionActive = undefined;
   export let optionSelected = undefined;
   export let ready = undefined;
@@ -18,7 +18,7 @@
 <auro-menu
   use:setAttribute={{attr: 'disabled', val: disabled}}
   use:setAttribute={{attr: 'matchWord', val: matchWord}}
-  use:setAttribute={{attr: 'noCheckmark', val: noCheckmark}}
+  use:setAttribute={{attr: 'nocheckmark', val: nocheckmark}}
   use:setAttribute={{attr: 'optionActive', val: optionActive}}
   use:setAttribute={{attr: 'optionSelected', val: optionSelected}}
   use:setAttribute={{attr: 'ready', val: ready}}
