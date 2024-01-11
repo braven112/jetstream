@@ -10,7 +10,7 @@ Currently this site have also been deployed to Vercel at [https://jetstream-roug
 ## Current Status
 
 Below are the Auro components that are currently available in this showcase page.
-_<small>(<b>21 of 34</b> components)</small>_
+_<small>(<b>25 of 34</b> components)</small>_
 - [x] Accordion
 - [x] Avatar
 - [x] Background
