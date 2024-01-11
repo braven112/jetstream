@@ -25,13 +25,13 @@
     --ds-unitless-scale-200: 1.5;
     --ds-unitless-scale-300: 2;
     --ds-unitless-scale-350: 3;
-    --ds-text-body-size-xxs: 0.5rem;
-    --ds-text-body-size-xs: 0.625rem;
-    --ds-text-body-size-sm: 0.75rem;
-    --ds-text-body-size-default: 0.875rem;
-    --ds-text-body-size-lg: 1rem;
-    --ds-text-body-height-xs: 0.875rem;
-    --ds-text-body-height-sm: 1rem;
-    --ds-text-body-height-default: 1.25rem;
-    --ds-text-body-height-lg: 1.5rem;
+    --ds-text-body-size-xxs: 0.35rem;
+    --ds-text-body-size-xs: 0.5rem;
+    --ds-text-body-size-sm: 0.625rem;
+    --ds-text-body-size-default: 0.75rem;
+    --ds-text-body-size-lg: 0.875rem;
+    --ds-text-body-height-xs: 0.750rem;
+    --ds-text-body-height-sm: 0.875rem;
+    --ds-text-body-height-default: 1rem;
+    --ds-text-body-height-lg: 1.25rem;
   }
