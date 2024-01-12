@@ -1,0 +1,63 @@
+/**
+ * Do not edit directly
+ * Generated on Fri, 29 Dec 2023 19:04:04 GMT
+ */
+
+ :root {
+    --ds-color-alert-notification-default: #ce0c88;
+    
+    --ds-color-background-lightest: #ffffff;
+    --ds-color-background-lighter: #f8f8f8;
+    --ds-color-background-darker: #5b105e;
+    --auro-color-background-darker: #5b105e;
+    --ds-color-background-darkest: #14004099;
+    --auro-color-background-darkest: #14004099;
+    
+    --ds-color-border-primary-default: #797362;
+    --ds-color-border-primary-inverse: #bbb29f;
+    --ds-color-border-active-default: #ce0c88;
+    --ds-color-border-active-inverse: #ee453d;
+    --ds-color-border-disabled-default: #ee453d;
+    
+    --ds-color-icon-primary-default: #796f62;
+    --ds-color-icon-primary-inverse: #bbb19f;
+    --ds-color-icon-emphasis-default: #222222;
+    --ds-color-icon-emphasis-inverse: #ffffff;
+    --ds-color-icon-accent-default: #ce0c88;
+    --ds-color-icon-disabled-default: rgba(0, 0, 0, 0.15);
+    
+    --ds-color-text-primary-default: #222222;
+    --ds-color-text-primary-inverse: #ffffff;
+    --ds-color-text-secondary-default: #796d62;
+    --ds-color-text-secondary-inverse: #bbb09f;
+    --ds-color-text-link-default: #ce0c88;
+    --ds-color-text-link-inverse: #ee453d;
+    --auro-color-text-link-on-light: #ce0c88;
+    --auro-color-text-link-on-dark: #ee453d;
+    --ds-color-text-disabled-default: #dbdbdb;
+    --ds-color-text-emphasis-default: #5b105e;
+    --ds-color-text-emphasis-inverse: #f0e1c1;
+    
+    --ds-color-ui-default-default: #ce0c88;
+    --auro-color-ui-default-on-light: #ce0c88;
+    --ds-color-ui-default-inverse: #ee453d;
+    --auro-color-ui-default-on-dark: #ee453d;
+    --ds-color-ui-hover-default: #db1b96;
+    --auro-color-ui-hover-on-light: #db1b96;
+    --ds-color-ui-hover-inverse: #eb2aa5;
+    --auro-color-ui-hover-on-dark: #eb2aa5;
+    --ds-color-ui-active-default: #ce0c88;
+    --auro-color-ui-active-on-light: #db1b96;
+    --ds-color-ui-active-inverse: #e350ae;
+    --auro-color-ui-active-on-dark: #e350ae;
+    --ds-color-ui-disabled-default: #ce0c88;
+    --ds-color-ui-bkg-default-default: rgba(0, 0, 0, 0.03);
+    --ds-color-ui-bkg-default-inverse: rgba(255, 255, 255, 0.03);
+    --ds-color-ui-bkg-hover-default: rgba(0, 0, 0, 0.06);
+    --ds-color-ui-bkg-hover-inverse: rgba(255, 255, 255, 0.06);
+    --ds-border-radius: 0px;
+  }
+  .auro-button[variant="secondary"], .auro-button--secondary {
+    --ds-color-background-lightest: #ee453d;
+    background-color: var(--ds-color-background-lightest, #ffffff);
+  }
