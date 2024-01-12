@@ -75,3 +75,8 @@
     --ds-color-brand-atlas-200: #f326a8;
     --ds-color-brand-atlas-100: #e350ae;
   }
+
+auro-alaska, auro-lockup {
+    --ds-color-brand-midnight-400: #01426a;
+    --auro-color-brand-midnight-400: #01426a;
+}
