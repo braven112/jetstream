@@ -1,8 +1,3 @@
-/**
- * Do not edit directly
- * Generated on Fri, 29 Dec 2023 19:04:04 GMT
- */
-
  :root {
     --ds-color-alert-notification-default: #ce0c88;
     
@@ -10,8 +5,8 @@
     --ds-color-background-lighter: #f8f8f8;
     --ds-color-background-darker: #5b105e;
     --auro-color-background-darker: #5b105e;
-    --ds-color-background-darkest: #14004099;
-    --auro-color-background-darkest: #14004099;
+    --ds-color-background-darkest: #140040;
+    --auro-color-background-darkest: #140040;
     
     --ds-color-border-primary-default: #797362;
     --ds-color-border-primary-inverse: #bbb29f;
@@ -44,7 +39,7 @@
     --auro-color-ui-default-on-dark: #ee453d;
     --ds-color-ui-hover-default: #db1b96;
     --auro-color-ui-hover-on-light: #db1b96;
-    --ds-color-ui-hover-inverse: #eb2aa5;
+    --ds-color-ui-hover-inverse: #e13b32;
     --auro-color-ui-hover-on-dark: #eb2aa5;
     --ds-color-ui-active-default: #ce0c88;
     --auro-color-ui-active-on-light: #db1b96;
@@ -53,7 +48,7 @@
     --ds-color-ui-disabled-default: #ce0c88;
     --ds-color-ui-bkg-default-default: rgba(0, 0, 0, 0.03);
     --ds-color-ui-bkg-default-inverse: rgba(255, 255, 255, 0.03);
-    --ds-color-ui-bkg-hover-default: #e13b32;
-    --ds-color-ui-bkg-hover-inverse: #e13b32;
+    --ds-color-ui-bkg-hover-default: #eb2aa521;
+    --ds-color-ui-bkg-hover-inverse: #e13b325e;
     --ds-border-radius: 0px;
   }
