@@ -43,6 +43,7 @@
 		"@aurodesignsystem/auro-flightline": "^2.0.2",
 		"@aurodesignsystem/auro-combobox": "^1.8.1",
 		"@aurodesignsystem/auro-toast": "^1.0.1",
+		"@aurodesignsystem/auro-datepicker": "^2.1.2",
 		"@fontsource/fira-mono": "^4.5.10",
 		"@neoconfetti/svelte": "^1.0.0",
 		"@playwright/test": "^1.28.1",

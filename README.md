@@ -10,7 +10,7 @@ Currently this site have also been deployed to Vercel at [https://jetstream-roug
 ## Current Status
 
 Below are the Auro components that are currently available in this showcase page.
-_<small>(<b>28 of 34</b> components)</small>_
+_<small>(<b>34 of 34</b> components)</small>_
 - [x] Accordion
 - [x] Avatar
 - [x] Background
@@ -22,11 +22,16 @@ _<small>(<b>28 of 34</b> components)</small>_
 - [x] Carousel
 - [x] Checkbox
 - [x] Combobox
+- [x] Datepicker
+- [x] Dialog
+- [x] Drawer
 - [x] Dropdown
 - [x] Flight
 - [x] Flightline
 - [x] Header
+- [x] Alaska Logo
 - [x] Hyperlink
+- [x] Icon
 - [x] Input
 - [x] Loader
 - [x] Lockup
@@ -39,6 +44,7 @@ _<small>(<b>28 of 34</b> components)</small>_
 - [x] Skeleton
 - [x] Sidenav
 - [x] Table
+- [x] Toast
 
 
 ## Development

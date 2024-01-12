@@ -35,6 +35,7 @@
 	import Dialog from "../components/Dialog.svelte";
 	import Toast from "../components/Toast.svelte";
 	import Toaster from "../components/Toaster.svelte";
+	import Datepicker from "../components/Datepicker.svelte";
 
 	import comboboxMenus from "../pageData/combobox";
 
@@ -730,6 +731,26 @@
 					<auro-menuoption static nomatch>No matching option</auro-menuoption>
 				</Menu>
 			</Combobox>
+		</div>
+	</section>
+
+	<section class="component-container">
+		<h2>Auro Datepicker</h2>
+		<h4 id="auro-datepicker-basic">Basic</h4>
+		<div class="exampleWrapper">
+			<Datepicker>
+				<span slot="fromLabel">Choose a date</span>
+				<span slot="mobileDateLabel">Choose a date</span>
+			</Datepicker>
+		</div>
+
+		<h4 id="auro-datepicker-range">Range</h4>
+		<div class="exampleWrapper">
+			<Datepicker range>
+				<span slot="fromLabel">Departure</span>
+				<span slot="toLabel">Return</span>
+				<span slot="mobileDateLabel">Roundtrip</span>
+			</Datepicker>
 		</div>
 	</section>
 

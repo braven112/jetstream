@@ -209,7 +209,7 @@ export default [
       },
       {
         href: "/#auro-datepicker-range",
-        label: "Checkmark"
+        label: "Range"
       }
     ]
   },
