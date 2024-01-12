@@ -340,6 +340,7 @@ body {
     --ds-color-icon-accent-default: #17926B;
     --ds-color-icon-disabled-default: #363636;
     --ds-color-text-primary-default: #ffffff;
+    --auro-color-text-primary-on-light: var(--ds-color-text-primary-default);
     --ds-color-text-primary-inverse: #242424;
     --ds-color-text-secondary-default: #B7B7B7;
     --ds-color-text-secondary-inverse: #363636;
@@ -369,7 +370,3 @@ body {
     --ds-color-ui-bkg-hover-default: rgba(255, 255, 255, 0.06);
     --ds-color-ui-bkg-hover-inverse: rgba(0, 0, 0, 0.06);
   }
-has context menu
-
-
-has context menu

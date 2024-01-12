@@ -53,11 +53,7 @@
     --ds-color-ui-disabled-default: #ce0c88;
     --ds-color-ui-bkg-default-default: rgba(0, 0, 0, 0.03);
     --ds-color-ui-bkg-default-inverse: rgba(255, 255, 255, 0.03);
-    --ds-color-ui-bkg-hover-default: rgba(0, 0, 0, 0.06);
-    --ds-color-ui-bkg-hover-inverse: rgba(255, 255, 255, 0.06);
+    --ds-color-ui-bkg-hover-default: #e13b32;
+    --ds-color-ui-bkg-hover-inverse: #e13b32;
     --ds-border-radius: 0px;
-  }
-  .auro-button[variant="secondary"], .auro-button--secondary {
-    --ds-color-background-lightest: #ee453d;
-    background-color: var(--ds-color-background-lightest, #ffffff);
   }
