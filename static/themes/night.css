@@ -2,6 +2,14 @@
 * Do not edit directly
 * Generated on Fri, 29 Dec 2023 19:04:04 GMT
 */
+
+body {
+    background-color: #151515;
+}
+
+.sidenav {
+    background-color: #363636;
+}
  
 :root {
     --ds-asset-font-circular-family-name: "Lato";
