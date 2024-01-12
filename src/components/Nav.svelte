@@ -2,7 +2,7 @@
 // @ts-nocheck
 
 	import setAttribute from '$lib/setAttribute';
-  import '@aurodesignsystem/auro-nav';
+  import 'https://cdn.jsdelivr.net/npm/@aurodesignsystem/auro-nav@latest/dist/auro-nav__bundled.js';
 
   export let download = undefined;
   export let fluid = undefined;
@@ -15,6 +15,8 @@
   export let secondary = undefined;
   export let target = undefined;
   export let type = undefined;
+  export let anchorNavContent = undefined;
+  export let style = undefined;
 </script>
 
 <auro-nav
@@ -29,6 +31,10 @@
   use:setAttribute={{attr: 'secondary', val: secondary}}
   use:setAttribute={{attr: 'target', val: target}}
   use:setAttribute={{attr: 'type', val: type}}
+  use:setAttribute={{attr: 'anchorNavContent', val: anchorNavContent}}
+  use:setAttribute={{attr: 'style', val: style}}
   >
   <slot></slot>
+  <slot name="mobileToggleCollapsed"></slot>
+  <slot name="mobileToggleExpanded"></slot>
 </auro-nav>

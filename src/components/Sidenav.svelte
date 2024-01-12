@@ -3,7 +3,6 @@
 
   import setAttribute from '$lib/setAttribute';
   import '@aurodesignsystem/auro-sidenav';
-
 </script>
 
 <auro-sidenav>
