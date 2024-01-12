@@ -51,4 +51,27 @@
     --ds-color-ui-bkg-hover-default: #eb2aa521;
     --ds-color-ui-bkg-hover-inverse: #e13b325e;
     --ds-border-radius: 0px;
+
+    --auro-color-brand-midnight-500: #5b105e;
+    --auro-color-brand-midnight-400: #7b1c7e;
+    --auro-color-brand-midnight-300: #8d2691;
+    --auro-color-brand-midnight-200: #a233a6;
+
+    --ds-color-brand-midnight-500: #5b105e;
+    --ds-color-brand-midnight-400: #7b1c7e;
+    --ds-color-brand-midnight-300: #8d2691;
+    --ds-color-brand-midnight-200: #a233a6;
+
+
+    --auro-color-brand-atlas-500: #ce0c88;
+    --auro-color-brand-atlas-400: #dd1292;
+    --auro-color-brand-atlas-300: #e4189a;
+    --auro-color-brand-atlas-200: #f326a8;
+    --auro-color-brand-atlas-100: #e350ae;
+    
+    --ds-color-brand-atlas-500: #ce0c88;
+    --ds-color-brand-atlas-400: #dd1292;
+    --ds-color-brand-atlas-300: #e4189a;
+    --ds-color-brand-atlas-200: #f326a8;
+    --ds-color-brand-atlas-100: #e350ae;
   }
