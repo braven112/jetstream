@@ -1,0 +1,330 @@
+/**
+* Do not edit directly
+* Generated on Fri, 29 Dec 2023 19:04:04 GMT
+*/
+ 
+:root {
+    --ds-asset-font-circular-family-name: "Lato";
+    --ds-asset-font-circular-filename: "ASCircularWeb";
+    --ds-asset-font-circular-weight-light: "-Light";
+    --ds-asset-font-circular-weight-medium: "-Regular";
+    --ds-asset-font-circular-weight-book: "-Bold";
+    
+    --ds-color-alert-notification-default: #3298CA;
+    --ds-color-alert-warning-default: #FE9E2D;
+    --ds-color-alert-error-default: #F05C46;
+    --ds-color-alert-success-default: #17926B;
+    --ds-color-alert-advisory-default: #FFD5AD;
+    --ds-color-alert-bkg-success-default: #315413;
+    --ds-color-alert-bkg-error-default: #921E15;
+    --ds-color-background-lightest: #151515;
+    --ds-color-background-lighter: #363636;
+    --ds-color-background-darker: #8F8F8F;
+    --ds-color-background-darkest: #B7B7B7;
+    --ds-color-background-gradient-default: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
+    /**
+     *
+     *   // Base value for token support; should not use in code!
+     */
+    --ds-color-base-white: #ffffff;
+    --ds-color-base-white-opacity-50: rgba(255, 255, 255, 0.5); /* white @ 50% */
+    --ds-color-base-white-opacity-40: rgba(255, 255, 255, 0.4); /* white @ 40% */
+    --ds-color-base-white-opacity-0: rgba(255, 255, 255, 0); /* white @ 0% */
+    /**
+     *
+     *   // Base value for token support; should not use in code!
+     */
+    --ds-color-base-black: #000000;
+    --ds-color-base-black-opacity-15: rgba(0, 0, 0, 0.15); /* black @ 15% */
+    --ds-color-state-error-100: #ff999b;
+    --ds-color-state-error-500: #df0b37;
+    --ds-color-state-success-100: #69cf96;
+    --ds-color-state-success-500: #00805d;
+    --ds-color-state-warning-500: #de750c;
+    --ds-color-border-primary-default: #363636;
+    --ds-color-border-primary-inverse: #8F8F8F;
+    --ds-color-border-active-default: #4BAC87;
+    --ds-color-border-active-inverse: #00583B;
+    --ds-color-border-error-default: #CE3E2D;
+    --ds-color-border-disabled-default: #dbdbdb;
+    --ds-color-border-focus-default: #363636;
+    --ds-color-border-divider-default:#585858;
+    --ds-color-border-divider-inverse: #8F8F8F;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-midnight-100: #c1daf0;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-midnight-200: #569ed7;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-midnight-300: #156fad;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-midnight-400: #01426a;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-midnight-500: #00274a;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-atlas-100: #cde6ff;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-atlas-200: #6bb7fb;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-atlas-300: #2492eb;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-atlas-400: #0074c8;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-atlas-500: #054687;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-breeze-100: #c0f7ff;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-breeze-200: #5de3f7;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-breeze-300: #00cff0;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-breeze-400: #099dc5;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-breeze-500: #0b5575;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-tropical-100: #e2ffcd;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-tropical-200: #d0fba6;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-tropical-300: #c0e585;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-tropical-400: #91be62;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-tropical-500: #5e8741;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-alpine-100: #bcaae6;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-alpine-200: #9e73ea;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-alpine-300: #8439ef;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-alpine-400: #631db8;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-alpine-500: #39115c;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-flamingo-100: #ffebee;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-flamingo-200: #ffc0ca;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-flamingo-300: #ff94a7;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-flamingo-400: #f65b7b;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-flamingo-500: #b82b47;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-canyon-100: #ffcab6;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-canyon-200: #f99574;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-canyon-300: #f26135;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-canyon-400: #de3e09;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-canyon-500: #b83302;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-goldcoast-100: #fff0cd;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-goldcoast-200: #ffdb67;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-goldcoast-300: #ffd200;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-goldcoast-400: #e5ad07;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-goldcoast-500: #b88624;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-neutral-100: #f9fbfc;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-neutral-200: #e2eaef;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-neutral-300: #cbd8e2;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-neutral-400: #9fabbb;
+    /**
+     *
+     *   // Please consider descriptive token prior to using brand token
+     */
+    --ds-color-brand-neutral-500: #626b79;
+    --ds-color-brand-gray-100: #f8f8f8;
+    --ds-color-brand-gray-200: #dbdbdb;
+    --ds-color-brand-gray-300: #b2b2b2;
+    --ds-color-brand-gray-400: #767676;
+    --ds-color-brand-gray-500: #222222;
+    --ds-color-brand-goldgray-100: #c5c1bf;
+    --ds-color-brand-goldgray-200: #726e6c;
+    --ds-color-brand-gold-100: #ccbc94;
+    --ds-color-brand-gold-200: #7f682e;
+    --ds-color-brand-emerald: #139142;
+    --ds-color-brand-sapphire: #015daa;
+    --ds-color-brand-ruby: #a41d4a;
+ 
+    --ds-color-icon-primary-default: #A4A4A4;
+    --ds-color-icon-primary-inverse: #363636;
+    --ds-color-icon-emphasis-default: #ffffff;
+    --ds-color-icon-emphasis-inverse: #242424;
+    --ds-color-icon-accent-default: #17926B;
+    --ds-color-icon-disabled-default: #363636;
+    --ds-color-text-primary-default: #ffffff;
+    --ds-color-text-primary-inverse: #242424;
+    --ds-color-text-secondary-default: #B7B7B7;
+    --ds-color-text-secondary-inverse: #363636;
+    --ds-color-text-link-default: #17926B;
+    --ds-color-text-link-inverse: #C5CC7D;
+    --ds-color-text-error-default: #CE3E2D;
+    --ds-color-text-error-inverse: #921E15;
+    --ds-color-text-disabled-default: #363636;
+    --ds-color-text-emphasis-default: #A579D0;
+    --ds-color-text-emphasis-inverse: #5D3C7F;
+    --ds-color-tier-alaska-mvp-default: #726e6c;
+    --ds-color-tier-alaska-mvp-inverse: #c5c1bf;
+    --ds-color-tier-alaska-mvpgold-default: #7f682e;
+    --ds-color-tier-alaska-mvpgold-inverse: #ccbc94;
+    --ds-color-tier-oneworld-emerald: #139142;
+    --ds-color-tier-oneworld-sapphire: #015daa;
+    --ds-color-tier-oneworld-ruby: #a41d4a;
+    --ds-color-ui-default-default: #17926B;
+    --ds-color-ui-default-inverse: #006D4B;
+    --ds-color-ui-hover-default: #006D4B;
+    --ds-color-ui-hover-inverse: #00432C;
+    --ds-color-ui-active-default: #93A424;
+    --ds-color-ui-active-inverse: #506700;
+    --ds-color-ui-disabled-default: rgba(255, 255, 255, 0.087);
+    --ds-color-ui-bkg-default-default: rgba(255, 255, 255, 0.03);
+    --ds-color-ui-bkg-default-inverse: rgba(0, 0, 0, 0.03);
+    --ds-color-ui-bkg-hover-default: rgba(255, 255, 255, 0.06);
+    --ds-color-ui-bkg-hover-inverse: rgba(0, 0, 0, 0.06);
+  }
+has context menu
+
+
+has context menu

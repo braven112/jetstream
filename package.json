@@ -26,7 +26,11 @@
 		"@aurodesignsystem/auro-button": "^7.2.2",
 		"@aurodesignsystem/auro-carousel": "^2.1.0",
 		"@aurodesignsystem/auro-checkbox": "^2.0.5",
+		"@aurodesignsystem/auro-combobox": "^1.8.1",
+		"@aurodesignsystem/auro-datepicker": "^2.1.2",
 		"@aurodesignsystem/auro-dropdown": "^2.9.11",
+		"@aurodesignsystem/auro-flight": "^2.5.0",
+		"@aurodesignsystem/auro-flightline": "^2.0.2",
 		"@aurodesignsystem/auro-header": "^2.1.0",
 		"@aurodesignsystem/auro-icon": "^4.1.0",
 		"@aurodesignsystem/auro-input": "^2.15.2",
@@ -35,15 +39,11 @@
 		"@aurodesignsystem/auro-nav": "^1.1.1",
 		"@aurodesignsystem/auro-pane": "^2.0.1",
 		"@aurodesignsystem/auro-radio": "^2.0.1",
+		"@aurodesignsystem/auro-select": "^2.8.5",
 		"@aurodesignsystem/auro-sidenav": "^1.0.1",
 		"@aurodesignsystem/auro-skeleton": "^2.0.1",
 		"@aurodesignsystem/auro-table": "^2.0.1",
-		"@aurodesignsystem/auro-select": "^2.8.5",
-		"@aurodesignsystem/auro-flight": "^2.5.0",
-		"@aurodesignsystem/auro-flightline": "^2.0.2",
-		"@aurodesignsystem/auro-combobox": "^1.8.1",
 		"@aurodesignsystem/auro-toast": "^1.0.1",
-		"@aurodesignsystem/auro-datepicker": "^2.1.2",
 		"@fontsource/fira-mono": "^4.5.10",
 		"@neoconfetti/svelte": "^1.0.0",
 		"@playwright/test": "^1.28.1",
@@ -67,7 +67,7 @@
 	"dependencies": {
 		"@alaskaairux/auro-interruption": "^1.4.5",
 		"@alaskaairux/webcorestylesheets": "^3.7.3",
-		"@aurodesignsystem/auro-themeswitcher": "^1.0.1",
+		"@aurodesignsystem/auro-themeswitcher": "^1.0.2",
 		"@aurodesignsystem/webcorestylesheets": "^5.0.5"
 	}
 }
