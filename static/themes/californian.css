@@ -1,3 +1,4 @@
+
  :root {
     --ds-color-alert-notification-default: #ce0c88;
     
@@ -79,4 +80,8 @@
 auro-alaska, auro-lockup {
     --ds-color-brand-midnight-400: #01426a;
     --auro-color-brand-midnight-400: #01426a;
+}
+
+auro-header, h1,h2,h3,h4,h5,h6 {
+    font-family: 'Chronicle Display',serif;
 }
