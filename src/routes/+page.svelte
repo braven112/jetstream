@@ -36,6 +36,8 @@
 	import Toast from "../components/Toast.svelte";
 	import Toaster from "../components/Toaster.svelte";
 
+	import comboboxMenus from "../pageData/combobox";
+
 	// Function for auro-dialog & auro-drawer
 	const toggleInterruption = (/** @type {string} */ elName) => {
 		let dialog = document.querySelector(elName);
@@ -77,8 +79,8 @@
 	const flightData = {
 		stopOneStep: JSON.stringify([{ "isStopover": true, "arrivalStation": "CDB"}]),
 		stopOver: JSON.stringify([{ "isStopover": true, "arrivalStation": "WRG"}, 
-					{ "isStopover": true, "arrivalStation": "PSG"}, 
-					{ "isStopover": true, "arrivalStation": "JNU"}]),
+			{ "isStopover": true, "arrivalStation": "PSG"}, 
+			{ "isStopover": true, "arrivalStation": "JNU"}]),
 		layOver: JSON.stringify([{ "isStopover": false, "arrivalStation": "ORD", "duration":"3h 10m" }])
 	};
 </script>
@@ -668,106 +670,9 @@
 		<h4 id="auro-carousel-image-custom">Carousel of images w/custom scroll distance</h4>
 		<div class="exampleWrapper">
 			<Carousel label="Images" scrolldistance="600">
-				<img src="https://picsum.photos/200?random=0" alt="Random insert 0">
-				<img src="https://picsum.photos/200?random=1" alt="Random insert 1">
-				<img src="https://picsum.photos/200?random=2" alt="Random insert 2">
-				<img src="https://picsum.photos/200?random=3" alt="Random insert 3">
-				<img src="https://picsum.photos/200?random=4" alt="Random insert 4">
-				<img src="https://picsum.photos/200?random=5" alt="Random insert 5">
-				<img src="https://picsum.photos/200?random=6" alt="Random insert 6">
-				<img src="https://picsum.photos/200?random=7" alt="Random insert 7">
-				<img src="https://picsum.photos/200?random=8" alt="Random insert 8">
-				<img src="https://picsum.photos/200?random=9" alt="Random insert 9">
-				<img src="https://picsum.photos/200?random=10" alt="Random insert 10">
-				<img src="https://picsum.photos/200?random=11" alt="Random insert 11">
-				<img src="https://picsum.photos/200?random=12" alt="Random insert 12">
-				<img src="https://picsum.photos/200?random=13" alt="Random insert 13">
-				<img src="https://picsum.photos/200?random=14" alt="Random insert 14">
-				<img src="https://picsum.photos/200?random=15" alt="Random insert 15">
-				<img src="https://picsum.photos/200?random=16" alt="Random insert 16">
-				<img src="https://picsum.photos/200?random=17" alt="Random insert 17">
-				<img src="https://picsum.photos/200?random=18" alt="Random insert 18">
-				<img src="https://picsum.photos/200?random=19" alt="Random insert 19">
-				<img src="https://picsum.photos/200?random=20" alt="Random insert 20">
-				<img src="https://picsum.photos/200?random=21" alt="Random insert 21">
-				<img src="https://picsum.photos/200?random=22" alt="Random insert 22">
-				<img src="https://picsum.photos/200?random=23" alt="Random insert 23">
-				<img src="https://picsum.photos/200?random=24" alt="Random insert 24">
-				<img src="https://picsum.photos/200?random=25" alt="Random insert 25">
-				<img src="https://picsum.photos/200?random=26" alt="Random insert 26">
-				<img src="https://picsum.photos/200?random=27" alt="Random insert 27">
-				<img src="https://picsum.photos/200?random=28" alt="Random insert 28">
-				<img src="https://picsum.photos/200?random=29" alt="Random insert 29">
-				<img src="https://picsum.photos/200?random=30" alt="Random insert 30">
-				<img src="https://picsum.photos/200?random=31" alt="Random insert 31">
-				<img src="https://picsum.photos/200?random=32" alt="Random insert 32">
-				<img src="https://picsum.photos/200?random=33" alt="Random insert 33">
-				<img src="https://picsum.photos/200?random=34" alt="Random insert 34">
-				<img src="https://picsum.photos/200?random=35" alt="Random insert 35">
-				<img src="https://picsum.photos/200?random=36" alt="Random insert 36">
-				<img src="https://picsum.photos/200?random=37" alt="Random insert 37">
-				<img src="https://picsum.photos/200?random=38" alt="Random insert 38">
-				<img src="https://picsum.photos/200?random=39" alt="Random insert 39">
-				<img src="https://picsum.photos/200?random=40" alt="Random insert 40">
-				<img src="https://picsum.photos/200?random=41" alt="Random insert 41">
-				<img src="https://picsum.photos/200?random=42" alt="Random insert 42">
-				<img src="https://picsum.photos/200?random=43" alt="Random insert 43">
-				<img src="https://picsum.photos/200?random=44" alt="Random insert 44">
-				<img src="https://picsum.photos/200?random=45" alt="Random insert 45">
-				<img src="https://picsum.photos/200?random=46" alt="Random insert 46">
-				<img src="https://picsum.photos/200?random=47" alt="Random insert 47">
-				<img src="https://picsum.photos/200?random=48" alt="Random insert 48">
-				<img src="https://picsum.photos/200?random=49" alt="Random insert 49">
-				<img src="https://picsum.photos/200?random=50" alt="Random insert 50">
-				<img src="https://picsum.photos/200?random=51" alt="Random insert 51">
-				<img src="https://picsum.photos/200?random=52" alt="Random insert 52">
-				<img src="https://picsum.photos/200?random=53" alt="Random insert 53">
-				<img src="https://picsum.photos/200?random=54" alt="Random insert 54">
-				<img src="https://picsum.photos/200?random=55" alt="Random insert 55">
-				<img src="https://picsum.photos/200?random=56" alt="Random insert 56">
-				<img src="https://picsum.photos/200?random=57" alt="Random insert 57">
-				<img src="https://picsum.photos/200?random=58" alt="Random insert 58">
-				<img src="https://picsum.photos/200?random=59" alt="Random insert 59">
-				<img src="https://picsum.photos/200?random=60" alt="Random insert 60">
-				<img src="https://picsum.photos/200?random=61" alt="Random insert 61">
-				<img src="https://picsum.photos/200?random=62" alt="Random insert 62">
-				<img src="https://picsum.photos/200?random=63" alt="Random insert 63">
-				<img src="https://picsum.photos/200?random=64" alt="Random insert 64">
-				<img src="https://picsum.photos/200?random=65" alt="Random insert 65">
-				<img src="https://picsum.photos/200?random=66" alt="Random insert 66">
-				<img src="https://picsum.photos/200?random=67" alt="Random insert 67">
-				<img src="https://picsum.photos/200?random=68" alt="Random insert 68">
-				<img src="https://picsum.photos/200?random=69" alt="Random insert 69">
-				<img src="https://picsum.photos/200?random=70" alt="Random insert 70">
-				<img src="https://picsum.photos/200?random=71" alt="Random insert 71">
-				<img src="https://picsum.photos/200?random=72" alt="Random insert 72">
-				<img src="https://picsum.photos/200?random=73" alt="Random insert 73">
-				<img src="https://picsum.photos/200?random=74" alt="Random insert 74">
-				<img src="https://picsum.photos/200?random=75" alt="Random insert 75">
-				<img src="https://picsum.photos/200?random=76" alt="Random insert 76">
-				<img src="https://picsum.photos/200?random=77" alt="Random insert 77">
-				<img src="https://picsum.photos/200?random=78" alt="Random insert 78">
-				<img src="https://picsum.photos/200?random=79" alt="Random insert 79">
-				<img src="https://picsum.photos/200?random=80" alt="Random insert 80">
-				<img src="https://picsum.photos/200?random=81" alt="Random insert 81">
-				<img src="https://picsum.photos/200?random=82" alt="Random insert 82">
-				<img src="https://picsum.photos/200?random=83" alt="Random insert 83">
-				<img src="https://picsum.photos/200?random=84" alt="Random insert 84">
-				<img src="https://picsum.photos/200?random=85" alt="Random insert 85">
-				<img src="https://picsum.photos/200?random=86" alt="Random insert 86">
-				<img src="https://picsum.photos/200?random=87" alt="Random insert 87">
-				<img src="https://picsum.photos/200?random=88" alt="Random insert 88">
-				<img src="https://picsum.photos/200?random=89" alt="Random insert 89">
-				<img src="https://picsum.photos/200?random=90" alt="Random insert 90">
-				<img src="https://picsum.photos/200?random=91" alt="Random insert 91">
-				<img src="https://picsum.photos/200?random=92" alt="Random insert 92">
-				<img src="https://picsum.photos/200?random=93" alt="Random insert 93">
-				<img src="https://picsum.photos/200?random=94" alt="Random insert 94">
-				<img src="https://picsum.photos/200?random=95" alt="Random insert 95">
-				<img src="https://picsum.photos/200?random=96" alt="Random insert 96">
-				<img src="https://picsum.photos/200?random=97" alt="Random insert 97">
-				<img src="https://picsum.photos/200?random=98" alt="Random insert 98">
-				<img src="https://picsum.photos/200?random=99" alt="Random insert 99">
+				{#each Array(100) as _, imageIndex}
+					<img src={`https://picsum.photos/200?random=${imageIndex}`} alt={`Random insert ${imageIndex}`}>
+				{/each}
 			</Carousel>
 		</div>
 	</section>
@@ -804,131 +709,9 @@
 			<Combobox>
 				<span slot="label">Name</span>
 				<Menu>
-					<auro-menuoption value="fca" id="airport-fca" suggest="fca montana kalispell">glacier park international</auro-menuoption>
-					<auro-menuoption value="sfo" id="airport-sfo" suggest="sfo california san francisco">san francisco international</auro-menuoption>
-					<auro-menuoption value="boi" id="airport-boi" suggest="boi idaho boise">gowen field</auro-menuoption>
-					<auro-menuoption value="stl" id="airport-stl" suggest="stl missouri st louis">lambert st louis international</auro-menuoption>
-					<auro-menuoption value="ylw" id="airport-ylw" suggest="ylw british columbia kelowna">kelowna international</auro-menuoption>
-					<auro-menuoption value="ykm" id="airport-ykm" suggest="ykm washington yakima">yakima air terminal</auro-menuoption>
-					<auro-menuoption value="puw" id="airport-puw" suggest="puw washington pullman">pullman moscow regional</auro-menuoption>
-					<auro-menuoption value="yeg" id="airport-yeg" suggest="yeg alberta edmonton">edmonton international</auro-menuoption>
-					<auro-menuoption value="tpa" id="airport-tpa" suggest="tpa florida tampa">tampa international</auro-menuoption>
-					<auro-menuoption value="msp" id="airport-msp" suggest="msp minnesota minneapolis">minneapolis st paul international</auro-menuoption>
-					<auro-menuoption value="ida" id="airport-ida" suggest="ida idaho idaho falls">idaho falls regional airport</auro-menuoption>
-					<auro-menuoption value="mfr" id="airport-mfr" suggest="mfr oregon medford">rogue valley international</auro-menuoption>
-					<auro-menuoption value="psp" id="airport-psp" suggest="psp california palm springs">palm springs international</auro-menuoption>
-					<auro-menuoption value="lir" id="airport-lir" suggest="lir guanacaste liberia">guanacaste airport</auro-menuoption>
-					<auro-menuoption value="oak" id="airport-oak" suggest="oak california oakland">oakland international</auro-menuoption>
-					<auro-menuoption value="bos" id="airport-bos" suggest="bos massachusetts boston">logan international</auro-menuoption>
-					<auro-menuoption value="bwi" id="airport-bwi" suggest="bwi maryland baltimore">thurgood marshall international</auro-menuoption>
-					<auro-menuoption value="dal" id="airport-dal" suggest="dal texas dallas">dallas love field</auro-menuoption>
-					<auro-menuoption value="sba" id="airport-sba" suggest="sba california santa barbara">santa barbara municipal</auro-menuoption>
-					<auro-menuoption value="mci" id="airport-mci" suggest="mci missouri kansas city">kansas city international</auro-menuoption>
-					<auro-menuoption value="koa" id="airport-koa" suggest="koa hawaii kona">kona international</auro-menuoption>
-					<auro-menuoption value="pvr" id="airport-pvr" suggest="pvr jalisco puerto vallarta">licenciado gustavo diaz ordaz international</auro-menuoption>
-					<auro-menuoption value="wrg" id="airport-wrg" suggest="wrg alaska wrangell">wrangell</auro-menuoption>
-					<auro-menuoption value="scc" id="airport-scc" suggest="scc alaska prudhoe bay">deadhorse</auro-menuoption>
-					<auro-menuoption value="lto" id="airport-lto" suggest="lto baja california loreto">loreto international</auro-menuoption>
-					<auro-menuoption value="ome" id="airport-ome" suggest="ome alaska nome">nome</auro-menuoption>
-					<auro-menuoption value="ict" id="airport-ict" suggest="ict kansas wichita">dwight d eisenhower national</auro-menuoption>
-					<auro-menuoption value="phl" id="airport-phl" suggest="phl pennsylvania philadelphia">philadelphia international</auro-menuoption>
-					<auro-menuoption value="dfw" id="airport-dfw" suggest="dfw texas dallas">dallas fort worth international</auro-menuoption>
-					<auro-menuoption value="ind" id="airport-ind" suggest="ind indiana indianapolis">indianapolis international</auro-menuoption>
-					<auro-menuoption value="smf" id="airport-smf" suggest="smf california sacramento">sacramento international</auro-menuoption>
-					<auro-menuoption value="sit" id="airport-sit" suggest="sit alaska sitka">rocky gutierrez</auro-menuoption>
-					<auro-menuoption value="dut" id="airport-dut" suggest="dut alaska dutch harbor">unalaska</auro-menuoption>
-					<auro-menuoption value="cdv" id="airport-cdv" suggest="cdv alaska cordova">merle mudhole smith</auro-menuoption>
-					<auro-menuoption value="psg" id="airport-psg" suggest="psg alaska petersburg">james a johnson</auro-menuoption>
-					<auro-menuoption value="bna" id="airport-bna" suggest="bna tennessee nashville">nashville international</auro-menuoption>
-					<auro-menuoption value="geg" id="airport-geg" suggest="geg washington spokane">spokane international</auro-menuoption>
-					<auro-menuoption value="ktn" id="airport-ktn" suggest="ktn alaska ketchikan">ketchikan international</auro-menuoption>
-					<auro-menuoption value="pit" id="airport-pit" suggest="pit pennsylvania pittsburgh">pittsburgh international</auro-menuoption>
-					<auro-menuoption value="sbp" id="airport-sbp" suggest="sbp california san luis obispo">san luis obispo regional</auro-menuoption>
-					<auro-menuoption value="bur" id="airport-bur" suggest="bur california burbank">hollywood burbank</auro-menuoption>
-					<auro-menuoption value="msy" id="airport-msy" suggest="msy louisiana new orleans">louis armstrong international</auro-menuoption>
-					<auro-menuoption value="pae" id="airport-pae" suggest="pae washington everett">paine field</auro-menuoption>
-					<auro-menuoption value="cvg" id="airport-cvg" suggest="cvg ohio cincinnati">cincinnati northern kentucky international</auro-menuoption>
-					<auro-menuoption value="yak" id="airport-yak" suggest="yak alaska yakutat">yakutat</auro-menuoption>
-					<auro-menuoption value="pdx" id="airport-pdx" suggest="pdx oregon portland">portland international</auro-menuoption>
-					<auro-menuoption value="anc" id="airport-anc" suggest="anc alaska anchorage">ted stevens</auro-menuoption>
-					<auro-menuoption value="sea" id="airport-sea" suggest="sea washington seattle">seattle tacoma international</auro-menuoption>
-					<auro-menuoption value="san" id="airport-san" suggest="san california san diego">san diego international</auro-menuoption>
-					<auro-menuoption value="sat" id="airport-sat" suggest="sat texas san antonio">san antonio international</auro-menuoption>
-					<auro-menuoption value="fat" id="airport-fat" suggest="fat california fresno">fresno yosemite international</auro-menuoption>
-					<auro-menuoption value="aus" id="airport-aus" suggest="aus texas austin">austin bergstrom international</auro-menuoption>
-					<auro-menuoption value="ord" id="airport-ord" suggest="ord illinois chicago">ohare international</auro-menuoption>
-					<auro-menuoption value="gdl" id="airport-gdl" suggest="gdl jalisco guadalajara">guadalajara international</auro-menuoption>
-					<auro-menuoption value="sjc" id="airport-sjc" suggest="sjc california san jose">san jose international</auro-menuoption>
-					<auro-menuoption value="jnu" id="airport-jnu" suggest="jnu alaska juneau">juneau international</auro-menuoption>
-					<auro-menuoption value="rdm" id="airport-rdm" suggest="rdm oregon redmond">roberts field</auro-menuoption>
-					<auro-menuoption value="sts" id="airport-sts" suggest="sts california sonoma">charles m schulz</auro-menuoption>
-					<auro-menuoption value="fai" id="airport-fai" suggest="fai alaska fairbanks">fairbanks international</auro-menuoption>
-					<auro-menuoption value="rdu" id="airport-rdu" suggest="rdu north carolina raleigh">raleigh durham international</auro-menuoption>
-					<auro-menuoption value="oma" id="airport-oma" suggest="oma nebraska omaha">eppley airfield</auro-menuoption>
-					<auro-menuoption value="bzn" id="airport-bzn" suggest="bzn montana bozeman">bozeman yellowstone international</auro-menuoption>
-					<auro-menuoption value="ont" id="airport-ont" suggest="ont california ontario">ontario international</auro-menuoption>
-					<auro-menuoption value="ogg" id="airport-ogg" suggest="ogg hawaii maui">kahului international</auro-menuoption>
-					<auro-menuoption value="sun" id="airport-sun" suggest="sun idaho sun valley">friedman memorial</auro-menuoption>
-					<auro-menuoption value="mzt" id="airport-mzt" suggest="mzt sinaloa mazatlan">general rafael buelna international</auro-menuoption>
-					<auro-menuoption value="dlg" id="airport-dlg" suggest="dlg alaska dillingham">dillingham</auro-menuoption>
-					<auro-menuoption value="adq" id="airport-adq" suggest="adq alaska kodiak">kodiak</auro-menuoption>
-					<auro-menuoption value="den" id="airport-den" suggest="den colorado denver">denver international</auro-menuoption>
-					<auro-menuoption value="zlo" id="airport-zlo" suggest="zlo colima manzanillo">manzanillo international</auro-menuoption>
-					<auro-menuoption value="sjd" id="airport-sjd" suggest="sjd baja california los cabos">los cabos international</auro-menuoption>
-					<auro-menuoption value="elp" id="airport-elp" suggest="elp texas el paso">el paso international airport</auro-menuoption>
-					<auro-menuoption value="atl" id="airport-atl" suggest="atl georgia atlanta">hartsfield jackson international</auro-menuoption>
-					<auro-menuoption value="lax" id="airport-lax" suggest="lax california los angeles">los angeles international</auro-menuoption>
-					<auro-menuoption value="rsw" id="airport-rsw" suggest="rsw florida fort myers">southwest florida international</auro-menuoption>
-					<auro-menuoption value="cle" id="airport-cle" suggest="cle ohio cleveland">cleveland hopkins international airport</auro-menuoption>
-					<auro-menuoption value="otz" id="airport-otz" suggest="otz alaska kotzebue">ralph wien memorial</auro-menuoption>
-					<auro-menuoption value="bze" id="airport-bze" suggest="bze belize belize city">philip sw goldson international airport</auro-menuoption>
-					<auro-menuoption value="eat" id="airport-eat" suggest="eat washington wenatchee">pangborn memorial</auro-menuoption>
-					<auro-menuoption value="dtw" id="airport-dtw" suggest="dtw michigan detroit">detroit metropolitan</auro-menuoption>
-					<auro-menuoption value="bet" id="airport-bet" suggest="bet alaska bethel">bethel</auro-menuoption>
-					<auro-menuoption value="dca" id="airport-dca" suggest="dca district of columbia washington">ronald reagan national</auro-menuoption>
-					<auro-menuoption value="rno" id="airport-rno" suggest="rno nevada reno">reno tahoe international</auro-menuoption>
-					<auro-menuoption value="brw" id="airport-brw" suggest="brw alaska barrow">wiley post will rogers</auro-menuoption>
-					<auro-menuoption value="mry" id="airport-mry" suggest="mry california monterey">monterey regional</auro-menuoption>
-					<auro-menuoption value="hnl" id="airport-hnl" suggest="hnl hawaii oahu">honolulu international</auro-menuoption>
-					<auro-menuoption value="okc" id="airport-okc" suggest="okc oklahoma oklahoma city">will rogers world</auro-menuoption>
-					<auro-menuoption value="iad" id="airport-iad" suggest="iad virginia dulles">washington dulles international</auro-menuoption>
-					<auro-menuoption value="mia" id="airport-mia" suggest="mia florida miami">miami international</auro-menuoption>
-					<auro-menuoption value="bli" id="airport-bli" suggest="bli washington bellingham">bellingham international</auro-menuoption>
-					<auro-menuoption value="hln" id="airport-hln" suggest="hln montana helena">helena regional</auro-menuoption>
-					<auro-menuoption value="gtf" id="airport-gtf" suggest="gtf montana great falls">great falls international</auro-menuoption>
-					<auro-menuoption value="zih" id="airport-zih" suggest="zih guerrero zihuatanejo">ixtapa zihuatanejo international</auro-menuoption>
-					<auro-menuoption value="yyc" id="airport-yyc" suggest="yyc alberta calgary">calgary international</auro-menuoption>
-					<auro-menuoption value="sna" id="airport-sna" suggest="sna california santa ana">john wayne</auro-menuoption>
-					<auro-menuoption value="fll" id="airport-fll" suggest="fll florida fort lauderdale">fort lauderdale hollywood international</auro-menuoption>
-					<auro-menuoption value="ewr" id="airport-ewr" suggest="ewr new jersey newark">newark liberty international</auro-menuoption>
-					<auro-menuoption value="hdn" id="airport-hdn" suggest="hdn colorado steamboat springs">yampa valley regional</auro-menuoption>
-					<auro-menuoption value="psc" id="airport-psc" suggest="psc washington pasco">tri cities</auro-menuoption>
-					<auro-menuoption value="tus" id="airport-tus" suggest="tus arizona tucson">tucson international</auro-menuoption>
-					<auro-menuoption value="abq" id="airport-abq" suggest="abq new mexico albuquerque">albuquerque international sunport</auro-menuoption>
-					<auro-menuoption value="jfk" id="airport-jfk" suggest="jfk new york new york">john f kennedy international</auro-menuoption>
-					<auro-menuoption value="yvr" id="airport-yvr" suggest="yvr british columbia vancouver">vancouver international</auro-menuoption>
-					<auro-menuoption value="sjo" id="airport-sjo" suggest="sjo san jose alajuela province">juan santamaria international</auro-menuoption>
-					<auro-menuoption value="las" id="airport-las" suggest="las nevada las vegas">harry reid international airport</auro-menuoption>
-					<auro-menuoption value="lih" id="airport-lih" suggest="lih hawaii kauai">lihue international</auro-menuoption>
-					<auro-menuoption value="mso" id="airport-mso" suggest="mso montana missoula">missoula international</auro-menuoption>
-					<auro-menuoption value="alw" id="airport-alw" suggest="alw washington walla walla">walla walla regional</auro-menuoption>
-					<auro-menuoption value="mke" id="airport-mke" suggest="mke wisconsin milwaukee">milwaukee mitchell international</auro-menuoption>
-					<auro-menuoption value="eug" id="airport-eug" suggest="eug oregon eugene">mahlon sweet field</auro-menuoption>
-					<auro-menuoption value="akn" id="airport-akn" suggest="akn alaska king salmon">king salmon</auro-menuoption>
-					<auro-menuoption value="cun" id="airport-cun" suggest="cun quintana roo cancun">cancun international</auro-menuoption>
-					<auro-menuoption value="rdd" id="airport-rdd" suggest="rdd california redding">redding municipal airport</auro-menuoption>
-					<auro-menuoption value="mco" id="airport-mco" suggest="mco florida orlando">orlando international</auro-menuoption>
-					<auro-menuoption value="slc" id="airport-slc" suggest="slc utah salt lake city">salt lake city international</auro-menuoption>
-					<auro-menuoption value="phx" id="airport-phx" suggest="phx arizona phoenix">sky harbor international</auro-menuoption>
-					<auro-menuoption value="bil" id="airport-bil" suggest="bil montana billings">billings logan international</auro-menuoption>
-					<auro-menuoption value="gst" id="airport-gst" suggest="gst alaska gustavus">gustavus</auro-menuoption>
-					<auro-menuoption value="adk" id="airport-adk" suggest="adk alaska adak">adak</auro-menuoption>
-					<auro-menuoption value="cvg" id="airport-cvg" suggest="cvg kentucky hebron">cincinnati northern kentucky international</auro-menuoption>
-					<auro-menuoption value="jac" id="airport-jac" suggest="jac wyoming jackson">jackson hole airport</auro-menuoption>
-					<auro-menuoption value="cmh" id="airport-cmh" suggest="cmh ohio columbus">john glenn columbus international</auro-menuoption>
-					<auro-menuoption value="yyj" id="airport-yyj" suggest="yyj british columbia victoria">victoria international</auro-menuoption>
-					<auro-menuoption value="chs" id="airport-chs" suggest="chs south carolina charleston">charleston international</auro-menuoption>
-					<auro-menuoption value="iah" id="airport-iah" suggest="iah texas houston">george bush intercontinental</auro-menuoption>
+					{#each comboboxMenus as menu, menuIndex}
+					<auro-menuoption key={menuIndex} value={menu.value} id={menu.id} suggest={menu.suggest}>{menu.text}</auro-menuoption>
+					{/each}
 					<auro-menuoption static nomatch>Unknown airport... </auro-menuoption>
 				</Menu>
 			</Combobox>

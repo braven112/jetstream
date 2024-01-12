@@ -35,6 +35,7 @@
   use:setAttribute={{attr: 'style', val: style}}
   >
   <slot></slot>
+  <slot name="label"></slot>
   <slot name="mobileToggleCollapsed"></slot>
   <slot name="mobileToggleExpanded"></slot>
 </auro-nav>

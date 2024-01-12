@@ -12,6 +12,7 @@
     export let flights = undefined;
     export let reroutedArrivalStation = undefined;
     export let reroutedDepartureStation = undefined;
+    export let stops = undefined;
 </script>
 
 <auro-flight
@@ -23,6 +24,7 @@
   use:setAttribute={{attr: 'flights', val: flights}}
   use:setAttribute={{attr: 'reroutedArrivalStation', val: reroutedArrivalStation}}
   use:setAttribute={{attr: 'reroutedDepartureStation', val: reroutedDepartureStation}}
+  use:setAttribute={{attr: 'stops', val: stops}}
   >
   <slot></slot>
   <slot name="arrivalHeader"></slot>
