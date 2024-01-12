@@ -31,6 +31,38 @@
 	import Flightline from "../components/Flightline.svelte";
 	import Flight from "../components/Flight.svelte";
 	import Combobox from "../components/Combobox.svelte";
+	import Drawer from "../components/Drawer.svelte";
+	import Dialog from "../components/Dialog.svelte";
+	import Toast from "../components/Toast.svelte";
+	import Toaster from "../components/Toaster.svelte";
+
+	// Function for auro-dialog & auro-drawer
+	const toggleInterruption = (/** @type {string} */ elName) => {
+		let dialog = document.querySelector(elName);
+		if (dialog) {
+			dialog.hasAttribute('open')
+			? dialog.removeAttribute("open")
+			: (dialog.removeAttribute("open"),
+				dialog.setAttribute("open", ""))
+		}
+	}
+
+	const dismissDropdown = (/** @type {string} */ elName) => {
+		let dropdown = document.querySelector(elName);
+		if (dropdown) {
+			// @ts-ignore
+			dropdown.hide();
+		}
+	}
+
+	const showToast = (/** @type {string} */ toastID) => {
+		const toast = document.querySelector(toastID);
+		if (toast) {
+			if (!toast.hasAttribute('visible')) {
+				toast.setAttribute('visible', "");
+			}
+		}
+	}
 
 	const basicTableData = {
 		headers: JSON.stringify(["","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]),
@@ -391,7 +423,7 @@
 
 		<h4 id="auro-banner-iconic">Iconic</h4>
 		<div class="exampleWrapper">
-			<Banner iconic iconbg="var(--auro-color-brand-neutral-400)">
+			<Banner iconic iconbg="var(--ds-color-brand-neutral-400)">
 				<picture slot="displayImage">
 					<source srcset="https://picsum.photos/id/452/2800/2000.jpg" media="(min-width: 1054px)">
 					<source srcset="https://picsum.photos/id/452/1500/2000" media="(min-width:660px)">
@@ -919,16 +951,324 @@
 	</section>
 
 	<section class="component-container">
+		<h2>Auro Dialog</h2>
+		<h4 id="auro-dialog-basic">Basic</h4>
+		<div class="exampleWrapper">
+			<div class="demo--inline exampleWrapper auro_containedButtons">
+				<Button onClick={() => toggleInterruption('#defaultDialog')}>Open default dialog</Button>
+				<Button onClick={() => toggleInterruption('#mediumDialog')}>Open medium dialog</Button>
+				<Button onClick={() => toggleInterruption('#smallDialog')}>Open small dialog</Button>
+			</div>
+			
+			<Dialog id="defaultDialog">
+				<span slot="header">Default Dialog</span>
+				<div slot="content">
+					<p>When traveling on Alaska Airlines flights, Alaska Airlines checked baggage fees may apply. See <Hyperlink href="https://www.alaskaair.com/bagrules" target="_blank">alaskaair.com/bagrules</Hyperlink> for our rules. For itineraries that include other airlines, their checked baggage fees may apply, as displayed on their websites.</p>
+					<p>Baggage rules and fees will be based on the specific itinerary chosen. The applicable first and second bag fees will be displayed after you have added flights to the cart.</p>
+					<Header level="3" display="500">Before checking your bags, remember to:</Header>
+					<ul>
+						<li>Caerphilly croque monsieur fondue</li>
+						<li>Taleggio goat mascarpone cow manchego cheese and wine emmental cheese strings</li>
+						<li>Cheddar cheese and biscuits chalk and cheese</li>
+						<li>Camembert de normandie stinking bishop bavarian bergkase</li>
+					</ul>
+				</div>
+				<div slot="footer" class="auro_containedButtons">
+					<Button secondary onClick={() => toggleInterruption('#defaultDialog')}>Close</Button>
+				</div>
+			</Dialog>
+			
+			<Dialog id="mediumDialog" md>
+				<span slot="header">Medium Dialog</span>
+				<div slot="content">
+					<p>When traveling on Alaska Airlines flights, Alaska Airlines checked baggage fees may apply. See <Hyperlink href="https://www.alaskaair.com/bagrules" target="_blank">alaskaair.com/bagrules</Hyperlink> for our rules. For itineraries that include other airlines, their checked baggage fees may apply, as displayed on their websites.</p>
+					<p>Baggage rules and fees will be based on the specific itinerary chosen. The applicable first and second bag fees will be displayed after you have added flights to the cart.</p>
+					<Header level="3" display="500">Before checking your bags, remember to:</Header>
+					<ul>
+						<li>Caerphilly croque monsieur fondue</li>
+						<li>Taleggio goat mascarpone cow manchego cheese and wine emmental cheese strings</li>
+						<li>Cheddar cheese and biscuits chalk and cheese</li>
+						<li>Camembert de normandie stinking bishop bavarian bergkase</li>
+					</ul>
+				</div>
+				<div slot="footer" class="auro_containedButtons">
+					<Button secondary onClick={() => toggleInterruption('#mediumDialog')}>Close</Button>
+				</div>
+			</Dialog>
+			
+			<Dialog id="smallDialog" sm>
+				<span slot="header">Small Dialog</span>
+				<div slot="content">
+					<p>When traveling on Alaska Airlines flights, Alaska Airlines checked baggage fees may apply. See <Hyperlink href="https://www.alaskaair.com/bagrules" target="_blank">alaskaair.com/bagrules</Hyperlink> for our rules. For itineraries that include other airlines, their checked baggage fees may apply, as displayed on their websites.</p>
+					<p>Baggage rules and fees will be based on the specific itinerary chosen. The applicable first and second bag fees will be displayed after you have added flights to the cart.</p>
+					<Header level="3" display="500">Before checking your bags, remember to:</Header>
+					<ul>
+						<li>Caerphilly croque monsieur fondue</li>
+						<li>Taleggio goat mascarpone cow manchego cheese and wine emmental cheese strings</li>
+						<li>Cheddar cheese and biscuits chalk and cheese</li>
+						<li>Camembert de normandie stinking bishop bavarian bergkase</li>
+					</ul>
+				</div>
+				<div slot="footer" class="auro_containedButtons">
+					<Button secondary onClick={() => toggleInterruption('#smallDialog')}>Close</Button>
+				</div>
+			</Dialog>
+		</div>
+
+		<h4 id="auro-dialog-modal">Modal</h4>
+		<div class="exampleWrapper">
+			<div class="demo--inline exampleWrapper auro_containedButtons">
+				<Button onClick={() => toggleInterruption('#defaultModalDialog')}>Open default modal</Button>
+				<Button onClick={() => toggleInterruption('#mediumModalDialog')}>Open medium modal</Button>
+				<Button onClick={() => toggleInterruption('#smallModalDialog')}>Open small modal</Button>
+			</div>
+			
+			<Dialog id="defaultModalDialog" modal>
+				<span slot="header">Default Modal Dialog</span>
+				<div slot="content">
+					<p>When traveling on Alaska Airlines flights, Alaska Airlines checked baggage fees may apply. See <Hyperlink href="https://www.alaskaair.com/bagrules" target="_blank">alaskaair.com/bagrules</Hyperlink> for our rules. For itineraries that include other airlines, their checked baggage fees may apply, as displayed on their websites.</p>
+					<p>Baggage rules and fees will be based on the specific itinerary chosen. The applicable first and second bag fees will be displayed after you have added flights to the cart.</p>
+					<Header level="3" display="500">Before checking your bags, remember to:</Header>
+					<ul>
+						<li>Caerphilly croque monsieur fondue</li>
+						<li>Taleggio goat mascarpone cow manchego cheese and wine emmental cheese strings</li>
+						<li>Cheddar cheese and biscuits chalk and cheese</li>
+						<li>Camembert de normandie stinking bishop bavarian bergkase</li>
+					</ul>
+				</div>
+				<div slot="footer" class="auro_containedButtons">
+					<Button onClick={() =>  toggleInterruption('#defaultModalDialog')}>I understand
+						<Icon category="interface" name="chevron-right" emphasis ondark></Icon>
+					</Button>
+				</div>
+			</Dialog>
+			
+			<Dialog id="mediumModalDialog" md modal>
+				<span slot="header">Medium Dialog</span>
+				<div slot="content">
+					<p>When traveling on Alaska Airlines flights, Alaska Airlines checked baggage fees may apply. See <Hyperlink href="https://www.alaskaair.com/bagrules" target="_blank">alaskaair.com/bagrules</Hyperlink> for our rules. For itineraries that include other airlines, their checked baggage fees may apply, as displayed on their websites.</p>
+					<p>Baggage rules and fees will be based on the specific itinerary chosen. The applicable first and second bag fees will be displayed after you have added flights to the cart.</p>
+					<Header level="3" display="500">Before checking your bags, remember to:</Header>
+					<ul>
+						<li>Caerphilly croque monsieur fondue</li>
+						<li>Taleggio goat mascarpone cow manchego cheese and wine emmental cheese strings</li>
+						<li>Cheddar cheese and biscuits chalk and cheese</li>
+						<li>Camembert de normandie stinking bishop bavarian bergkase</li>
+					</ul>
+				</div>
+				<div slot="footer" class="auro_containedButtons">
+					<Button onClick={() => toggleInterruption('#mediumModalDialog')}>I understand
+						<Icon category="interface" name="chevron-right" emphasis ondark></Icon>
+					</Button>
+				</div>
+			</Dialog>
+			
+			<Dialog id="smallModalDialog" sm modal>
+				<span slot="header">Small Dialog</span>
+				<div slot="content">
+					<p>When traveling on Alaska Airlines flights, Alaska Airlines checked baggage fees may apply. See <Hyperlink href="https://www.alaskaair.com/bagrules" target="_blank">alaskaair.com/bagrules</Hyperlink> for our rules. For itineraries that include other airlines, their checked baggage fees may apply, as displayed on their websites.</p>
+					<p>Baggage rules and fees will be based on the specific itinerary chosen. The applicable first and second bag fees will be displayed after you have added flights to the cart.</p>
+					<Header level="3" display="500">Before checking your bags, remember to:</Header>
+					<ul>
+						<li>Caerphilly croque monsieur fondue</li>
+						<li>Taleggio goat mascarpone cow manchego cheese and wine emmental cheese strings</li>
+						<li>Cheddar cheese and biscuits chalk and cheese</li>
+						<li>Camembert de normandie stinking bishop bavarian bergkase</li>
+					</ul>
+				</div>
+				<div slot="footer" class="auro_containedButtons">
+					<Button onClick={() => toggleInterruption('#smallModalDialog')}>I understand
+						<Icon category="interface" name="chevron-right" emphasis ondark></Icon>
+					</Button>
+				</div>
+			</Dialog>
+		</div>
+	</section>
+
+	<section class="component-container">
+		<h2>Auro Drawer</h2>
+		<h4 id="auro-drawer-basic">Basic</h4>
+		<div class="exampleWrapper">
+			<Button onClick={() => toggleInterruption('#basicDrawer')}>Open default drawer</Button>
+			<Button onClick={() => toggleInterruption('#leftDrawer')}>Open left drawer</Button>
+
+			<Drawer id="basicDrawer">
+				<span slot="header">Default Drawer</span>
+				<div slot="content">
+					<p>When traveling on Alaska Airlines flights, Alaska Airlines checked baggage fees may apply. See <Hyperlink href="https://www.alaskaair.com/bagrules" target="_blank">alaskaair.com/bagrules</Hyperlink> for our rules. For itineraries that include other airlines, their checked baggage fees may apply, as displayed on their websites.</p>
+					<p>Baggage rules and fees will be based on the specific itinerary chosen. The applicable first and second bag fees will be displayed after you have added flights to the cart.</p>
+					<Header level="3" display="500">Before checking your bags, remember to:</Header>
+					<ul>
+						<li>Caerphilly croque monsieur fondue</li>
+						<li>Taleggio goat mascarpone cow manchego cheese and wine emmental cheese strings</li>
+						<li>Cheddar cheese and biscuits chalk and cheese</li>
+						<li>Camembert de normandie stinking bishop bavarian bergkase</li>
+					</ul>
+				</div>
+				<div slot="footer" class="auro_containedButtons">
+					<Button secondary onClick={() => toggleInterruption('#basicDrawer')}>Close</Button>
+				</div>
+			</Drawer>
+
+			<Drawer id="leftDrawer" left>
+				<span slot="header">Left Drawer</span>
+				<div slot="content">
+					<p>When traveling on Alaska Airlines flights, Alaska Airlines checked baggage fees may apply. See <Hyperlink href="https://www.alaskaair.com/bagrules" target="_blank">alaskaair.com/bagrules</Hyperlink> for our rules. For itineraries that include other airlines, their checked baggage fees may apply, as displayed on their websites.</p>
+					<p>Baggage rules and fees will be based on the specific itinerary chosen. The applicable first and second bag fees will be displayed after you have added flights to the cart.</p>
+					<Header level="3" display="500">Before checking your bags, remember to:</Header>
+					<ul>
+						<li>Caerphilly croque monsieur fondue</li>
+						<li>Taleggio goat mascarpone cow manchego cheese and wine emmental cheese strings</li>
+						<li>Cheddar cheese and biscuits chalk and cheese</li>
+						<li>Camembert de normandie stinking bishop bavarian bergkase</li>
+					</ul>
+				</div>
+				<div slot="footer" class="auro_containedButtons">
+					<Button secondary onClick={() => toggleInterruption('#leftDrawer')}>Close</Button>
+				</div>
+			</Drawer>
+		</div>
+
+		<h4 id="auro-drawer-size">Size</h4>
+		<div class="exampleWrapper">
+			<Button onClick={() => toggleInterruption('#normalDrawer')}>Open default drawer</Button>
+			<Button onClick={() => toggleInterruption('#mediumDrawer')}>Open medium drawer</Button>
+			<Button onClick={() => toggleInterruption('#smallDrawer')}>Open small drawer</Button>
+
+			<Drawer id="normalDrawer">
+				<span slot="header">Default Drawer</span>
+				<div slot="content">
+					<p>When traveling on Alaska Airlines flights, Alaska Airlines checked baggage fees may apply. See <Hyperlink href="https://www.alaskaair.com/bagrules" target="_blank">alaskaair.com/bagrules</Hyperlink> for our rules. For itineraries that include other airlines, their checked baggage fees may apply, as displayed on their websites.</p>
+					<p>Baggage rules and fees will be based on the specific itinerary chosen. The applicable first and second bag fees will be displayed after you have added flights to the cart.</p>
+					<Header level="3" display="500">Before checking your bags, remember to:</Header>
+					<ul>
+						<li>Caerphilly croque monsieur fondue</li>
+						<li>Taleggio goat mascarpone cow manchego cheese and wine emmental cheese strings</li>
+						<li>Cheddar cheese and biscuits chalk and cheese</li>
+						<li>Camembert de normandie stinking bishop bavarian bergkase</li>
+					</ul>
+				</div>
+				<div slot="footer" class="auro_containedButtons">
+					<Button secondary onClick={() => toggleInterruption('#normalDrawer')}>Close</Button>
+				</div>
+			</Drawer>
+
+			<Drawer id="mediumDrawer" md>
+				<span slot="header">Medium Drawer</span>
+				<div slot="content">
+					<p>When traveling on Alaska Airlines flights, Alaska Airlines checked baggage fees may apply. See <Hyperlink href="https://www.alaskaair.com/bagrules" target="_blank">alaskaair.com/bagrules</Hyperlink> for our rules. For itineraries that include other airlines, their checked baggage fees may apply, as displayed on their websites.</p>
+					<p>Baggage rules and fees will be based on the specific itinerary chosen. The applicable first and second bag fees will be displayed after you have added flights to the cart.</p>
+					<Header level="3" display="500">Before checking your bags, remember to:</Header>
+					<ul>
+						<li>Caerphilly croque monsieur fondue</li>
+						<li>Taleggio goat mascarpone cow manchego cheese and wine emmental cheese strings</li>
+						<li>Cheddar cheese and biscuits chalk and cheese</li>
+						<li>Camembert de normandie stinking bishop bavarian bergkase</li>
+					</ul>
+				</div>
+				<div slot="footer" class="auro_containedButtons">
+					<Button secondary onClick={() => toggleInterruption('#mediumDrawer')}>Close</Button>
+				</div>
+			</Drawer>
+
+			<Drawer id="smallDrawer" sm>
+				<span slot="header">Small Drawer</span>
+				<div slot="content">
+					<p>When traveling on Alaska Airlines flights, Alaska Airlines checked baggage fees may apply. See <Hyperlink href="https://www.alaskaair.com/bagrules" target="_blank">alaskaair.com/bagrules</Hyperlink> for our rules. For itineraries that include other airlines, their checked baggage fees may apply, as displayed on their websites.</p>
+					<p>Baggage rules and fees will be based on the specific itinerary chosen. The applicable first and second bag fees will be displayed after you have added flights to the cart.</p>
+					<Header level="3" display="500">Before checking your bags, remember to:</Header>
+					<ul>
+						<li>Caerphilly croque monsieur fondue</li>
+						<li>Taleggio goat mascarpone cow manchego cheese and wine emmental cheese strings</li>
+						<li>Cheddar cheese and biscuits chalk and cheese</li>
+						<li>Camembert de normandie stinking bishop bavarian bergkase</li>
+					</ul>
+				</div>
+				<div slot="footer" class="auro_containedButtons">
+					<Button secondary onClick={() => toggleInterruption('#smallDrawer')}>Close</Button>
+				</div>
+			</Drawer>
+		</div>
+
+		<h4 id="auro-drawer-modal">Modal</h4>
+		<div class="exampleWrapper">
+			<Button onClick={() => toggleInterruption('#defaultModalDrawer')}>Open default modal</Button>
+			<Button onClick={() => toggleInterruption('#mediumModalDrawer')}>Open medium modal</Button>
+			<Button onClick={() => toggleInterruption('#smallModalDrawer')}>Open small modal</Button>
+
+			<Drawer id="defaultModalDrawer" modal>
+				<span slot="header">Default Modal Drawer</span>
+				<div slot="content">
+					<p>When traveling on Alaska Airlines flights, Alaska Airlines checked baggage fees may apply. See <Hyperlink href="https://www.alaskaair.com/bagrules" target="_blank">alaskaair.com/bagrules</Hyperlink> for our rules. For itineraries that include other airlines, their checked baggage fees may apply, as displayed on their websites.</p>
+					<p>Baggage rules and fees will be based on the specific itinerary chosen. The applicable first and second bag fees will be displayed after you have added flights to the cart.</p>
+					<Header level="3" display="500">Before checking your bags, remember to:</Header>
+					<ul>
+						<li>Caerphilly croque monsieur fondue</li>
+						<li>Taleggio goat mascarpone cow manchego cheese and wine emmental cheese strings</li>
+						<li>Cheddar cheese and biscuits chalk and cheese</li>
+						<li>Camembert de normandie stinking bishop bavarian bergkase</li>
+					</ul>
+				</div>
+				<div slot="footer" class="auro_containedButtons">
+					<Button onClick={() => toggleInterruption('#defaultModalDrawer')}>I understand
+						<Icon category="interface" name="chevron-right" emphasis ondark></Icon>
+					</Button>
+				</div>
+			</Drawer>
+
+			<Drawer id="mediumModalDrawer" md modal>
+				<span slot="header">Medium Drawer</span>
+				<div slot="content">
+					<p>When traveling on Alaska Airlines flights, Alaska Airlines checked baggage fees may apply. See <Hyperlink href="https://www.alaskaair.com/bagrules" target="_blank">alaskaair.com/bagrules</Hyperlink> for our rules. For itineraries that include other airlines, their checked baggage fees may apply, as displayed on their websites.</p>
+					<p>Baggage rules and fees will be based on the specific itinerary chosen. The applicable first and second bag fees will be displayed after you have added flights to the cart.</p>
+					<Header level="3" display="500">Before checking your bags, remember to:</Header>
+					<ul>
+						<li>Caerphilly croque monsieur fondue</li>
+						<li>Taleggio goat mascarpone cow manchego cheese and wine emmental cheese strings</li>
+						<li>Cheddar cheese and biscuits chalk and cheese</li>
+						<li>Camembert de normandie stinking bishop bavarian bergkase</li>
+					</ul>
+				</div>
+				<div slot="footer" class="auro_containedButtons">
+					<Button onClick={() => toggleInterruption('#mediumModalDrawer')}>I understand
+						<Icon category="interface" name="chevron-right" emphasis ondark></Icon>
+					</Button>
+				</div>
+			</Drawer>
+
+			<Drawer id="smallModalDrawer" sm modal>
+				<span slot="header">Small Drawer</span>
+				<div slot="content">
+					<p>When traveling on Alaska Airlines flights, Alaska Airlines checked baggage fees may apply. See <Hyperlink href="https://www.alaskaair.com/bagrules" target="_blank">alaskaair.com/bagrules</Hyperlink> for our rules. For itineraries that include other airlines, their checked baggage fees may apply, as displayed on their websites.</p>
+					<p>Baggage rules and fees will be based on the specific itinerary chosen. The applicable first and second bag fees will be displayed after you have added flights to the cart.</p>
+					<Header level="3" display="500">Before checking your bags, remember to:</Header>
+					<ul>
+						<li>Caerphilly croque monsieur fondue</li>
+						<li>Taleggio goat mascarpone cow manchego cheese and wine emmental cheese strings</li>
+						<li>Cheddar cheese and biscuits chalk and cheese</li>
+						<li>Camembert de normandie stinking bishop bavarian bergkase</li>
+					</ul>
+				</div>
+				<div slot="footer" class="auro_containedButtons">
+					<Button onClick={() => toggleInterruption('#smallModalDrawer')}>I understand
+						<auro-icon category="interface" name="chevron-right" emphasis onDark></auro-icon>
+					</Button>
+				</div>
+			</Drawer>
+		</div>
+	</section>
+
+	<section class="component-container">
 		<h2>Auro Dropdown</h2>
 		<h4 id="auro-dropdown-basic">Basic</h4>
 		<div class="exampleWrapper">
-			<Dropdown id="common" common aria-label="Label content for screen reader">
-				<div style="padding: var(--auro-size-sm);">
+			<Dropdown id="common" common ariaLabel="Label content for screen reader">
+				<div style="padding: var(--ds-size-sm);">
 					Lorem ipsum solar
 					<br />
-					<auro-button onclick="document.querySelector('#common').hide()">
+					<Button onClick={() => dismissDropdown("common")}>
 					Dismiss Dropdown
-					</auro-button>
+					</Button>
 				</div>
 				<span slot="helpText">
 					Help text
@@ -942,12 +1282,12 @@
 		<h4 id="auro-dropdown-label">Label</h4>
 		<div class="exampleWrapper">
 			<Dropdown id="commonSlot" bordered rounded inset chevron>
-				<div style="padding: var(--auro-size-sm);">
+				<div style="padding: var(--ds-size-sm);">
 					Lorem ipsum solar
 					<br />
-					<auro-button onclick="document.querySelector('#commonSlot').hide()">
+					<Button onClick={() => dismissDropdown("commonSlot")}>
 					Dismiss Dropdown
-					</auro-button>
+					</Button>
 				</div>
 				<span slot="helpText">
 					Help text
@@ -1141,6 +1481,118 @@
 				<auro-flight-segment iata="BOS" duration="1h 40m"></auro-flight-segment>
 				<auro-flight-segment canceled destinationCanceled iata="DUB" duration="13h 40m"></auro-flight-segment>
 			</Flightline>
+		</div>
+	</section>
+
+	<section class="component-container">
+		<h2>Auro Header</h2>
+		<h4 id="auro-header-level">Header</h4>
+		<div class="exampleWrapper">
+			<Header>Hello World!</Header>
+			<Header level="2">Hello World!</Header>
+			<Header level="3">Hello World!</Header>
+			<Header level="4">Hello World!</Header>
+			<Header level="5">Hello World!</Header>
+			<Header level="6">Hello World!</Header>
+		</div>
+
+		<h4 id="auro-header-display">Display</h4>
+		<div class="exampleWrapper">
+			<Header display="300">Hello World!</Header>
+			<Header display="400">Hello World!</Header>
+			<Header display="500">Hello World!</Header>
+			<Header display="600">Hello World!</Header>
+			<Header display="700">Hello World!</Header>
+			<Header display="800">Hello World!</Header>
+		</div>
+	</section>
+
+	<section class="component-container">
+		<h2>Auro Alaska Logo</h2>
+		<h4 id="auro-alaska-default">Default</h4>
+		<div class="exampleWrapper">
+			<AlaskaLogo style="width: 192px"></AlaskaLogo>
+		</div>
+
+		<h4 id="auro-alaska-default-onDark">Default On Dark</h4>
+		<div class="exampleWrapper--ondark">
+			<AlaskaLogo ondark style="width: 192px"></AlaskaLogo>
+		</div>
+
+		<h4 id="auro-alaska-with-tag-line">With Tag Line</h4>
+		<div class="exampleWrapper">
+			<AlaskaLogo official style="width: 192px"></AlaskaLogo>
+		</div>
+
+		<h4 id="auro-alaska-with-tag-line-onD">With Tag line On Dark</h4>
+		<div class="exampleWrapper">
+			<AlaskaLogo official ondark style="width: 192px"></AlaskaLogo>
+		</div>
+
+		<h4 id="auro-alaska-scale">Scale</h4>
+		<div class="exampleWrapper">
+			<AlaskaLogo official style="width: 72px"></AlaskaLogo>
+			<AlaskaLogo official style="width: 108px"></AlaskaLogo>
+			<AlaskaLogo official style="width: 192px"></AlaskaLogo>
+			<AlaskaLogo official style="width: 528px"></AlaskaLogo>
+		</div>
+	</section>
+
+	<section class="component-container">
+		<h2>Auro Icon</h2>
+		<h4 id="auro-icon-default">Default</h4>
+		<div class="exampleWrapper">
+			<Icon category="interface" name="pin-trip"></Icon>
+		</div>
+
+		<h4 id="auro-icon-accessibility">Accessibility</h4>
+		<div class="exampleWrapper">
+			<Icon category="interface" name="pin-trip" ariaHidden="false"></Icon>
+		</div>
+
+		<h4 id="auro-icon-default-label">Alter Accessibbility</h4>
+		<div class="exampleWrapper">
+			<Icon category="interface" name="pin-trip">Default With Label</Icon>
+		</div>
+
+		<h4 id="auro-icon-visual-state">Visual State</h4>
+		<div class="exampleWrapper">
+			<Icon category="interface" name="pin-trip"></Icon>
+			<Icon category="interface" name="pin-trip" emphasis></Icon>
+			<Icon category="interface" name="pin-trip" accent></Icon>
+			<Icon category="interface" name="pin-trip" disabled></Icon>
+			<Icon category="interface" name="pin-trip" error></Icon>
+			<Icon category="interface" name="pin-trip" success></Icon>
+			<Icon category="interface" name="pin-trip" advisory></Icon>
+		</div>
+
+		<h4 id="auro-icon-visual-state-onDark">Visual State Ondark</h4>
+		<div class="exampleWrapper--ondark">
+			<Icon ondark category="interface" name="pin-trip"></Icon>
+			<Icon ondark category="interface" name="pin-trip" emphasis></Icon>
+			<Icon ondark category="interface" name="pin-trip" accent></Icon>
+			<Icon ondark category="interface" name="pin-trip" disabled></Icon>
+			<Icon ondark category="interface" name="pin-trip" error></Icon>
+			<Icon ondark category="interface" name="pin-trip" success></Icon>
+			<Icon ondark category="interface" name="pin-trip" advisory></Icon>
+		</div>
+
+		<h4 id="auro-icon-custom-color">Custom Color</h4>
+		<div class="exampleWrapper">
+			<Icon category="interface" name="pin-trip" ></Icon> default inherits color<br/>
+			<Icon category="interface" name="pin-trip" customColor></Icon> applies primary color selector<br/>
+			<Icon category="interface" name="pin-trip" customColor style="color: orange;"></Icon> applies the color from the style attribute
+		</div>
+
+		<h4 id="auro-icon-custom-size">Custom Size</h4>
+		<div class="exampleWrapper">
+			<Icon
+				style="width: 30rem"
+				customSize
+				category="interface"
+				name="pin-trip"
+				success >
+			</Icon>
 		</div>
 	</section>
 
@@ -1612,13 +2064,13 @@
 		<div class="exampleWrapper">
 			<Popover>
 				Top popover content!
-				<auro-button slot="trigger">Popover Test</auro-button>
+				<Button slot="trigger">Popover Test</Button>
 			</Popover>
 			
 			<!-- Using the placement=bottom attribute -->
 			<Popover placement="bottom">
 				Popover content!
-				<auro-button secondary slot="trigger">Popover Test</auro-button>
+				<Button secondary slot="trigger">Popover Test</Button>
 			</Popover>
 		</div>
 
@@ -1626,12 +2078,12 @@
 		<div class="exampleWrapper">
 			<Popover addSpace>
 				Notice this popover is a little<br>further away from the trigger.
-				<auro-button slot="trigger">Popover w/additional space above</auro-button>
+				<Button slot="trigger">Popover w/additional space above</Button>
 			</Popover>
 			
 			<Popover placement="bottom" addSpace>
 				Notice this popover is a little<br>further away from the trigger.
-				<auro-button secondary slot="trigger">Popover w/additional space below</auro-button>
+				<Button secondary slot="trigger">Popover w/additional space below</Button>
 			</Popover>
 		</div>
 
@@ -1639,13 +2091,12 @@
 		<div class="exampleWrapper">
 			<Popover removeSpace>
 				Notice this popover is a little<br>closer to the trigger.
-			
 				<!--
 					For elements like `auro-icon` that do not have a default tab-to state,
 					be sure to add `tabindex="0"` to the element when using `auro-popover`
 					otherwise users of assistive technology will not see the content.
 				-->
-				<auro-icon category="in-flight" name="plug" slot="trigger" tabindex="0"></auro-icon>
+				<Icon category="in-flight" name="plug" slot="trigger" tabindex="0"></Icon>
 			</Popover>
 		</div>
 
@@ -1941,6 +2392,72 @@
 		<div class="exampleWrapper">
 			<Table nowrap columnHeaders={basicTableData.headers} componentData={basicTableData.data}>
 			</Table>
+		</div>
+	</section>
+
+	<section class="component-container">
+		<h2>Auro Toast</h2>
+		<h4 id="auro-toast-default">Default Notification</h4>
+		<div class="exampleWrapper">
+			<Button onClick={() => showToast('#defaultToast')}>
+				Show default notification
+			</Button>
+			<Toast style="display: block; margin: 0.5rem 0;" id="defaultToast">
+				Default notification with no error type
+			</Toast>
+			<!-- no icon variant -->
+			<Button onClick={() => showToast('#defaultToast-noIcon')}>
+				Show default notification with no icon
+			</Button>
+			<Toast style="display: block; margin: 0.5rem 0;" id="defaultToast-noIcon" noIcon>
+				Default notification with no error type
+			</Toast>
+		</div>
+
+		<h4 id="auro-toast-error">Error Notification</h4>
+		<div class="exampleWrapper">
+			<Button onClick={() => showToast('#errorToast')}>
+				Show error notification
+			</Button>
+			<Toast style="display: block; margin: 0.5rem 0;" variant="error" id="errorToast">
+				Unable to add lap infant. Please try again
+			</Toast>
+			<!-- no icon variant -->
+			<Button onClick={() => showToast('#errorToast-noIcon')}>
+				Show error notification with no icon
+			</Button>
+			<Toast style="display: block; margin: 0.5rem 0;" variant="error" id="errorToast-noIcon" noIcon>
+				Unable to add lap infant. Please try again
+			</Toast>
+		</div>
+
+		<h4 id="auro-toast-success">Success Notification</h4>
+		<div class="exampleWrapper">
+			<Button onClick={() => showToast('#successToast')}>
+				Show success notification
+			</Button>
+			<Toast style="display: block; margin: 0.5rem 0;" variant="success" id="successToast">
+				Successfully added lap infant
+			</Toast>
+			<!-- no icon variant -->
+			<Button onClick={() => showToast('#successToast-noIcon')}>
+				Show success notification with no icon
+			</Button>
+			<Toast style="display: block; margin: 0.5rem 0;" variant="success" id="successToast-noIcon" noIcon>
+				Successfully added lap infant
+			</Toast>
+		</div>
+
+		<h4 id="auro-toast-multiple">Multiple Notification</h4>
+		<div class="exampleWrapper">
+			<Button onClick={() => showToast('#toast-default')}>Show default toast</Button>
+			<Button onClick={() => showToast('#toast-error')}>Show error toast</Button>
+			<Button onClick={() => showToast('#toast-success')}>Show success toast</Button>
+			<Toaster>
+				<Toast id="toast-default">Default toast</Toast>
+				<Toast id="toast-error" variant="error">Unable to add lap infant. Please try again</Toast>
+				<Toast id="toast-success" variant="success">Successfully added lap infant</Toast>
+			</Toaster>
 		</div>
 	</section>
 
