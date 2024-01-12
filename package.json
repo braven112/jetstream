@@ -67,7 +67,7 @@
 	"dependencies": {
 		"@alaskaairux/auro-interruption": "^1.4.5",
 		"@alaskaairux/webcorestylesheets": "^3.7.3",
-		"@aurodesignsystem/auro-themeswitcher": "^1.0.2",
+		"@aurodesignsystem/auro-themeswitcher": "^1.0.3",
 		"@aurodesignsystem/webcorestylesheets": "^5.0.5"
 	}
 }
