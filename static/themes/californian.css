@@ -11,7 +11,7 @@
     
     --ds-color-border-primary-default: #797362;
     --ds-color-border-primary-inverse: #bbb29f;
-    --ds-color-border-active-default: #ce0c88;
+    --ds-color-border-active-default: #ce0c88ad;
     --ds-color-border-active-inverse: #ee453d;
     --ds-color-border-disabled-default: #ee453d;
     
@@ -75,6 +75,8 @@
     --ds-color-brand-atlas-300: #e4189a;
     --ds-color-brand-atlas-200: #f326a8;
     --ds-color-brand-atlas-100: #e350ae;
+
+    
   }
 
 auro-alaska, auro-lockup {
@@ -82,6 +84,16 @@ auro-alaska, auro-lockup {
     --auro-color-brand-midnight-400: #01426a;
 }
 
-auro-header, h1,h2,h3,h4,h5,h6 {
+h2 {
     font-family: 'Chronicle Display',serif;
+    color: var(--ds-color-text-emphasis-default);
 }
+
+:root {
+    --ds-text-heading-700-size-breakpoint-sm: 2rem;
+    --ds-text-heading-700-size-breakpoint-md: 2.25rem;
+    --ds-text-heading-700-size-breakpoint-lg: 2.5rem;
+}
+
+
+
