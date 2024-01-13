@@ -6,3 +6,7 @@
 
 @import 'https://cdn.jsdelivr.net/npm/@aurodesignsystem/webcorestylesheets@latest/dist/elementDemoStyles.css';
 /* @import 'https://cdn.jsdelivr.net/npm/@aurodesignsystem/webcorestylesheets@latest/dist/demoWrapper.css'; */
+
+auro-loader[laser] {
+    display: none;
+}

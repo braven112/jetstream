@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
  :root {
     --ds-font-family-default: 'Open Sans', sans-serif;
     --ds-color-alert-notification-default: #ce0c88;
@@ -80,7 +80,16 @@
     --ds-color-brand-atlas-200: #f326a8;
     --ds-color-brand-atlas-100: #e350ae;
 
-    
+    --ds-text-heading-700-size-breakpoint-sm: 2rem;
+    --ds-text-heading-700-size-breakpoint-md: 2.25rem;
+    --ds-text-heading-700-size-breakpoint-lg: 2.5rem;
+
+    --ds-text-heading-300-weight: 300;
+    --ds-text-heading-400-weight: 300;
+    --ds-text-heading-500-weight: 300;
+    --ds-text-heading-600-weight: 600;
+    --ds-text-heading-700-weight: 700;
+    --ds-text-heading-800-weight: 800;
   }
 
 auro-alaska, auro-lockup {
@@ -93,12 +102,7 @@ body {
 h2 {
     font-family: 'Bree Serif', serif;
     color: var(--ds-color-text-emphasis-default);
-}
-
-:root {
-    --ds-text-heading-700-size-breakpoint-sm: 2rem;
-    --ds-text-heading-700-size-breakpoint-md: 2.25rem;
-    --ds-text-heading-700-size-breakpoint-lg: 2.5rem;
+    font-weight:300 !important;
 }
 
 
