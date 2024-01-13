@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
  :root {
     --ds-color-alert-notification-default: #ce0c88;
     
@@ -85,7 +85,7 @@ auro-alaska, auro-lockup {
 }
 
 h2 {
-    font-family: 'Chronicle Display',serif;
+    font-family: 'Bree Serif', serif;
     color: var(--ds-color-text-emphasis-default);
 }
 
@@ -96,4 +96,9 @@ h2 {
 }
 
 
-
+auro-loader {
+    color: var(--ds-color-text-emphasis-default);
+}
+auro-loader[ondark] {
+    color: var(--ds-color-text-emphasis-inverse);
+}
