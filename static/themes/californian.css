@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@300;700&display=swap');
  :root {
+    --ds-font-family-default: 'Open Sans', sans-serif;
     --ds-color-alert-notification-default: #ce0c88;
     
     --ds-color-background-lightest: #ffffff;
@@ -83,7 +84,9 @@ auro-alaska, auro-lockup {
     --ds-color-brand-midnight-400: #01426a;
     --auro-color-brand-midnight-400: #01426a;
 }
-
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 h2 {
     font-family: 'Bree Serif', serif;
     color: var(--ds-color-text-emphasis-default);
