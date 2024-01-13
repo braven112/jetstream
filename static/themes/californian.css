@@ -59,11 +59,13 @@
     --auro-color-brand-midnight-400: #7b1c7e;
     --auro-color-brand-midnight-300: #8d2691;
     --auro-color-brand-midnight-200: #a233a6;
+    --auro-color-brand-midnight-100: #ea7eee;
 
     --ds-color-brand-midnight-500: #5b105e;
     --ds-color-brand-midnight-400: #7b1c7e;
     --ds-color-brand-midnight-300: #8d2691;
     --ds-color-brand-midnight-200: #a233a6;
+    --ds-color-brand-midnight-100: #ea7eee95;
 
 
     --auro-color-brand-atlas-500: #ce0c88;
@@ -105,4 +107,16 @@ auro-loader {
 }
 auro-loader[ondark] {
     color: var(--ds-color-text-emphasis-inverse);
+}
+
+auro-skeleton {
+    background-image: linear-gradient(to right, #ea7eee2e 10%, #a233a6c7 40%, #ea7eee2e 80%);
+    background-color: #ea7eee2e;
+}
+
+.exampleWrapper {
+    background: repeating-linear-gradient(45deg, #f3f3f37d, #f3f3f37d 2px, var(--ds-color-base-white, #ffffff) 2px, var(--ds-color-base-white, #FFFFFF) 4px);
+}
+.exampleWrapper--ondark {
+    background: repeating-linear-gradient(45deg, var(--ds-color-background-darkest, #00274a), var(--ds-color-background-darkest, #00274a) 2px, var(--ds-color-background-darker, #01426a) 2px, var(--ds-color-background-darker, #01426a) 3px);
 }
