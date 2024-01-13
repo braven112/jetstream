@@ -370,3 +370,8 @@ body {
     --ds-color-ui-bkg-hover-default: rgba(255, 255, 255, 0.06);
     --ds-color-ui-bkg-hover-inverse: rgba(0, 0, 0, 0.06);
   }
+
+
+  auro-themeswitcher {
+    --auro-color-background-lightest: var(--ds-color-background-lightest);
+}
