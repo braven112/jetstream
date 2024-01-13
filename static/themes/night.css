@@ -374,4 +374,5 @@ body {
 
   auro-themeswitcher {
     --auro-color-background-lightest: var(--ds-color-background-lightest);
+    --auro-color-background-lighter: var(--ds-color-background-lighter)
 }
