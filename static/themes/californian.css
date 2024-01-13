@@ -95,6 +95,7 @@
 auro-alaska, auro-lockup {
     --ds-color-brand-midnight-400: #01426a;
     --auro-color-brand-midnight-400: #01426a;
+    --auro-color-brand-breeze-400: var(--ds-color-text-emphasis-inverse);
 }
 body {
     font-family: 'Open Sans', sans-serif;
