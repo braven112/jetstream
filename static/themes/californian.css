@@ -10,8 +10,9 @@
     --ds-color-background-darkest: #140040;
     --auro-color-background-darkest: #140040;
     
-    --ds-color-border-primary-default: #797362;
-    --ds-color-border-primary-inverse: #bbb29f;
+    --ds-color-border-primary-default: #ece1f1;
+    --auro-color-border-primary-on-light: var(--ds-color-border-primary-default);
+    --ds-color-border-primary-inverse: #f1eef3;
     --ds-color-border-active-default: #ce0c88ad;
     --ds-color-border-active-inverse: #ee453d;
     --ds-color-border-disabled-default: #ee453d;
