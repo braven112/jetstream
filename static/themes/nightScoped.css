@@ -3,23 +3,13 @@
 * Generated on Fri, 29 Dec 2023 19:04:04 GMT
 */
 
-/* body {
-    background-color: #151515;
-    color: var(--ds-color-text-primary-default);
-    font-family: Arial, Helvetica, sans-serif;
-} */
-
-/* .sidenav {
-    background-color: #242424 !important;
-} */
-
-/* .exampleWrapper,
-.exampleWrapper--ondark {
-    background: unset !important;
-} */
-
 .sidenav {
     background-color: #242424 !important;
+}
+
+.sidenav,
+auro-button {
+    color: var(--ds-color-text-primary-default);
 
     :root {
         --ds-asset-font-circular-family-name: "Lato";
