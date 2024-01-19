@@ -1,0 +1,47 @@
+/**
+ * Do not edit directly
+ * Generated on Fri, 19 Jan 2024 08:34:04 GMT
+ */
+
+ :root {
+    --ds-color-alert-notification-default: #0074cb;
+    --ds-color-alert-warning-default: #f27f0c;
+    --ds-color-alert-error-default: #d93021;
+    --ds-color-alert-success-default: #408020;
+    --ds-color-background-lightest: #ffffff;
+    --ds-color-background-lighter: #fafafa;
+    --ds-color-background-darker: #f8f8f8;
+    --ds-color-background-darkest: #f0f0f0;
+    --ds-color-base-white: #ffffff; /* 
+    // Base value for token support; should not use in code! */
+    --ds-color-base-black: #0d0d0d; /* 
+    // Base value for token support; should not use in code! */
+    --ds-color-base-black-opacity-30: rgba(0, 0, 0, 0.3); /* black @ 30% */
+    --ds-color-state-error-500: #d93021;
+    --ds-color-state-success-500: #408020;
+    --ds-color-state-warning-500: #f27f0c;
+    --ds-color-border-primary-default: rgba(0, 0, 0, 0.1);
+    --ds-color-border-divider-default: rgba(0, 0, 0, 0.3);
+    --ds-color-brand-midnight-400: #f8f8f8; /* 
+    // Please consider descriptive token prior to using brand token */
+    --ds-color-brand-midnight-500: #00274a; /* 
+    // Please consider descriptive token prior to using brand token */
+    --ds-color-brand-atlas-400: #0074cb; /* 
+    // Please consider descriptive token prior to using brand token */
+    --ds-color-brand-atlas-500: #30a1f2; /* 
+    // Please consider descriptive token prior to using brand token */
+    --ds-color-brand-neutral-500: #6d6f73; /* 
+    // Please consider descriptive token prior to using brand token */
+    --ds-color-brand-gray-100: #fafafa;
+    --ds-color-brand-gray-200: rgba(36, 37, 38, 0.2);
+    --ds-color-brand-gray-500: #242526;
+    --ds-color-text-primary-default: #242526;
+    --ds-color-text-secondary-default: #6d6f73;
+    --ds-color-text-disabled-default: rgba(36, 37, 38, 0.2);
+    --ds-color-ui-default-default: #0074cb;
+    --ds-color-ui-hover-default: #30a1f2;
+    --ds-text-primary-hover-default: #0d0d0d;
+    --ds-text-secondary-hover-default: #3d3e40;
+    --ds-text-tertiary-default: #84868b;
+    --ds-text-tertiary-hover-default: #737373;
+  }  
