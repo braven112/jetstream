@@ -132,4 +132,5 @@ auro-skeleton {
 :root{
     --hero-background-color-secondary: var(--ds-color-brand-atlas-500);
     --merch4-background-color-accent: var(--ds-color-brand-atlas-500);
+    --hero-background-image-md: radial-gradient( 23% 120% at 100% 50%, var(--merch4-background-color-accent) 99.5%, var(--ds-color-background-darkest) 100% );
 }
