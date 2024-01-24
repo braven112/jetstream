@@ -125,3 +125,7 @@ auro-skeleton {
 .exampleWrapper--ondark {
     background: repeating-linear-gradient(45deg, var(--ds-color-background-darkest, #00274a), var(--ds-color-background-darkest, #00274a) 2px, var(--ds-color-background-darker, #01426a) 2px, var(--ds-color-background-darker, #01426a) 3px);
 }
+/* Used on the auro-examples site for .fineprint on a magenta background */
+.grid-item {
+    --ds-color-text-secondary-default: white;
+}
