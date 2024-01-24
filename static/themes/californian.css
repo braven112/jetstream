@@ -80,6 +80,12 @@
     --ds-color-brand-atlas-200: #f326a8;
     --ds-color-brand-atlas-100: #e350ae;
 
+    --ds-color-brand-breeze-100: #ff999b;
+    --ds-color-brand-breeze-200: #e1797c;
+    --ds-color-brand-breeze-300: #cf595d;
+    --ds-color-brand-breeze-400: #c13237;
+    --ds-color-brand-breeze-500: #99171b;
+
     --ds-text-heading-700-size-breakpoint-sm: 2rem;
     --ds-text-heading-700-size-breakpoint-md: 2.25rem;
     --ds-text-heading-700-size-breakpoint-lg: 2.5rem;
@@ -132,5 +138,4 @@ auro-skeleton {
 :root{
     --hero-background-color-secondary: var(--ds-color-brand-atlas-500);
     --merch4-background-color-accent: var(--ds-color-brand-atlas-500);
-    --hero-background-image-md: radial-gradient( 23% 120% at 100% 50%, var(--merch4-background-color-accent) 99.5%, var(--ds-color-background-darkest) 100% );
 }
