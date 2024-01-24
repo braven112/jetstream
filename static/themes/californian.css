@@ -135,7 +135,4 @@ auro-skeleton {
 .grid-item {
     --ds-color-text-secondary-default: white;
 }
-:root{
-    --hero-background-color-secondary: var(--ds-color-brand-atlas-500);
-    --merch4-background-color-accent: var(--ds-color-brand-atlas-500);
-}
+
