@@ -1,47 +1,108 @@
 /**
  * Do not edit directly
- * Generated on Fri, 19 Jan 2024 08:34:04 GMT
+ * Generated on Thu, 25 Jan 2024 05:36:22 GMT
  */
 
  :root {
-    --ds-color-alert-notification-default: #0074cb;
-    --ds-color-alert-warning-default: #f27f0c;
-    --ds-color-alert-error-default: #d93021;
-    --ds-color-alert-success-default: #408020;
-    --ds-color-background-lightest: #ffffff;
-    --ds-color-background-lighter: #fafafa;
-    --ds-color-background-darker: #f8f8f8;
-    --ds-color-background-darkest: #f0f0f0;
-    --ds-color-base-white: #ffffff; /* 
-    // Base value for token support; should not use in code! */
-    --ds-color-base-black: #0d0d0d; /* 
-    // Base value for token support; should not use in code! */
-    --ds-color-base-black-opacity-30: rgba(0, 0, 0, 0.3); /* black @ 30% */
-    --ds-color-state-error-500: #d93021;
-    --ds-color-state-success-500: #408020;
-    --ds-color-state-warning-500: #f27f0c;
-    --ds-color-border-primary-default: rgba(0, 0, 0, 0.1);
-    --ds-color-border-divider-default: rgba(0, 0, 0, 0.3);
-    --ds-color-brand-midnight-400: #f8f8f8; /* 
-    // Please consider descriptive token prior to using brand token */
-    --ds-color-brand-midnight-500: #00274a; /* 
-    // Please consider descriptive token prior to using brand token */
-    --ds-color-brand-atlas-400: #0074cb; /* 
-    // Please consider descriptive token prior to using brand token */
-    --ds-color-brand-atlas-500: #30a1f2; /* 
-    // Please consider descriptive token prior to using brand token */
-    --ds-color-brand-neutral-500: #6d6f73; /* 
-    // Please consider descriptive token prior to using brand token */
-    --ds-color-brand-gray-100: #fafafa;
-    --ds-color-brand-gray-200: rgba(36, 37, 38, 0.2);
-    --ds-color-brand-gray-500: #242526;
-    --ds-color-text-primary-default: #242526;
-    --ds-color-text-secondary-default: #6d6f73;
-    --ds-color-text-disabled-default: rgba(36, 37, 38, 0.2);
-    --ds-color-ui-default-default: #0074cb;
-    --ds-color-ui-hover-default: #30a1f2;
-    --ds-text-primary-hover-default: #0d0d0d;
-    --ds-text-secondary-hover-default: #3d3e40;
-    --ds-text-tertiary-default: #84868b;
-    --ds-text-tertiary-hover-default: #737373;
-  }  
+  --ds-color-alert-error-default: #db0b00;
+  --ds-color-alert-success-default: #068a1e;
+  --ds-color-background-lightest: #ffffff;
+  --ds-color-background-lighter: #f5f6f8;
+  --ds-color-background-darker: #054687;
+  --ds-color-background-darkest: #00274a;
+  --ds-color-base-white: #ffffff; /* 
+  // Base value for token support; should not use in code! */
+  --ds-color-base-black: #000000; /* 
+  // Base value for token support; should not use in code! */
+  --ds-color-base-black-opacity-30: rgba(0, 0, 0, 0.3); /* black @ 30% */
+  --ds-color-state-error-500: #db0b00;
+  --ds-color-state-success-500: #068a1e;
+  --ds-color-state-warning-500: #de750c;
+  --ds-color-border-primary-default: #b2bec9;
+  --ds-color-border-primary-inverse: #4a657e;
+  --ds-color-border-divider-default: #d9dfe4;
+  --ds-color-border-divider-inverse: #254664;
+  --ds-color-border-active-default: #0074c8;
+  --ds-color-border-error-default: #db0b00;
+  --ds-color-border-disabled-default: #d9dfe4;
+  --ds-color-border-focus-default: #8c9eae;
+  --ds-color-brand-midnight-400: #01426a; /* 
+  // Please consider descriptive token prior to using brand token */
+  --ds-color-brand-midnight-500: #00274a; /* 
+  // Please consider descriptive token prior to using brand token */
+  --ds-color-brand-atlas-400: #0074c8; /* 
+  // Please consider descriptive token prior to using brand token */
+  --ds-color-brand-atlas-500: #054687; /* 
+  // Please consider descriptive token prior to using brand token */
+  --ds-color-brand-neutral-500: #626b79; /* 
+  // Please consider descriptive token prior to using brand token */
+  --ds-color-brand-gray-100: #f5f6f8;
+  --ds-color-brand-gray-200: #d6dce2;
+  --ds-color-brand-gray-300: #b2bec9; /* 
+  // Please consider descriptive token prior to using brand token */
+  --ds-color-brand-gray-400: #73889c; /* 
+  // Please consider descriptive token prior to using brand token */
+  --ds-color-brand-gray-500: #405d77;
+  --ds-color-brand-goldgray-100: #7b7b7b;
+  --ds-color-brand-goldgray-200: #c7c7c7;
+  --ds-color-brand-gold-100: #7e623d;
+  --ds-color-brand-gold-200: #8f7b39;
+  --ds-color-brand-emerald: #0f8c4a;
+  --ds-color-brand-sapphire: #10699c;
+  --ds-color-brand-ruby: #9c305a;
+  --ds-color-icon-primary-default: #00274a;
+  --ds-color-icon-primary-inverse: #ebeef1;
+  --ds-color-icon-emphasis-default: #054687;
+  --ds-color-icon-emphasis-inverse: #0074c8;
+  --ds-color-icon-accent-default: #0074c8;
+  --ds-color-icon-disabled-default: #a6b3c0;
+  --ds-color-text-primary-default: #00274a;
+  --ds-color-text-primary-inverse: #ebeef1;
+  --ds-color-text-secondary-default: #73889c;
+  --ds-color-text-secondary-inverse: #8c9eae;
+  --ds-color-text-disabled-default: #a6b3c0;
+  --ds-color-text-link-default: #0074c8;
+  --ds-color-text-link-inverse: #30a1f2;
+  --ds-color-text-error-default: #db0b00;
+  --ds-color-text-error-inverse: #ed0c00;
+  --ds-color-text-emphasis-default: #054687;
+  --ds-color-text-emphasis-inverse: #0074cb;
+  --ds-color-tier-alaska-mvp-default: #00436d;
+  --ds-color-tier-alaska-mvp-inverse: #71ade3;
+  --ds-color-tier-alaska-mvpgold-default: #8f7b39;
+  --ds-color-tier-alaska-mvpgold-inverse: #c2ab61;
+  --ds-color-tier-oneworld-emerald: #0f8c4a;
+  --ds-color-tier-oneworld-sapphire: #10699c;
+  --ds-color-tier-oneworld-ruby: #9c305a;
+  --ds-color-ui-default-default: #0074c8;
+  --ds-color-ui-default-inverse: #30a1f2;
+  --ds-color-ui-hover-default: #30a1f2;
+  --ds-color-ui-hover-inverse: #66bfff;
+  --ds-color-ui-active-default: #054687;
+  --ds-color-ui-disabled-default: #a6b3c0;
+  --ds-color-ui-bkg-hover-default: #ebeef1;
+  --ds-elevation-100: 0px 4px 12px 0px rgba(0, 39, 74, 0.08); /* for the least amount of emphasis */
+  --ds-elevation-200: 0px 6px 24px 0px rgba(0, 39, 74, 0.1); /* for more emphasis than low elevation */
+  --ds-elevation-300: 0px 8px 36px 0px rgba(0, 39, 74, 0.12); /* for medium emphasis or differentiation */
+  --ds-elevation-400: 0px 10px 48px 0px rgba(0, 39, 74, 0.14); /* for maximum emphasis or differentiation */
+  --ds-text-primary-hover-default: 0d0d0d;
+  --ds-text-secondary-hover-default: 3d3e40;
+  --ds-text-tertiary-default: 84868b;
+  --ds-text-tertiary-hover-default: 737373;
+  --ds-text-heading-300-weight: 900;
+  --ds-text-heading-400-weight: 900;
+  --ds-text-heading-500-weight: 900;
+  --ds-text-heading-600-weight: 900;
+  --ds-text-heading-700-weight: 900;
+  --ds-text-heading-800-weight: 900;
+  --ds-text-heading-default-weight: 900;
+  --ds-text-heading-default-margin: 0;
+  --ds-text-heading-default-spacing: 0;
+  --ds-text-heading-display-weight: 900;
+  --ds-text-body-default-weight: 450;
+  --ds-grid-breakpoint-xs: 480px;
+  --ds-grid-breakpoint-sm: 576px;
+  --ds-grid-breakpoint-md: 768px;
+  --ds-grid-breakpoint-lg: 1280px;
+  --ds-grid-breakpoint-xl: 1440px;
+}
