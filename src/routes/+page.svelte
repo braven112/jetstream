@@ -28,7 +28,6 @@
 	import Select from "../components/Select.svelte";
 	import Sidenav from "../components/Sidenav.svelte";
 	import Dropdown from "../components/Dropdown.svelte";
-	import Flightline from "../components/Flightline.svelte";
 	import Flight from "../components/Flight.svelte";
 	import Combobox from "../components/Combobox.svelte";
 	import Drawer from "../components/Drawer.svelte";
@@ -1117,7 +1116,6 @@
 				departureStation="SEA"
 				arrivalTime="2022-07-13T14:56:00-07:00"
 				arrivalStation="LAX">
-					<Flightline></Flightline>
 			</Flight>
 		</div>
 
@@ -1130,7 +1128,6 @@
 				departureStation="KOA"
 				arrivalTime="2022-06-01T06:45:00-07:00"
 				arrivalStation="SEA">
-					<Flightline></Flightline>
 			</Flight>
 		</div>
 
@@ -1144,9 +1141,7 @@
 				arrivalTime="2022-05-04T03:55:00-09:00"
 				arrivalStation="ADK"
 				stops={flightData.stopOneStep}>
-					<Flightline>
-						<auro-flight-segment stopover iata="CDB"></auro-flight-segment>
-					</Flightline>
+
 			</Flight>
 		</div>
 
@@ -1160,11 +1155,7 @@
 				arrivalTime="2022-05-04T05:53:00-09:00"
 				arrivalStation="ANC"    
 				stops={flightData.stopOver}>
-					<Flightline>
-						<auro-flight-segment stopover iata="WRG"></auro-flight-segment>
-						<auro-flight-segment stopover iata="PSG"></auro-flight-segment>
-						<auro-flight-segment stopover iata="JNU"></auro-flight-segment>
-					</Flightline>
+
 			</Flight>
 		</div>
 
@@ -1178,9 +1169,7 @@
 			arrivalTime="2022-07-21T16:39:00-04:00"
 			arrivalStation="BOS"
 			stops={flightData.layOver}>
-				<Flightline>
-					<auro-flight-segment iata="ORD" duration="3h 10m"></auro-flight-segment>
-				</Flightline>
+			
 				<span slot="footer">
 					<auro-icon category="logos" name="tail-AS" style="width: 24px" aria-hidden="true"></auro-icon>
 					AS161 is subject to government approval <br aria-hidden="true"/>
@@ -1200,7 +1189,7 @@
 			arrivalTime="2022-07-30T16:40:00-04:00"
 			arrivalStation="EWR"
 			reroutedArrivalStation="AVP">
-				<Flightline></Flightline>
+			
 				<span slot="departureHeader">Scheduled <auro-datetime type="tzTime" setDate="2022-07-30T07:20:00-07:00"></auro-datetime></span>
 				<span slot="arrivalHeader">Scheduled <auro-datetime type="tzTime" setDate="2022-05-04T17:48:00-04:00"></auro-datetime></span>
 			</Flight>
@@ -1216,7 +1205,7 @@
 			arrivalTime="2022-07-30T16:40:00-04:00"
 			arrivalStation="EWR"
 			reroutedDepartureStation="PAE">
-				<Flightline></Flightline>
+				
 				<span slot="departureHeader">Scheduled <auro-datetime type="tzTime" setDate="2022-07-30T07:20:00-07:00"></auro-datetime></span>
 				<span slot="arrivalHeader">Scheduled <auro-datetime type="tzTime" setDate="2022-05-04T17:48:00-04:00"></auro-datetime></span>
 			</Flight>
@@ -1227,64 +1216,37 @@
 		<h2>Auro Flightline</h2>
 		<h4 id="auro-flightline-nonstop">Nonstop</h4>
 		<div class="exampleWrapper">
-			<Flightline></Flightline>
+	
 		</div>
 
 		<h4 id="auro-flightline-canceled">Canceled</h4>
 		<div class="exampleWrapper">
-			<Flightline canceled></Flightline>
-			<Flightline canceled>
-				<auro-flight-segment iata="EWR" duration="3h 40m"></auro-flight-segment>
-			</Flightline>
+		
 		</div>
 
 		<h4 id="auro-flightline-single-layover">Flight with a single layover</h4>
 		<div class="exampleWrapper">
-			<Flightline>
-				<auro-flight-segment iata="ORD" duration="3h 40m"></auro-flight-segment>
-			</Flightline>
-			<Flightline>
-				<auro-flight-segment nextDay iata="ORD" duration="3h 40m"></auro-flight-segment>
-			</Flightline>
+			
 		</div>
 
 		<h4 id="auro-flightline-canceled-layover">Canceled with single layover</h4>
 		<div class="exampleWrapper">
-			<Flightline>
-				<auro-flight-segment canceled iata="EWR" duration="3h 40m"></auro-flight-segment>
-			</Flightline>
+			
 		</div>
 
 		<h4 id="auro-flightline-single-stopover">Flight with a single stopover</h4>
 		<div class="exampleWrapper">
-			<Flightline>
-				<auro-flight-segment stopover iata="CDB"></auro-flight-segment>
-			</Flightline>
+		
 		</div>
 
 		<h4 id="auro-flightline-stopover-and-layover">Flight with a stopover and a layover</h4>
 		<div class="exampleWrapper">
-			<Flightline>
-				<auro-flight-segment stopover iata="YAK"></auro-flight-segment>
-				<auro-flight-segment iata="SEA" duration="0h 40m"></auro-flight-segment>
-			</Flightline>
-			<Flightline>
-				<auro-flight-segment stopover iata="CDB"></auro-flight-segment>
-				<auro-flight-segment iata="ANC" duration="1h 30m"></auro-flight-segment>
-				<auro-flight-segment iata="SEA" duration="0h 40m"></auro-flight-segment>
-				<auro-flight-segment iata="SFO" duration="1h 40m"></auro-flight-segment>
-			</Flightline>
+			
 		</div>
 
 		<h4 id="auro-flightline-canceled-stopover-and-layover">Canceled with layovers and stopovers</h4>
 		<div class="exampleWrapper">
-			<Flightline>
-				<auro-flight-segment stopover iata="YAK"></auro-flight-segment>
-				<auro-flight-segment stopover iata="WRG"></auro-flight-segment>
-				<auro-flight-segment canceled iata="SEA" duration="0h 40m"></auro-flight-segment>
-				<auro-flight-segment iata="BOS" duration="1h 40m"></auro-flight-segment>
-				<auro-flight-segment canceled destinationCanceled iata="DUB" duration="13h 40m"></auro-flight-segment>
-			</Flightline>
+			
 		</div>
 	</section>
 
