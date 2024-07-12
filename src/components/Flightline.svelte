@@ -2,9 +2,8 @@
 // @ts-nocheck
 
 	import setAttribute from '$lib/setAttribute';
-    import 'https://cdn.jsdelivr.net/npm/@aurodesignsystem/auro-flightline@latest/dist/auro-flightline__bundled.js';
-    import "https://unpkg.com/@aurodesignsystem/auro-flightline@latest/dist/auro-flight-segment__bundled.js";
-
+  import '@aurodesignsystem/auro-flight';
+   
     export let canceled = undefined;
     export let destinationCanceled = undefined;
     export let duration = undefined;
