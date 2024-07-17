@@ -1,0 +1,58 @@
+/**
+ * Do not edit directly
+ * Generated on Fri, 29 Dec 2023 19:04:04 GMT
+ */
+
+ :root {
+    --ds-color-alert-notification-default: #c87100;
+    
+    --ds-color-background-lightest: #ffffff;
+    --ds-color-background-lighter: #f8f8f8;
+    --ds-color-background-darker: #6a2f01;
+    --auro-color-background-darker: #6a2f01;
+    --ds-color-background-darkest: #4a1e00;
+    --auro-color-background-darkest: #4a1e00;
+    
+    --ds-color-border-primary-default: #797362;
+    --ds-color-border-primary-inverse: #bbb29f;
+    --ds-color-border-active-default: #c87100;
+    --ds-color-border-active-inverse: #efc62e;
+    --ds-color-border-disabled-default: #efc62e;
+    
+    --ds-color-icon-primary-default: #796f62;
+    --ds-color-icon-primary-inverse: #bbb19f;
+    --ds-color-icon-emphasis-default: #222222;
+    --ds-color-icon-emphasis-inverse: #ffffff;
+    --ds-color-icon-accent-default: #c88500;
+    --ds-color-icon-disabled-default: rgba(0, 0, 0, 0.15);
+    
+    --ds-color-text-primary-default: #222222;
+    --ds-color-text-primary-inverse: #ffffff;
+    --ds-color-text-secondary-default: #796d62;
+    --ds-color-text-secondary-inverse: #bbb09f;
+    --ds-color-text-link-default: #c87100;
+    --ds-color-text-link-inverse: #efc62e;
+    --auro-color-text-link-on-light: #c87100;
+    --auro-color-text-link-on-dark: #efc62e;
+    --ds-color-text-disabled-default: #dbdbdb;
+    --ds-color-text-emphasis-default: #6a3b01;
+    --ds-color-text-emphasis-inverse: #f0e1c1;
+    
+    --ds-color-ui-default-default: #c87100;
+    --auro-color-ui-default-on-light: #c87100;
+    --ds-color-ui-default-inverse: #efc62e;
+    --auro-color-ui-default-on-dark: #efc62e;
+    --ds-color-ui-hover-default: #aa6001;
+    --auro-color-ui-hover-on-light: #aa6001;
+    --ds-color-ui-hover-inverse: #bd9c25;
+    --auro-color-ui-hover-on-dark: #bd9c25;
+    --ds-color-ui-active-default: #724101;
+    --auro-color-ui-active-on-light: #724101;
+    --ds-color-ui-active-inverse: #92791e;
+    --auro-color-ui-active-on-dark: #92791e;
+    --ds-color-ui-disabled-default: rgba(200, 133, 0, 0.2);
+    --ds-color-ui-bkg-default-default: rgba(0, 0, 0, 0.03);
+    --ds-color-ui-bkg-default-inverse: rgba(255, 255, 255, 0.03);
+    --ds-color-ui-bkg-hover-default: rgba(0, 0, 0, 0.06);
+    --ds-color-ui-bkg-hover-inverse: rgba(255, 255, 255, 0.06);
+  }

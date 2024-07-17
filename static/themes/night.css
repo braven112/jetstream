@@ -1028,8 +1028,8 @@
     --ds-color-container-ui-primary-hover-inverse: var(--ds-color-excursion-blue-900);
     --ds-color-container-ui-secondary-active-default: #f2f2f2;
     --ds-color-container-ui-secondary-active-inverse: #f2f2f2;
-    --ds-color-container-ui-secondary-default-default: #f2f2f2;
-    --ds-color-container-ui-secondary-default-inverse: #f2f2f2;
+    --ds-color-container-ui-secondary-default-default: var(--ds-color-base-white-100);
+    --ds-color-container-ui-secondary-default-inverse:  var(--ds-color-base-white);
     --ds-color-container-ui-secondary-disabled-default: #f2f2f2;
     --ds-color-container-ui-secondary-disabled-inverse: #f2f2f2;
     --ds-color-container-ui-secondary-focus-default: #f2f2f2;
