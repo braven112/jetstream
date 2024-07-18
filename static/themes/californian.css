@@ -627,7 +627,7 @@
     --ds-color-background-warning-default: #fef8e9;
     --ds-color-background-warning-inverse: #5d4514;
     --ds-color-background-info-default: var(--ds-color-brand-purple-100);
-    --ds-color-background-info-inverse: #193d73;
+    --ds-color-background-info-inverse: var(--ds-color-brand-purple-900);;
     --ds-color-background-subtle-default: var(--ds-color-brand-neutral-100);
     --ds-color-background-subtle-inverse: var(--ds-color-brand-gray-1000);
     --ds-color-background-accent-default: var(--ds-color-brand-purple-200);
@@ -676,7 +676,7 @@
     --ds-color-border-info-inverse: #89b2d4;
     --ds-color-border-ui-default-default: #2c67b5;
     --ds-color-border-ui-default-inverse: var(--ds-color-brand-purple-300);
-    --ds-color-border-ui-hover-default: #193d73;
+    --ds-color-border-ui-hover-default: var(--ds-color-brand-purple-900);;
     --ds-color-border-ui-hover-inverse: #a8e9f7;
     --ds-color-border-ui-active-default: #225296;
     --ds-color-border-ui-active-inverse: #6ad5ef;
@@ -698,7 +698,7 @@
     --ds-color-container-error-default: #fff4f4;
     --ds-color-container-error-inverse: #74110e;
     --ds-color-container-info-default: var(--ds-color-brand-purple-100);
-    --ds-color-container-info-inverse: #193d73;
+    --ds-color-container-info-inverse: var(--ds-color-brand-purple-900);;
     --ds-color-container-primary-default: var(--ds-color-base-white);
     --ds-color-container-primary-inverse: var(--ds-color-brand-purple-900);
     --ds-color-container-secondary-default: #f7f7f7;
@@ -719,7 +719,7 @@
     --ds-color-container-ui-primary-disabled-inverse: #275b72;
     --ds-color-container-ui-primary-focus-default: #2c67b5;
     --ds-color-container-ui-primary-focus-inverse: var(--ds-color-brand-purple-300);
-    --ds-color-container-ui-primary-hover-default: #193d73;
+    --ds-color-container-ui-primary-hover-default: var(--ds-color-brand-purple-900);;
     --ds-color-container-ui-primary-hover-inverse: #a8e9f7;
     --ds-color-container-ui-secondary-active-default: var(--ds-color-brand-purple-100);
     --ds-color-container-ui-secondary-active-inverse: rgba(255, 255, 255, 0.06);
@@ -763,7 +763,7 @@
     --ds-color-icon-subtle-inverse: #326aa5;
     --ds-color-icon-ui-default-default: #2c67b5;
     --ds-color-icon-ui-default-inverse: var(--ds-color-brand-purple-300);
-    --ds-color-icon-ui-hover-default: #193d73;
+    --ds-color-icon-ui-hover-default: var(--ds-color-brand-purple-900);;
     --ds-color-icon-ui-hover-inverse: #a8e9f7;
     --ds-color-icon-ui-active-default: #225296;
     --ds-color-icon-ui-active-inverse: #6ad5ef;
@@ -833,7 +833,7 @@
     --ds-color-text-ui-disabled-inverse: #7e7e7e;
     --ds-color-text-ui-focus-default: #2c67b5;
     --ds-color-text-ui-focus-inverse: var(--ds-color-brand-purple-300);
-    --ds-color-text-ui-hover-default: #193d73;
+    --ds-color-text-ui-hover-default: var(--ds-color-brand-purple-900);;
     --ds-color-text-ui-hover-inverse: #a8e9f7;
     --ds-color-text-link-default: var(--ds-color-brand-atlas-400);
     --ds-color-text-link-inverse:  var(--ds-color-brand-orange-400);
