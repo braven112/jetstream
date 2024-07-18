@@ -167,35 +167,7 @@
     --ds-text-body-height-sm: 1.25rem;
     --ds-text-body-height-default: 1.5rem;
     --ds-text-body-height-lg: 1.625rem;
-    --ds-color-alert-notification-default: var(--ds-color-brand-atlas-400);
-    --ds-color-alert-warning-default: #de750c;
-    --ds-color-alert-error-default: #df0b37;
-    --ds-color-alert-success-default: #00805d;
-    --ds-color-alert-advisory-default: #fff0cd;
-    --ds-color-alert-bkg-success-default: #ddf6e8;
-    --ds-color-alert-bkg-error-default: #ffedf1;
-    --ds-color-background-primary-100-default: var(--ds-color-base-white);;
-    --ds-color-background-primary-100-inverse: var(--ds-color-brand-purple-900);
-    --ds-color-background-primary-200-default: #f7f7f7;
-    --ds-color-background-primary-200-inverse: #194069;
-    --ds-color-background-primary-300-default: #e4e8ec;
-    --ds-color-background-primary-300-inverse: #265688;
-    --ds-color-background-primary-400-default: #dddddd;
-    --ds-color-background-primary-400-inverse: #326aa5;
-    --ds-color-background-success-default: #eef8f5;
-    --ds-color-background-success-inverse: #173c30;
-    --ds-color-background-error-default: #fff4f4;
-    --ds-color-background-error-inverse: #74110e;
-    --ds-color-background-warning-default: #fef8e9;
-    --ds-color-background-warning-inverse: #5d4514;
-    --ds-color-background-info-default: var(--ds-color-brand-purple-100);
-    --ds-color-background-info-inverse: #193d73;
-    --ds-color-background-subtle-default: #f7f8fa;
-    --ds-color-background-subtle-inverse: var(--ds-color-brand-gray-1000);
-    --ds-color-background-accent-default: var(--ds-color-brand-purple-200);
-    --ds-color-background-accent-inverse: #275b72;
-    --ds-color-background-emphasis-default: #c9e0f7;
-    --ds-color-background-emphasis-inverse: #225296;
+    
     
     /* depricated */
     --ds-color-background-lightest: var(--ds-color-base-white);
@@ -625,7 +597,49 @@
     // Base value for token support; should not use in code! */
     --ds-color-base-warning-400: #8e6b22; /* 
     // Base value for token support; should not use in code! */
-    --ds-color-base-warning-500: #5d4514; /* 
+    --ds-color-base-warning-500: #5d4514; 
+    
+    
+    
+    
+    
+    
+    
+    --ds-color-alert-notification-default: var(--ds-color-brand-atlas-400);
+    --ds-color-alert-warning-default: #de750c;
+    --ds-color-alert-error-default: #df0b37;
+    --ds-color-alert-success-default: #00805d;
+    --ds-color-alert-advisory-default: #fff0cd;
+    --ds-color-alert-bkg-success-default: #ddf6e8;
+    --ds-color-alert-bkg-error-default: #ffedf1;
+    --ds-color-background-primary-100-default: var(--ds-color-base-white);
+    --ds-color-background-primary-100-inverse: var(--ds-color-brand-purple-900);
+    --ds-color-background-primary-200-default: #f7f7f7;
+    --ds-color-background-primary-200-inverse: #194069;
+    --ds-color-background-primary-300-default: #e4e8ec;
+    --ds-color-background-primary-300-inverse: #265688;
+    --ds-color-background-primary-400-default: #dddddd;
+    --ds-color-background-primary-400-inverse: #326aa5;
+    --ds-color-background-success-default: #eef8f5;
+    --ds-color-background-success-inverse: #173c30;
+    --ds-color-background-error-default: #fff4f4;
+    --ds-color-background-error-inverse: #74110e;
+    --ds-color-background-warning-default: #fef8e9;
+    --ds-color-background-warning-inverse: #5d4514;
+    --ds-color-background-info-default: var(--ds-color-brand-purple-100);
+    --ds-color-background-info-inverse: #193d73;
+    --ds-color-background-subtle-default: var(--ds-color-brand-neutral-100);
+    --ds-color-background-subtle-inverse: var(--ds-color-brand-gray-1000);
+    --ds-color-background-accent-default: var(--ds-color-brand-purple-200);
+    --ds-color-background-accent-inverse: #275b72;
+    --ds-color-background-emphasis-default: #c9e0f7;
+    --ds-color-background-emphasis-inverse: #225296;
+    
+    
+    
+    
+    
+    /* 
     
     
     
@@ -689,7 +703,7 @@
     --ds-color-container-primary-inverse: var(--ds-color-brand-purple-900);
     --ds-color-container-secondary-default: #f7f7f7;
     --ds-color-container-secondary-inverse: #194069;
-    --ds-color-container-subtle-default: #f7f8fa;
+    --ds-color-container-subtle-default: var(--ds-color-brand-neutral-100);
     --ds-color-container-subtle-inverse: #393d43;
     --ds-color-container-success-default: #eef8f5;
     --ds-color-container-success-inverse: #173c30;
