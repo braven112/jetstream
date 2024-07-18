@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+ :root {
+    --ds-font-family-default: 'Open Sans', sans-serif;
+    --ds-color-alert-notification-default: #ce0c88;
+    
+    --ds-color-background-lightest: #ffffff;
+    --ds-color-background-lighter: #f8f8f8;
+    --ds-color-background-darker: #5b105e;
+    --auro-color-background-darker: #5b105e;
+    --ds-color-background-darkest: #140040;
+    --auro-color-background-darkest: #140040;
+    
+    --ds-color-border-primary-default: #ece1f1;
+    --auro-color-border-primary-on-light: var(--ds-color-border-primary-default);
+    --ds-color-border-primary-inverse: #f1eef3;
+    --ds-color-border-active-default: #a00667;
+    --ds-color-border-active-inverse: #ee453d;
+    --ds-color-border-disabled-default: #ee453d;/*  #dddddd */
+    
+    --ds-color-icon-primary-default: #796f62;
+    --ds-color-icon-primary-inverse: #bbb19f;
+
+    --ds-color-icon-emphasis-default: #222222;
+    --ds-color-icon-emphasis-inverse: #ffffff;
+    --ds-color-icon-accent-default: #ce0c88;
+    --ds-color-icon-disabled-default: rgba(0, 0, 0, 0.15);
+    
+    --ds-color-text-primary-default: #222222;
+    --ds-color-text-primary-inverse: #ffffff;
+    --ds-color-text-secondary-default: #796d62;
+    --ds-color-text-secondary-inverse: #bbb09f;
+    --ds-color-text-link-default: #ce0c88;
+    --ds-color-text-link-inverse: #ee453d;
+    --auro-color-text-link-on-light: #ce0c88;
+    --auro-color-text-link-on-dark: #ee453d;
+    --ds-color-text-disabled-default: #dbdbdb;
+    --ds-color-text-emphasis-default: #5b105e;
+    --ds-color-text-emphasis-inverse: #ee453d;
+    
+    --ds-color-ui-default-default: #ce0c88;
+    --auro-color-ui-default-on-light: #ce0c88;
+    --ds-color-ui-default-inverse: #ee453d;
+    --auro-color-ui-default-on-dark: #ee453d;
+    --ds-color-ui-hover-default: #db1b96;
+    --auro-color-ui-hover-on-light: #db1b96;
+    --ds-color-ui-hover-inverse: #e13b32;
+    --auro-color-ui-hover-on-dark: #eb2aa5;
+    --ds-color-ui-active-default: #ce0c88;
+    --auro-color-ui-active-on-light: #db1b96;
+    --ds-color-ui-active-inverse: #e350ae;
+    --auro-color-ui-active-on-dark: #e350ae;
+    --ds-color-ui-disabled-default: #ce0c88;
+    --ds-color-ui-bkg-default-default: rgba(0, 0, 0, 0.03);
+    --ds-color-ui-bkg-default-inverse: rgba(255, 255, 255, 0.03);
+    --ds-color-ui-bkg-hover-default: #eb2aa521;
+    --ds-color-ui-bkg-hover-inverse: #e13b325e;
+    --ds-border-radius: 0px;
+
+    --auro-color-brand-midnight-500: #5b105e;
+    --auro-color-brand-midnight-400: #7b1c7e;
+    --auro-color-brand-midnight-300: #8d2691;
+    --auro-color-brand-midnight-200: #a233a6;
+    --auro-color-brand-midnight-100: #ea7eee;
+
+    --ds-color-brand-midnight-500: #5b105e;
+    --ds-color-brand-midnight-400: #7b1c7e;
+    --ds-color-brand-midnight-300: #8d2691;
+    --ds-color-brand-midnight-200: #a233a6;
+    --ds-color-brand-midnight-100: #ea7eee95;
+
+
+    --auro-color-brand-atlas-500: #ce0c88;
+    --auro-color-brand-atlas-400: #dd1292;
+    --auro-color-brand-atlas-300: #e4189a;
+    --auro-color-brand-atlas-200: #f326a8;
+    --auro-color-brand-atlas-100: #e350ae;
+    
+    --ds-color-brand-atlas-500: #ce0c88;
+    --ds-color-brand-atlas-400: #dd1292;
+    --ds-color-brand-atlas-300: #e4189a;
+    --ds-color-brand-atlas-200: #f326a8;
+    --ds-color-brand-atlas-100: #e350ae;
+
+    --ds-color-brand-breeze-100: #ff999b;
+    --ds-color-brand-breeze-200: #e1797c;
+    --ds-color-brand-breeze-300: #cf595d;
+    --ds-color-brand-breeze-400: #c13237;
+    --ds-color-brand-breeze-500: #99171b;
+
+    --ds-text-heading-700-size-breakpoint-sm: 2rem;
+    --ds-text-heading-700-size-breakpoint-md: 2.25rem;
+    --ds-text-heading-700-size-breakpoint-lg: 2.5rem;
+
+    --ds-text-heading-300-weight: 300;
+    --ds-text-heading-400-weight: 300;
+    --ds-text-heading-500-weight: 300;
+    --ds-text-heading-600-weight: 600;
+    --ds-text-heading-700-weight: 700;
+    --ds-text-heading-800-weight: 800;
+  }
+
+auro-alaska, auro-lockup {
+    --ds-color-brand-midnight-400: #01426a;
+    --auro-color-brand-midnight-400: #01426a;
+    --auro-color-brand-breeze-400: var(--ds-color-text-emphasis-inverse);
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h2 {
+    font-family: 'Bree Serif', serif;
+    color: var(--ds-color-text-emphasis-default);
+    font-weight:300 !important;
+}
+
+
+auro-loader {
+    color: var(--ds-color-text-emphasis-default);
+}
+auro-loader[ondark] {
+    color: var(--ds-color-text-emphasis-inverse);
+}
+
+auro-skeleton {
+    background-image: linear-gradient(to right, #ea7eee2e 10%, #ea7eee2e 40%, #ea7eee2e 80%);
+    background-color: #ea7eee2e;
+}
+
+.exampleWrapper {
+    background: repeating-linear-gradient(45deg, #f3f3f37d, #f3f3f37d 2px, var(--ds-color-base-white, #ffffff) 2px, var(--ds-color-base-white, #FFFFFF) 4px);
+}
+.exampleWrapper--ondark {
+    background: repeating-linear-gradient(45deg, var(--ds-color-background-darkest, #00274a), var(--ds-color-background-darkest, #00274a) 2px, var(--ds-color-background-darker, #01426a) 2px, var(--ds-color-background-darker, #01426a) 3px);
+}
+/* Used on the auro-examples site for .fineprint on a magenta background */
+.grid-item {
+    --ds-color-text-secondary-default: white;
+}
+
