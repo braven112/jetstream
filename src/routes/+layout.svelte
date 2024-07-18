@@ -43,7 +43,7 @@
 		max-width: unset;
 		overflow: auto;
 		scroll-behavior: smooth;
-		padding: 16px;
+		padding: var(--ds-size-200);
 	}
 
 	.main-container {
@@ -52,8 +52,7 @@
 	}
 
 	.sidenav {
-		background-color: #eee;
-		padding: 16px;
+		padding: var(--ds-size-200);
 		overflow: auto;
 		resize: horizontal;
 	}
