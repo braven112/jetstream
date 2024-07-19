@@ -859,11 +859,11 @@
     --ds-color-tier-oneworld-sapphire: #a41d4a;
     --ds-color-tier-oneworld-ruby: #015daa;
     --ds-color-ui-default-default: var(--ds-color-brand-atlas-400);
-    --ds-color-ui-default-inverse: var(--ds-color-brand-purple-300);
+    --ds-color-ui-default-inverse: var(--ds-color-cali-pink-100);
     --ds-color-ui-hover-default: var(--ds-color-cali-pink-300);
-    --ds-color-ui-hover-inverse: var(--ds-color-brand-purple-100);
+    --ds-color-ui-hover-inverse: var(--ds-color-cali-pink-200);
     --ds-color-ui-active-default: var(--ds-color-cali-pink-300);
-    --ds-color-ui-active-inverse: var(--ds-color-brand-purple-100);
+    --ds-color-ui-active-inverse: var(--ds-color-cali-pink-200);
     --ds-color-ui-disabled-default: var(--ds-color-cali-pink-400);
     --ds-color-ui-bkg-default-default: rgba(0, 0, 0, 0.03);
     --ds-color-ui-bkg-default-inverse: rgba(255, 255, 255, 0.03);
