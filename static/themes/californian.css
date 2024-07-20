@@ -692,7 +692,7 @@
 
 
     --ds-color-container-accent-default: var(--ds-color-cali-pink-200);
-    --ds-color-container-accent-inverse: var(--ds-color-cali-pink-200);
+    --ds-color-container-accent-inverse: var(--ds-color-brand-purple-300);
     --ds-color-container-emphasis-default: var(--ds-color-brand-purple-200);
     --ds-color-container-emphasis-inverse: #6ad5ef;
     --ds-color-container-error-default: #fff4f4;
@@ -711,15 +711,15 @@
     --ds-color-container-tertiary-inverse: rgba(255, 255, 255, 0.06);
     --ds-color-container-warning-default: #fef8e9;
     --ds-color-container-warning-inverse: #5d4514;
-    --ds-color-container-ui-primary-active-default: var(--ds-color-brand-orange-400);
-    --ds-color-container-ui-primary-active-inverse: #6ad5ef;
-    --ds-color-container-ui-primary-default-default: #2c67b5;
+    --ds-color-container-ui-primary-active-default: var(--ds-color-cali-pink-400);
+    --ds-color-container-ui-primary-active-inverse: var(--ds-color-brand-orange-400);
+    --ds-color-container-ui-primary-default-default: var(--ds-color-cali-pink-400);
     --ds-color-container-ui-primary-default-inverse: var(--ds-color-brand-purple-300);
     --ds-color-container-ui-primary-disabled-default: #a0c9f1;
-    --ds-color-container-ui-primary-disabled-inverse: #275b72;
-    --ds-color-container-ui-primary-focus-default: #2c67b5;
+    --ds-color-container-ui-primary-disabled-inverse: var(--ds-color-cali-pink-800);
+    --ds-color-container-ui-primary-focus-default: var(--ds-color-cali-pink-400);
     --ds-color-container-ui-primary-focus-inverse: var(--ds-color-brand-purple-300);
-    --ds-color-container-ui-primary-hover-default: var(--ds-color-cali-pink-400);;
+    --ds-color-container-ui-primary-hover-default: var(--ds-color-cali-pink-400);
     --ds-color-container-ui-primary-hover-inverse: #a8e9f7;
     --ds-color-container-ui-secondary-active-default: var(--ds-color-brand-purple-100);
     --ds-color-container-ui-secondary-active-inverse: rgba(255, 255, 255, 0.06);
@@ -816,7 +816,7 @@
     --ds-color-text-error-inverse: #f9aca6;
     --ds-color-text-disabled-default: #dddddd;
     --ds-color-text-emphasis-default: var(--ds-color-brand-purple-900);
-    --ds-color-text-emphasis-inverse: var(--ds-color-brand-orange-400);
+    --ds-color-text-emphasis-inverse: var(--ds-color-cali-pink-200);
     --ds-color-text-accent-default: #647845;
     --ds-color-text-accent-inverse: #badd81;
     --ds-color-text-info-default: #326aa5;
@@ -902,8 +902,7 @@
   }
   auro-alaska, auro-lockup {
     --ds-color-brand-midnight-400: #57378e;
-    --auro-color-brand-midnight-400: #57378e;
-    --auro-color-brand-breeze-400: var(--ds-color-text-emphasis-inverse);
+    --ds-color-brand-breeze-400: var(--ds-color-text-emphasis-inverse);
 }
 body {
     font-family: var(--ds-font-family-default);
