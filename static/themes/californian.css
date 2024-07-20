@@ -171,9 +171,9 @@
     
     /* depricated */
     --ds-color-background-lightest: var(--ds-color-base-white);
-    --ds-color-background-lighter: #f7f7f7;
-    --ds-color-background-darker: #01426a;
-    --ds-color-background-darkest: #00274a;
+    --ds-color-background-lighter: var(--ds-color-base-gray-100);
+    --ds-color-background-darker: var(--ds-color-cali-pink-300);
+    --ds-color-background-darkest: var(--ds-color-cali-pink-400);
     --ds-color-background-gradient-default: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
     
     
