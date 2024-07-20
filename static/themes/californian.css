@@ -691,8 +691,8 @@
 
 
 
-    --ds-color-container-accent-default: #f5fbeb;
-    --ds-color-container-accent-inverse: #badd81;
+    --ds-color-container-accent-default: var(--ds-color-cali-pink-200);
+    --ds-color-container-accent-inverse: var(--ds-color-cali-pink-200);
     --ds-color-container-emphasis-default: var(--ds-color-brand-purple-200);
     --ds-color-container-emphasis-inverse: #6ad5ef;
     --ds-color-container-error-default: #fff4f4;

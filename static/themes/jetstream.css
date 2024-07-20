@@ -889,7 +889,7 @@
   --ds-color-brand-sapphire: #015daa;
   --ds-color-brand-ruby: #a41d4a;
   --ds-color-container-accent-default: #f5fbeb;
-  --ds-color-container-accent-inverse: #badd81;
+  --ds-color-container-accent-inverse: var(--ds-color-container-ui-primary-default-inverse);
   --ds-color-container-emphasis-default: #ebfafd;
   --ds-color-container-emphasis-inverse: #6ad5ef;
   --ds-color-container-error-default: #fa9db0;
