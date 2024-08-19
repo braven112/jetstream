@@ -2,7 +2,7 @@
 // @ts-nocheck
 
 	import setAttribute from '$lib/setAttribute';
-  import '@alaskaairux/auro-loader';
+  import '@aurodesignsystem/auro-loader';
 
   export let lg = undefined;
   export let ondark = undefined;

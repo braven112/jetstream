@@ -2,7 +2,7 @@
 // @ts-nocheck
 
 	import setAttribute from '$lib/setAttribute';
-  import '@alaskaairux/auro-popover';
+  import '@aurodesignsystem/auro-popover';
 
   export let addSpace = undefined;
   export let removeSpace = undefined;

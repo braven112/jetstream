@@ -17,9 +17,9 @@
     <auro-sidenavsection key={`section-${index}`}>
       <span slot="trigger">{section.heading}</span>
       {#each section.items as item, itemIdx}
-        <auro-sidenavitem key={`item-${itemIdx}`}
+        <!-- <auro-sidenavitem key={`item-${itemIdx}`}
         use:setAttribute={{attr: 'href', val: item.href}}
-        use:setAttribute={{attr: 'relative', val: true}}>{item.label}</auro-sidenavitem>
+        use:setAttribute={{attr: 'relative', val: true}}>{item.label}</auro-sidenavitem> -->
       {/each}
     </auro-sidenavsection>
   {/each}

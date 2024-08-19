@@ -176,7 +176,7 @@
 		</div>
 	</section>
 
-	<section class="component-container">
+	<!-- <section class="component-container">
 		<h2 id="auro-hyperlink">Auro Hyperlink</h2>
 		<div class="exampleWrapper">
 			This is
@@ -184,7 +184,7 @@
 				This is Auro Hyperlink
 			</Hyperlink>.
 		</div>
-	</section>
+	</section> -->
 
 	<section class="component-container">
 		<h2>Auro Accordion</h2>
@@ -227,7 +227,7 @@
 		</div>
 	</section>
 
-	<section class="component-container">
+	<!-- <section class="component-container">
 		<h2 id="auro-background">Auro Background</h2>
 		<div class="exampleWrapper">
 			<Background bg="url('https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2') center center/cover no-repeat">
@@ -245,7 +245,7 @@
 				</div>
 			</Background>
 		</div>
-	</section>
+	</section> -->
 
 	<section class="component-container">
 		<h2 id="auro-backtotop">Auro BackToTop</h2>
@@ -315,7 +315,7 @@
 		</div>
 	</section>
 
-	<section class="component-container">
+	<!-- <section class="component-container">
 		<h2>Auro Banner</h2>
 		<h4 id="auro-banner-billboard">Billboard</h4>
 		<div class="exampleWrapper">
@@ -514,9 +514,9 @@
 				</Hyperlink>
 			</Banner>
 		</div>
-	</section>
+	</section> -->
 
-	<section class="component-container">
+	<!-- <section class="component-container">
 		<h2>Auro Card</h2>
 		<h4 id="auro-card-basic">Basic</h4>
 		<div class="exampleWrapper">
@@ -643,7 +643,7 @@
 				</Card>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<section class="component-container">
 		<h2>Auro Carousel</h2>
@@ -754,7 +754,7 @@
 		</div>
 	</section>
 
-	<section class="component-container">
+	<!-- <section class="component-container">
 		<h2>Auro Dialog</h2>
 		<h4 id="auro-dialog-basic">Basic</h4>
 		<div class="exampleWrapper">
@@ -887,9 +887,9 @@
 				</div>
 			</Dialog>
 		</div>
-	</section>
+	</section> -->
 
-	<section class="component-container">
+	<!-- <section class="component-container">
 		<h2>Auro Drawer</h2>
 		<h4 id="auro-drawer-basic">Basic</h4>
 		<div class="exampleWrapper">
@@ -1060,7 +1060,7 @@
 				</div>
 			</Drawer>
 		</div>
-	</section>
+	</section> -->
 
 	<section class="component-container">
 		<h2>Auro Dropdown</h2>
@@ -1862,7 +1862,7 @@
 	</section>
 
 	<!-- TODO: UPDATE THIS STORY -->
-	<section class="component-container">
+	<!-- <section class="component-container">
 		<h2>Auro Popover</h2>
 		<h4 id="auro-popover-default">Default</h4>
 		<div class="exampleWrapper">
@@ -1871,7 +1871,6 @@
 				<Button slot="trigger">Popover Test</Button>
 			</Popover>
 			
-			<!-- Using the placement=bottom attribute -->
 			<Popover placement="bottom">
 				Popover content!
 				<Button secondary slot="trigger">Popover Test</Button>
@@ -1895,11 +1894,6 @@
 		<div class="exampleWrapper">
 			<Popover removeSpace>
 				Notice this popover is a little<br>closer to the trigger.
-				<!--
-					For elements like `auro-icon` that do not have a default tab-to state,
-					be sure to add `tabindex="0"` to the element when using `auro-popover`
-					otherwise users of assistive technology will not see the content.
-				-->
 				<Icon category="in-flight" name="plug" slot="trigger" tabindex="0"></Icon>
 			</Popover>
 		</div>
@@ -1919,7 +1913,7 @@
 				<Hyperlink role="button" slot="trigger">hyperlink, role button</Hyperlink>
 			</Popover>
 		</div>
-	</section>
+	</section> -->
 
 	<section class="component-container">
 		<h2>Auro Radio</h2>
@@ -2168,7 +2162,7 @@
 		</div>
 	</section>
 
-	<section class="component-container">
+	<!-- <section class="component-container">
 		<h2>Auro Sidenav</h2>
 		<h4 id="auro-sidenav">Default</h4>
 		<div class="exampleWrapper">
@@ -2188,7 +2182,7 @@
 				</auro-sidenavsection>
 			</Sidenav>
 		</div>
-	</section>
+	</section> -->
 
 	<section class="component-container">
 		<h2>Auro Table</h2>
