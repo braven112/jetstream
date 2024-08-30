@@ -2,7 +2,7 @@
   // @ts-nocheck
 
   import setAttribute from "$lib/setAttribute";
-  import '@alaskaairux/auro-interruption/dist/auro-dialog__bundled';
+  import '@aurodesignsystem/auro-dialog/dist/auro-dialog__bundled';
 
   export let id = undefined;
   export let left = undefined;

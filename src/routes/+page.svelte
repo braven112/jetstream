@@ -776,6 +776,40 @@
 						<li>Cheddar cheese and biscuits chalk and cheese</li>
 						<li>Camembert de normandie stinking bishop bavarian bergkase</li>
 					</ul>
+					<Select>
+						<Menu>
+							<auro-menuoption value="air">
+								<auro-icon label customColor category="health" name="air">Air</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="covidtest">
+								<auro-icon label customColor category="health" name="covid-test">Covid Test</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="health">
+								<auro-icon label customColor category="health" name="health">Health</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="mask">
+								<auro-icon label customColor category="health" name="mask">Mask</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="spraybottle">
+								<auro-icon label customColor category="health" name="spraybottle">Spray Bottle</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="air">
+								<auro-icon label customColor category="health" name="air">Air</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="covidtest">
+								<auro-icon label customColor category="health" name="covid-test">Covid Test</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="health">
+								<auro-icon label customColor category="health" name="health">Health</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="mask">
+								<auro-icon label customColor category="health" name="mask">Mask</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="spraybottle">
+								<auro-icon label customColor category="health" name="spraybottle">Spray Bottle</auro-icon>
+							</auro-menuoption>
+						</Menu>
+					</Select>
 				</div>
 				<div slot="footer" class="auro_containedButtons">
 					<Button secondary onClick={() => toggleInterruption('#defaultDialog')}>Close</Button>
@@ -794,6 +828,40 @@
 						<li>Cheddar cheese and biscuits chalk and cheese</li>
 						<li>Camembert de normandie stinking bishop bavarian bergkase</li>
 					</ul>
+					<Select>
+						<Menu>
+							<auro-menuoption value="air">
+								<auro-icon label customColor category="health" name="air">Air</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="covidtest">
+								<auro-icon label customColor category="health" name="covid-test">Covid Test</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="health">
+								<auro-icon label customColor category="health" name="health">Health</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="mask">
+								<auro-icon label customColor category="health" name="mask">Mask</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="spraybottle">
+								<auro-icon label customColor category="health" name="spraybottle">Spray Bottle</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="air">
+								<auro-icon label customColor category="health" name="air">Air</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="covidtest">
+								<auro-icon label customColor category="health" name="covid-test">Covid Test</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="health">
+								<auro-icon label customColor category="health" name="health">Health</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="mask">
+								<auro-icon label customColor category="health" name="mask">Mask</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="spraybottle">
+								<auro-icon label customColor category="health" name="spraybottle">Spray Bottle</auro-icon>
+							</auro-menuoption>
+						</Menu>
+					</Select>
 				</div>
 				<div slot="footer" class="auro_containedButtons">
 					<Button secondary onClick={() => toggleInterruption('#mediumDialog')}>Close</Button>
@@ -812,6 +880,40 @@
 						<li>Cheddar cheese and biscuits chalk and cheese</li>
 						<li>Camembert de normandie stinking bishop bavarian bergkase</li>
 					</ul>
+					<Select>
+						<Menu>
+							<auro-menuoption value="air">
+								<auro-icon label customColor category="health" name="air">Air</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="covidtest">
+								<auro-icon label customColor category="health" name="covid-test">Covid Test</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="health">
+								<auro-icon label customColor category="health" name="health">Health</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="mask">
+								<auro-icon label customColor category="health" name="mask">Mask</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="spraybottle">
+								<auro-icon label customColor category="health" name="spraybottle">Spray Bottle</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="air">
+								<auro-icon label customColor category="health" name="air">Air</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="covidtest">
+								<auro-icon label customColor category="health" name="covid-test">Covid Test</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="health">
+								<auro-icon label customColor category="health" name="health">Health</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="mask">
+								<auro-icon label customColor category="health" name="mask">Mask</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="spraybottle">
+								<auro-icon label customColor category="health" name="spraybottle">Spray Bottle</auro-icon>
+							</auro-menuoption>
+						</Menu>
+					</Select>
 				</div>
 				<div slot="footer" class="auro_containedButtons">
 					<Button secondary onClick={() => toggleInterruption('#smallDialog')}>Close</Button>
@@ -839,6 +941,40 @@
 						<li>Cheddar cheese and biscuits chalk and cheese</li>
 						<li>Camembert de normandie stinking bishop bavarian bergkase</li>
 					</ul>
+					<Select>
+						<Menu>
+							<auro-menuoption value="air">
+								<auro-icon label customColor category="health" name="air">Air</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="covidtest">
+								<auro-icon label customColor category="health" name="covid-test">Covid Test</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="health">
+								<auro-icon label customColor category="health" name="health">Health</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="mask">
+								<auro-icon label customColor category="health" name="mask">Mask</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="spraybottle">
+								<auro-icon label customColor category="health" name="spraybottle">Spray Bottle</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="air">
+								<auro-icon label customColor category="health" name="air">Air</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="covidtest">
+								<auro-icon label customColor category="health" name="covid-test">Covid Test</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="health">
+								<auro-icon label customColor category="health" name="health">Health</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="mask">
+								<auro-icon label customColor category="health" name="mask">Mask</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="spraybottle">
+								<auro-icon label customColor category="health" name="spraybottle">Spray Bottle</auro-icon>
+							</auro-menuoption>
+						</Menu>
+					</Select>
 				</div>
 				<div slot="footer" class="auro_containedButtons">
 					<Button onClick={() =>  toggleInterruption('#defaultModalDialog')}>I understand
@@ -859,6 +995,40 @@
 						<li>Cheddar cheese and biscuits chalk and cheese</li>
 						<li>Camembert de normandie stinking bishop bavarian bergkase</li>
 					</ul>
+					<Select>
+						<Menu>
+							<auro-menuoption value="air">
+								<auro-icon label customColor category="health" name="air">Air</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="covidtest">
+								<auro-icon label customColor category="health" name="covid-test">Covid Test</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="health">
+								<auro-icon label customColor category="health" name="health">Health</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="mask">
+								<auro-icon label customColor category="health" name="mask">Mask</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="spraybottle">
+								<auro-icon label customColor category="health" name="spraybottle">Spray Bottle</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="air">
+								<auro-icon label customColor category="health" name="air">Air</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="covidtest">
+								<auro-icon label customColor category="health" name="covid-test">Covid Test</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="health">
+								<auro-icon label customColor category="health" name="health">Health</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="mask">
+								<auro-icon label customColor category="health" name="mask">Mask</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="spraybottle">
+								<auro-icon label customColor category="health" name="spraybottle">Spray Bottle</auro-icon>
+							</auro-menuoption>
+						</Menu>
+					</Select>
 				</div>
 				<div slot="footer" class="auro_containedButtons">
 					<Button onClick={() => toggleInterruption('#mediumModalDialog')}>I understand
@@ -879,6 +1049,40 @@
 						<li>Cheddar cheese and biscuits chalk and cheese</li>
 						<li>Camembert de normandie stinking bishop bavarian bergkase</li>
 					</ul>
+					<Select>
+						<Menu>
+							<auro-menuoption value="air">
+								<auro-icon label customColor category="health" name="air">Air</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="covidtest">
+								<auro-icon label customColor category="health" name="covid-test">Covid Test</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="health">
+								<auro-icon label customColor category="health" name="health">Health</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="mask">
+								<auro-icon label customColor category="health" name="mask">Mask</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="spraybottle">
+								<auro-icon label customColor category="health" name="spraybottle">Spray Bottle</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="air">
+								<auro-icon label customColor category="health" name="air">Air</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="covidtest">
+								<auro-icon label customColor category="health" name="covid-test">Covid Test</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="health">
+								<auro-icon label customColor category="health" name="health">Health</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="mask">
+								<auro-icon label customColor category="health" name="mask">Mask</auro-icon>
+							</auro-menuoption>
+							<auro-menuoption value="spraybottle">
+								<auro-icon label customColor category="health" name="spraybottle">Spray Bottle</auro-icon>
+							</auro-menuoption>
+						</Menu>
+					</Select>
 				</div>
 				<div slot="footer" class="auro_containedButtons">
 					<Button onClick={() => toggleInterruption('#smallModalDialog')}>I understand
