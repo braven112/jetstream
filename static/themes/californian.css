@@ -641,6 +641,7 @@
     --ds-primary-text-color: var(--ds-color-brand-gray-1000);
     --ds-primary-font: var(--ds-font-family-default);
     --ds-secondary-font: var(--ds-font-family-secondary);
+    --ds-secondary-text-color: var(--ds-color-brand-gray-800);
     --ds-primary-action-color: var(--ds-color-cali-pink-400);
     --ds-secondary-action-color: var(--ds-color-brand-purple-800);
     --ds-primary-page-background: var(--ds-color-base-white);
@@ -916,7 +917,7 @@ body {
 }
 auro-header[level="2"], h2 {
     font-family: var(--ds-secondary-font);
-    color: var(--ds-color-text-emphasis-default);
+    color: var(---ds-secondary-text-color);
     font-weight:300 !important;
 }
 
