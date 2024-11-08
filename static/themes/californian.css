@@ -606,7 +606,7 @@
     
     
     
-    --ds-color-alert-notification-default: var(--ds-color-brand-atlas-400);
+    --ds-color-alert-notification-default: var(--ds-primary-action-color);
     --ds-color-alert-warning-default: #de750c;
     --ds-color-alert-error-default: #df0b37;
     --ds-color-alert-success-default: #00805d;
@@ -907,6 +907,8 @@
     --ds-color-utility-warning-inverse: #f2c153;
     --ds-color-utility-success-default: #0b6f4d;
     --ds-color-utility-success-inverse: #8eceb9;
+
+    --auro-color-ui-default-on-light: var(--ds-primary-action-color);
   }
   auro-alaska, auro-lockup {
     --ds-color-brand-midnight-400: #57378e;
