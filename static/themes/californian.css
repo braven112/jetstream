@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
  :root {
+
     --ds-font-family-default: 'Open Sans', sans-serif;
     --ds-font-family-secondary: 'Bree Serif', serif;
     --ds-font-family-mono: Menlo, Monaco, Consolas, 'Courier New', monospace;
@@ -172,8 +173,8 @@
     /* depricated */
     --ds-color-background-lightest: var(--ds-color-base-white);
     --ds-color-background-lighter: var(--ds-color-base-gray-100);
-    --ds-color-background-darker: var(--ds-color-cali-pink-300);
-    --ds-color-background-darkest: var(--ds-color-cali-pink-400);
+    --ds-color-background-darker: var(--ds-primary-action-color);
+    --ds-color-background-darkest: var(--ds-tertiary-action-color);
     --ds-color-background-gradient-default: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
     
     
@@ -636,13 +637,18 @@
     --ds-color-background-emphasis-inverse: #225296;
     
     
-    
-    
+    /* Main Colors*/
+    --ds-primary-text-color: var(--ds-color-brand-gray-1000);
+    --ds-primary-font: var(--ds-font-family-default);
+    --ds-secondary-font: var(--ds-font-family-secondary);
+    --ds-primary-action-color: var(--ds-color-cali-pink-400);
+    --ds-secondary-action-color: var(--ds-color-brand-purple-800);
+    --ds-primary-page-background: var(--ds-color-base-white);
     
     /* 
     
     
-    
+
     
     
     
@@ -711,25 +717,26 @@
     --ds-color-container-tertiary-inverse: rgba(255, 255, 255, 0.06);
     --ds-color-container-warning-default: #fef8e9;
     --ds-color-container-warning-inverse: #5d4514;
-    --ds-color-container-ui-primary-active-default: var(--ds-color-cali-pink-400);
+    --ds-color-container-ui-primary-active-default: var(--ds-primary-action-color);
     --ds-color-container-ui-primary-active-inverse: var(--ds-color-brand-orange-400);
-    --ds-color-container-ui-primary-default-default: var(--ds-color-cali-pink-400);
+    --ds-color-container-ui-primary-default-default: var(--ds-primary-action-color);
     --ds-color-container-ui-primary-default-inverse: var(--ds-color-brand-purple-300);
     --ds-color-container-ui-primary-disabled-default: #a0c9f1;
     --ds-color-container-ui-primary-disabled-inverse: var(--ds-color-cali-pink-800);
-    --ds-color-container-ui-primary-focus-default: var(--ds-color-cali-pink-400);
+    --ds-color-container-ui-primary-focus-default: var(--ds-primary-action-color);
     --ds-color-container-ui-primary-focus-inverse: var(--ds-color-brand-purple-300);
-    --ds-color-container-ui-primary-hover-default: var(--ds-color-cali-pink-400);
+    --ds-color-container-ui-primary-hover-default: var(--ds-primary-action-color);
     --ds-color-container-ui-primary-hover-inverse: #a8e9f7;
-    --ds-color-container-ui-secondary-active-default: var(--ds-color-brand-purple-100);
+
+    --ds-color-container-ui-secondary-active-default: var(--ds-secondary-action-color);
     --ds-color-container-ui-secondary-active-inverse: rgba(255, 255, 255, 0.06);
     --ds-color-container-ui-secondary-default-default: var(--ds-color-base-white);
-    --ds-color-container-ui-secondary-default-inverse: rgba(255, 255, 255, 0.03);
+    --ds-color-container-ui-secondary-default-inverse: var(--ds-secondary-action-color);
     --ds-color-container-ui-secondary-disabled-default: #f7f7f7;
     --ds-color-container-ui-secondary-disabled-inverse: rgba(255, 255, 255, 0.12);
-    --ds-color-container-ui-secondary-focus-default: var(--ds-color-base-white);
+    --ds-color-container-ui-secondary-focus-default: var(--ds-secondary-action-color);
     --ds-color-container-ui-secondary-focus-inverse: rgba(255, 255, 255, 0.03);
-    --ds-color-container-ui-secondary-hover-default: rgba(0, 0, 0, 0.03);
+    --ds-color-container-ui-secondary-hover-default: var(--ds-secondary-action-color);
     --ds-color-container-ui-secondary-hover-inverse: rgba(255, 255, 255, 0.12);
     --ds-color-container-ui-tertiary-active-default: rgba(0, 0, 0, 0.06);
     --ds-color-container-ui-tertiary-active-inverse: rgba(255, 255, 255, 0.06);
@@ -749,7 +756,7 @@
     --ds-color-icon-tertiary-inverse: #939fad;
     --ds-color-icon-emphasis-default: var(--ds-color-brand-gray-1000);
     --ds-color-icon-emphasis-inverse: var(--ds-color-base-white);
-    --ds-color-icon-accent-default: var(--ds-color-cali-pink-400);
+    --ds-color-icon-accent-default: var(--ds-primary-action-color);
     --ds-color-icon-accent-inverse: #badd81;
     --ds-color-icon-info-default: #326aa5;
     --ds-color-icon-info-inverse: #89b2d4;
@@ -806,7 +813,7 @@
     --ds-color-icon-brand-neutral-default: #6a717c;
     --ds-color-icon-brand-neutral-inverse: #afb9c6;
     --ds-color-icon-disabled-default: rgba(0, 0, 0, 0.15);
-    --ds-color-text-primary-default:  var(--ds-color-brand-gray-1000);
+    --ds-color-text-primary-default:  var(--ds-primary-text-color);
     --ds-color-text-primary-inverse: var(--ds-color-base-white);
     --ds-color-text-secondary-default: var(--ds-color-brand-gray-800);
     --ds-color-text-secondary-inverse:var(--ds-color-brand-gray-400);
@@ -815,7 +822,7 @@
     --ds-color-text-error-default: #cc1816;
     --ds-color-text-error-inverse: #f9aca6;
     --ds-color-text-disabled-default: #dddddd;
-    --ds-color-text-emphasis-default: var(--ds-color-brand-purple-900);
+    --ds-color-text-emphasis-default: var(--ds-color-brand-gray-800);
     --ds-color-text-emphasis-inverse: var(--ds-color-cali-pink-200);
     --ds-color-text-accent-default: #647845;
     --ds-color-text-accent-inverse: #badd81;
@@ -864,7 +871,7 @@
     --ds-color-ui-hover-inverse: var(--ds-color-brand-orange-500);
     --ds-color-ui-active-default: var(--ds-color-cali-pink-300);
     --ds-color-ui-active-inverse: var(--ds-color-brand-orange-500);
-    --ds-color-ui-disabled-default: var(--ds-color-cali-pink-400);
+    --ds-color-ui-disabled-default: var(--ds-primary-action-color);
     --ds-color-ui-bkg-default-default: rgba(0, 0, 0, 0.03);
     --ds-color-ui-bkg-default-inverse: rgba(255, 255, 255, 0.03);
     --ds-color-ui-bkg-hover-default: #eb2aa521;
@@ -905,10 +912,10 @@
     --ds-color-brand-breeze-400: var(--ds-color-text-emphasis-inverse);
 }
 body {
-    font-family: var(--ds-font-family-default);
+    font-family: var(--ds-primary-font);
 }
-h2 {
-    font-family: var(--ds-font-family-secondary);
+auro-header[level="2"], h2 {
+    font-family: var(--ds-secondary-font);
     color: var(--ds-color-text-emphasis-default);
     font-weight:300 !important;
 }
