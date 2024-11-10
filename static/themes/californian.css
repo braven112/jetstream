@@ -963,21 +963,24 @@ a[data-testid="PublicLogo"] {
 }
 
 .homelet .nav-tabs li.active a, .homelet .nav-tabs li.active a:hover, .homelet .nav-tabs li a:hover {
-    background-color: var(--ds-color-text-ui-default-default);
+    background-color: var(--ds-secondary-action-color);
 }
 .homelet .nav-tabs li.active a:hover, .homelet .nav-tabs li a:hover {
     background-color: var(--ds-color-text-ui-default-inverse);
 }
 .hf-f footer {
     --background-image-lazy: url(https://resource.alaskaair.net/v3/assets/blt2cefe12c88e9dd91/bltcfd58591efcb524c/plane-tail-footer);
-    background-color: var(--ds-color-text-ui-default-default);
+    background-color: var(--ds-secondary-action-color);
 }
 
 .homelet .flight-search .nav-tabs li.active a {
-    border-bottom-color: var(--ds-color-border-ui-default-default);
-    color: var(--ds-color-text-ui-default-default);
+    border-bottom-color: var(--ds-secondary-action-color);
+    color: var(--ds-secondary-action-color);
 }
 
 img.ow-logo {
     visibility: hidden;
+}
+body #hf-nav.hf-nav-test .menu-subnav-container .menu-item .menu-item-a, body #ta-hf-nav.hf-nav-test .menu-subnav-container .menu-item .menu-item-a, body #ezb-hf-nav.hf-nav-test .menu-subnav-container .menu-item .menu-item-a {
+    color: var(--ds-primary-action-color);
 }
