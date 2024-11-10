@@ -947,3 +947,24 @@ auro-skeleton {
     --ds-color-text-secondary-default: white;
 }
 
+/* updates the as.com logo */
+a[data-testid="PublicLogo"] img {visibility: hidden}
+a[data-testid="PublicLogo"] {
+    /* outline: 1px solid red; */
+    background-image: url(https://css.s-hawaiianairlines.com/Content/assets/images/logos/ha-logo-horizontal.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0px 1px;
+    padding: 0 !important;
+    height: auto !important;
+}
+#hf-nav>.pure-menu-list>.pure-menu-item>a, #ezb-hf-nav>.pure-menu-list>.pure-menu-item>a, #ta-hf-nav>.pure-menu-list>.pure-menu-item>a {
+    color:var(--ds-color-text-ui-default-default)
+}
+
+.homelet .nav-tabs li.active a, .homelet .nav-tabs li.active a:hover, .homelet .nav-tabs li a:hover {
+    background-color: var(--ds-color-text-ui-default-default);
+}
+.homelet .nav-tabs li.active a:hover, .homelet .nav-tabs li a:hover {
+    background-color: var(--ds-color-text-ui-default-inverse);
+}
