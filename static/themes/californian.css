@@ -1034,6 +1034,11 @@ div[class*=' HeroNav'], div[class^='HeroNav'] {
     background-color: var(--ds-secondary-action-color);
     background: linear-gradient(90deg, var(--ds-primary-action-color) 0%, var(--ds-secondary-action-color) 60%);
 }
+div[class*=' HeroNav_DotBg'], div[class^='HeroNav_DotBg'] {
+
+    background: linear-gradient(90deg, var(--ds-primary-action-color) 0%, var(--ds-secondary-action-color) 60%);
+}
 div[class*=' HeroNav'] auro-hyperlink, div[class^='HeroNav'] auro-hyperlink{
     color:var(--ds-tertiary-action-color);
+    --ds-color-ui-default-default: var(--ds-tertiary-action-color);
 }
