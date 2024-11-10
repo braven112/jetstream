@@ -990,7 +990,7 @@ a[data-testid="PublicLogo"] {
     background-color: var(--ds-secondary-action-color);
 }
 .hf-f footer {
-    --background-image-lazy: url(https://resource.alaskaair.net/v3/assets/blt2cefe12c88e9dd91/bltcfd58591efcb524c/plane-tail-footer);
+    --background-image-lazy: none;
     background-color: var(--ds-secondary-action-color);
 }
 
