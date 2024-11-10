@@ -1000,8 +1000,11 @@ body #hf-nav.hf-nav-test .menu-subnav-container .menu-h4, body #ta-hf-nav.hf-nav
         padding: 0 1rem;
     }
 }
-
-.btn-green, .auro-button,.hf-signin-form .btn-primary, .hf-signin-form .btn-green, .hf-signin-form .btn-success {
+.homelet .btn-ghost-blue, #hf-top.hf-nav-test .login-help a {
+    color: var(--ds-primary-action-color);
+    border-color: var(--ds-primary-action-color);
+}
+.homelet .btn-green, .btn-green, .auro-button,.hf-signin-form .btn-primary, .hf-signin-form .btn-green, .hf-signin-form .btn-success {
     background-color: var(--ds-primary-action-color);
     border-color: var(--ds-primary-action-color);
     border-radius: 0;
