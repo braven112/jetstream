@@ -1026,18 +1026,16 @@ svg.icon-search {
 
 
 /* hero nav */
-div[class*=' HeroNav_symbol'] svg, div[class^='HeroNav_symbol'] svg {
+[class*=' HeroNav_symbol'] svg, [class^='HeroNav_symbol'] svg {
     fill: var(--ds-tertiary-action-color);
 }
-div[class*=' HeroNav'], div[class^='HeroNav'] {
+[class*=' HeroNav'], [class^='HeroNav'] {
     color:var(--ds-tertiary-action-color);
-    background-color: var(--ds-secondary-action-color);
 }
-div[class*=' HeroNav_DotBg'], div[class^='HeroNav_DotBg'] {
+[class*=' HeroNav_DotBg'], [class^='HeroNav_DotBg'] {
 
     background: linear-gradient(5deg, var(--ds-primary-action-color) 0%, var(--ds-secondary-action-color) 60%);
 }
-div[class*=' HeroNav'] auro-hyperlink, div[class^='HeroNav'] auro-hyperlink{
-    color:var(--ds-tertiary-action-color);
-    --ds-color-ui-default-default: var(--ds-tertiary-action-color);
+[class*=' HeroNav'] auro-hyperlink, [class^='HeroNav'] auro-hyperlink{
+    --auro-color-ui-default-on-light: var(--ds-color-text-primary-inverse);
 }
