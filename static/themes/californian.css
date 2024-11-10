@@ -992,6 +992,14 @@ body #hf-nav.hf-nav-test .menu-subnav-container .menu-item .menu-item-a, body #t
 body #hf-nav.hf-nav-test .menu-subnav-container .menu-h4, body #ta-hf-nav.hf-nav-test .menu-subnav-container .menu-h4, body #ezb-hf-nav.hf-nav-test .menu-subnav-container .menu-h4 {
     color: var(--ds-secondary-action-color);
 }
+#hf-nav, #ezb-hf-nav, #ta-hf-nav {
+    padding: 0 1rem;
+}
+@media (min-width: 1232px) {
+    .AdvisoryBanner__Container {
+        padding: 0 1rem;
+    }
+}
 
 .btn-green, .auro-button,.hf-signin-form .btn-primary, .hf-signin-form .btn-green, .hf-signin-form .btn-success {
     background-color: var(--ds-primary-action-color);
