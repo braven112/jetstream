@@ -1018,3 +1018,6 @@ svg.icon-search {
     background-color: var(--ds-primary-action-color);
     border-color: var(--ds-primary-action-color);
 }
+.hf-f #img-waves {
+    display: none;
+}
