@@ -1029,9 +1029,10 @@ svg.icon-search {
 div[class*=' HeroNav_symbol'] svg, div[class^='HeroNav_symbol'] svg {
     fill: var(--ds-tertiary-action-color);
 }
-div[class*=' HeroNav'] a, div[class^='HeroNav'] a {
+div[class*=' HeroNav'], div[class^='HeroNav'] {
     color:var(--ds-tertiary-action-color);
 }
-div[class*=' HeroNav_HeroNav'], div[class^='HeroNav_HeroNav'] {
+div[class*=' HeroNav'] auro-hyperlink, div[class^='HeroNav'] auro-hyperlink{
     color:var(--ds-tertiary-action-color);
+    background-color: var(--ds-secondary-action-color);
 }
