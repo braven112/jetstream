@@ -963,7 +963,15 @@ a[data-testid="PublicLogo"] {
     border-bottom-color: var(--ds-secondary-action-color);
     color: var(--ds-secondary-action-color);
 }
-
+#hf-nav>.pure-menu-list>.pure-menu-item>a, #ezb-hf-nav>.pure-menu-list>.pure-menu-item>a, #ta-hf-nav>.pure-menu-list>.pure-menu-item>a {
+    color: var(--ds-secondary-action-color);
+}
+#hf-top>ul>li>a, #ezb-hf-top>ul>li>a, #ta-hf-top>ul>li>a {
+    color: var(--ds-secondary-action-color);
+}
+.hf-nav-test .menu-desktop-user-svg {
+    stroke: var(--ds-secondary-action-color);
+}
 .homelet .nav-tabs li.active a, .homelet .nav-tabs li.active a:hover, .homelet .nav-tabs li a:hover {
     background-color: var(--ds-secondary-action-color);
 }
