@@ -247,9 +247,9 @@
 
     --ds-color-brand-purple-600: #8d47f0;
     
-    --ds-color-brand-purple-700: #57378e;  
+    --ds-color-brand-purple-700: #413691;  
  
-
+    
     
     --ds-color-brand-purple-900: #2c175f;  
     --ds-color-brand-purple-1000:#140040;  
@@ -643,7 +643,7 @@
     --ds-secondary-font: var(--ds-font-family-secondary);
     --ds-secondary-text-color: var(--ds-color-brand-gray-800);
     --ds-primary-action-color: var(--ds-color-cali-pink-400);
-    --ds-secondary-action-color: var(--ds-color-brand-purple-800);
+    --ds-secondary-action-color: var(--ds-color-brand-purple-700);
     --ds-primary-page-background: var(--ds-color-base-white);
     
     /* 
