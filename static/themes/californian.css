@@ -959,7 +959,7 @@ a[data-testid="PublicLogo"] {
     padding: 0 !important;
     height: auto !important;
 }
-#hf-nav>.pure-menu-list>.pure-menu-item>a, #ezb-hf-nav>.pure-menu-list>.pure-menu-item>a, #ta-hf-nav>.pure-menu-list>.pure-menu-item>a {
+#hf-nav>.pure-menu-list>.pure-menu-item>a:hover, #hf-nav>.pure-menu-list>.pure-menu-item>a:focus, #ezb-hf-nav>.pure-menu-list>.pure-menu-item>a:hover, #ezb-hf-nav>.pure-menu-list>.pure-menu-item>a:focus, #ta-hf-nav>.pure-menu-list>.pure-menu-item>a:hover, #ta-hf-nav>.pure-menu-list>.pure-menu-item>a:focus {
     border-bottom-color: var(--ds-secondary-action-color);
     color: var(--ds-secondary-action-color);
 }
