@@ -644,6 +644,7 @@
     --ds-secondary-text-color: var(--ds-color-brand-gray-800);
     --ds-primary-action-color: var(--ds-color-cali-pink-400);
     --ds-secondary-action-color: var(--ds-color-brand-purple-700);
+    --ds-tertiary-action-color: var(--ds-color-brand-orange-400);
     --ds-primary-page-background: var(--ds-color-base-white);
     
     /* 
@@ -1021,4 +1022,16 @@ svg.icon-search {
 }
 .hf-f #img-waves {
     display: none;
+}
+
+
+/* hero nav */
+div[class*=' HeroNav_symbol'] svg, div[class^='HeroNav_symbol'] svg {
+    fill: var(--ds-tertiary-action-color);
+}
+div[class*=' HeroNav'] a, div[class^='HeroNav'] a {
+    color:var(--ds-tertiary-action-color);
+}
+div[class*=' HeroNav_HeroNav'], div[class^='HeroNav_HeroNav'] {
+    color:var(--ds-tertiary-action-color);
 }
