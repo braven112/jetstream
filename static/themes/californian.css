@@ -835,7 +835,7 @@
     --ds-color-text-success-inverse: #0b6f4d;
     --ds-color-text-ui-active-default: #225296;
     --ds-color-text-ui-active-inverse: #6ad5ef;
-    --ds-color-text-ui-default-default: var(--ds-color-brand-purple-700);
+    --ds-color-text-ui-default-default: var(--ds-color-brand-purple-700) !important;
     --ds-color-text-ui-default-inverse: var(--ds-color-brand-purple-300);
     --ds-color-text-ui-disabled-default: #adadad;
     --ds-color-text-ui-disabled-inverse: #7e7e7e;
@@ -967,4 +967,17 @@ a[data-testid="PublicLogo"] {
 }
 .homelet .nav-tabs li.active a:hover, .homelet .nav-tabs li a:hover {
     background-color: var(--ds-color-text-ui-default-inverse);
+}
+.hf-f footer {
+    --background-image-lazy: url(https://resource.alaskaair.net/v3/assets/blt2cefe12c88e9dd91/bltcfd58591efcb524c/plane-tail-footer);
+    background-color: var(--ds-color-text-ui-default-default);
+}
+
+.homelet .flight-search .nav-tabs li.active a {
+    border-bottom-color: var(--ds-color-border-ui-default-default);
+    color: var(--ds-color-text-ui-default-default);
+}
+
+img.ow-logo {
+    visibility: hidden;
 }
