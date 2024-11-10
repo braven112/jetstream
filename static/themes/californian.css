@@ -986,7 +986,7 @@ a[data-testid="PublicLogo"] {
 img.ow-logo {
     visibility: hidden;
 }
-body #hf-nav.hf-nav-test .menu-subnav-container .menu-item .menu-item-a, body #ta-hf-nav.hf-nav-test .menu-subnav-container .menu-item .menu-item-a, body #ezb-hf-nav.hf-nav-test .menu-subnav-container .menu-item .menu-item-a {
+#hf-top.hf-nav-test .navbar-greeting-popup a, body #hf-nav.hf-nav-test .menu-subnav-container .menu-item .menu-item-a, body #ta-hf-nav.hf-nav-test .menu-subnav-container .menu-item .menu-item-a, body #ezb-hf-nav.hf-nav-test .menu-subnav-container .menu-item .menu-item-a {
     color: var(--ds-primary-action-color);
 }
 body #hf-nav.hf-nav-test .menu-subnav-container .menu-h4, body #ta-hf-nav.hf-nav-test .menu-subnav-container .menu-h4, body #ezb-hf-nav.hf-nav-test .menu-subnav-container .menu-h4 {
