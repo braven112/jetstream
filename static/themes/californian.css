@@ -1011,7 +1011,9 @@ body #hf-nav.hf-nav-test .menu-subnav-container .menu-item .menu-item-a, body #t
 body #hf-nav.hf-nav-test .menu-subnav-container .menu-h4, body #ta-hf-nav.hf-nav-test .menu-subnav-container .menu-h4, body #ezb-hf-nav.hf-nav-test .menu-subnav-container .menu-h4 {
     color: var(--ds-secondary-action-color);
 }
-
+svg.icon-search {
+    fill: var(--ds-primary-action-color);
+}
 .btn-green, .auro-button {
     background-color: var(--ds-primary-action-color);
     border-color: var(--ds-primary-action-color);
