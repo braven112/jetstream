@@ -1033,8 +1033,7 @@ svg.icon-search {
     color:var(--ds-color-text-primary-inverse)
 }
 [class*=' HeroNav_DotBg'], [class^='HeroNav_DotBg'] {
-
-    background: linear-gradient(5deg, var(--ds-primary-action-color) 0%, var(--ds-secondary-action-color) 60%);
+    background: linear-gradient(20deg, var(--ds-primary-action-color) 0%, var(--ds-secondary-action-color) 18%);
 }
 [class*=' HeroNav'] auro-hyperlink, [class^='HeroNav'] auro-hyperlink{
     --auro-color-ui-default-on-light: var(--ds-color-text-primary-inverse);
