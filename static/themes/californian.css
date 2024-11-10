@@ -1017,6 +1017,7 @@ svg.icon-search {
 .btn-green, .auro-button {
     background-color: var(--ds-primary-action-color);
     border-color: var(--ds-primary-action-color);
+    border-radius: 0;
 }
 .hf-f #img-waves {
     display: none;
