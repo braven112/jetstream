@@ -1030,7 +1030,7 @@ svg.icon-search {
     fill: var(--ds-tertiary-action-color);
 }
 [class*=' HeroNav'], [class^='HeroNav'] {
-    color:var(--ds-tertiary-action-color);
+    color:var(--ds-color-text-primary-inverse)
 }
 [class*=' HeroNav_DotBg'], [class^='HeroNav_DotBg'] {
 
@@ -1038,4 +1038,7 @@ svg.icon-search {
 }
 [class*=' HeroNav'] auro-hyperlink, [class^='HeroNav'] auro-hyperlink{
     --auro-color-ui-default-on-light: var(--ds-color-text-primary-inverse);
+}
+[class*=' firstLiDivider'], [class^='firstLiDivider'] {
+    display: none;
 }
