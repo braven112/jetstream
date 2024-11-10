@@ -2,7 +2,7 @@
  :root {
 
     --ds-font-family-default: 'Open Sans', sans-serif;
-    --ds-font-family-secondary: 'Bree Serif', serif;
+    --ds-font-family-secondary: "Chronicle Display",Georgia,serif;
     --ds-font-family-mono: Menlo, Monaco, Consolas, 'Courier New', monospace;
     --ds-asset-font-circular-family-name: "AS Circular";
     --ds-asset-font-circular-filename: "ASCircularWeb";
