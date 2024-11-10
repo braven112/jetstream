@@ -247,7 +247,7 @@
 
     --ds-color-brand-purple-600: #8d47f0;
     
-    --ds-color-brand-purple-700: #413691;  
+    --ds-color-brand-purple-700: #413691 !important;  
  
     
     
@@ -909,6 +909,7 @@
     --ds-color-utility-success-inverse: #8eceb9;
 
     --auro-color-ui-default-on-light: var(--ds-primary-action-color);
+    --auro-color-ui-hover-on-light: hsl(from var(---ds-primary-action-color)) h s calc(l - 5);
   }
   auro-alaska, auro-lockup {
     --ds-color-brand-midnight-400: #57378e;
