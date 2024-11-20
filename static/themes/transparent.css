@@ -1,0 +1,619 @@
+/**
+ * Do not edit directly
+ * Generated on Wed, 20 Nov 2024 02:47:18 GMT
+ */
+
+ img {
+  opacity: 0;
+ }
+
+:root {
+  --ds-elevation-100: 0px 0px 5px rgba(0, 0, 0, 0); /* for the least amount of emphasis */
+  --ds-elevation-200: 0px 0px 10px rgba(0, 0, 0, 0); /* for more emphasis than low elevation */
+  --ds-elevation-300: 0px 0px 15px rgba(0, 0, 0, 0); /* for maximum emphasis or differentiation */
+  --ds-color-alert-notification-default: rgba(0, 0, 0, 0);
+  --ds-color-alert-warning-default: rgba(0, 0, 0, 0);
+  --ds-color-alert-error-default: rgba(0, 0, 0, 0);
+  --ds-color-alert-success-default: rgba(0, 0, 0, 0);
+  --ds-color-alert-advisory-default: rgba(0, 0, 0, 0);
+  --ds-color-alert-bkg-success-default: #ddf6e8;
+  --ds-color-alert-bkg-error-default: #ffedf1;
+  --ds-color-background-primary-100-default: rgba(0, 0, 0, 0);
+  --ds-color-background-primary-100-inverse: rgba(0, 0, 0, 0);
+  --ds-color-background-primary-200-default: rgba(0, 0, 0, 0);
+  --ds-color-background-primary-200-inverse: rgba(0, 0, 0, 0);
+  --ds-color-background-primary-300-default: rgba(0, 0, 0, 0);
+  --ds-color-background-primary-300-inverse: rgba(0, 0, 0, 0);
+  --ds-color-background-primary-400-default: rgba(0, 0, 0, 0);
+  --ds-color-background-primary-400-inverse: rgba(0, 0, 0, 0);
+  --ds-color-background-success-default: rgba(0, 0, 0, 0);
+  --ds-color-background-success-inverse: rgba(0, 0, 0, 0);
+  --ds-color-background-error-default: rgba(0, 0, 0, 0);
+  --ds-color-background-error-inverse: rgba(0, 0, 0, 0);
+  --ds-color-background-warning-default: rgba(0, 0, 0, 0);
+  --ds-color-background-warning-inverse: rgba(0, 0, 0, 0);
+  --ds-color-background-info-default: rgba(0, 0, 0, 0);
+  --ds-color-background-info-inverse: rgba(0, 0, 0, 0);
+  --ds-color-background-subtle-default: rgba(0, 0, 0, 0);
+  --ds-color-background-subtle-inverse: rgba(0, 0, 0, 0);
+  --ds-color-background-accent-default: rgba(0, 0, 0, 0);
+  --ds-color-background-accent-inverse: rgba(0, 0, 0, 0);
+  --ds-color-background-emphasis-default: rgba(0, 0, 0, 0);
+  --ds-color-background-emphasis-inverse: rgba(0, 0, 0, 0);
+  --ds-color-background-scrimmed-default: rgba(0, 0, 0, 0);
+  --ds-color-background-lightest: rgba(0, 0, 0, 0);
+  --ds-color-background-lighter: rgba(0, 0, 0, 0);
+  --ds-color-background-darker: rgba(0, 0, 0, 0);
+  --ds-color-background-darkest: rgba(0, 0, 0, 0);
+  --ds-color-background-gradient-default: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  --ds-color-base-white: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-white-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-white-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-white-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-white-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-white-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-white-opacity-50: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-white-opacity-40: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-white-opacity-0: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-black: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-black-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-black-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-black-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-black-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-black-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-black-opacity-15: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-blue-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-blue-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-blue-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-blue-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-blue-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-blue-600: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-blue-700: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-blue-800: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-blue-900: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-blue-1000: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-cyan-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-cyan-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-cyan-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-cyan-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-cyan-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-cyan-600: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-cyan-700: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-cyan-800: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-cyan-900: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-cyan-1000: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-error-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-error-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-error-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-error-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-error-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-gray-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-gray-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-gray-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-gray-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-gray-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-gray-600: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-gray-700: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-gray-800: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-gray-900: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-gray-1000: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-green-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-green-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-green-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-green-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-green-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-green-600: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-green-700: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-green-800: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-green-900: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-green-1000: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-lime-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-lime-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-lime-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-lime-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-lime-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-lime-600: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-lime-700: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-lime-800: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-lime-900: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-lime-1000: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-navy-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-navy-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-navy-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-navy-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-navy-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-navy-600: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-navy-700: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-navy-800: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-navy-900: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-navy-1000: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-neutral-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-neutral-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-neutral-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-neutral-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-neutral-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-neutral-600: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-neutral-700: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-neutral-800: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-neutral-900: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-neutral-1000: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-pink-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-pink-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-pink-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-pink-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-pink-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-pink-600: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-pink-700: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-pink-800: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-pink-900: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-pink-1000: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-purple-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-purple-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-purple-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-purple-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-purple-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-purple-600: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-purple-700: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-purple-800: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-purple-900: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-purple-1000: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-red-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-red-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-red-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-red-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-red-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-red-600: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-red-700: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-red-800: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-red-900: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-red-1000: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-success-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-success-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-success-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-success-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-success-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-turquoise-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-turquoise-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-turquoise-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-turquoise-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-turquoise-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-turquoise-600: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-turquoise-700: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-turquoise-800: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-turquoise-900: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-turquoise-1000: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-yellow-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-yellow-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-yellow-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-yellow-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-yellow-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-yellow-600: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-yellow-700: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-yellow-800: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-yellow-900: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-yellow-1000: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-warning-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-warning-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-warning-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-warning-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-base-warning-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-state-error-100: rgba(0, 0, 0, 0);
+  --ds-color-state-error-500: rgba(0, 0, 0, 0);
+  --ds-color-state-success-100: rgba(0, 0, 0, 0);
+  --ds-color-state-success-500: rgba(0, 0, 0, 0);
+  --ds-color-state-warning-500: rgba(0, 0, 0, 0);
+  --ds-color-border-primary-default: rgba(0, 0, 0, 0);
+  --ds-color-border-primary-inverse: rgba(0, 0, 0, 0);
+  --ds-color-border-secondary-default: rgba(0, 0, 0, 0);
+  --ds-color-border-secondary-inverse: rgba(0, 0, 0, 0);
+  --ds-color-border-tertiary-default: rgba(0, 0, 0, 0);
+  --ds-color-border-tertiary-inverse: rgba(0, 0, 0, 0);
+  --ds-color-border-error-default: rgba(0, 0, 0, 0);
+  --ds-color-border-error-inverse: rgba(0, 0, 0, 0);
+  --ds-color-border-divider-default: rgba(0, 0, 0, 0);
+  --ds-color-border-divider-inverse: rgba(0, 0, 0, 0);
+  --ds-color-border-subtle-default: rgba(0, 0, 0, 0);
+  --ds-color-border-subtle-inverse: rgba(0, 0, 0, 0);
+  --ds-color-border-emphasis-default: rgba(0, 0, 0, 0);
+  --ds-color-border-emphasis-inverse: rgba(0, 0, 0, 0);
+  --ds-color-border-accent-default: rgba(0, 0, 0, 0);
+  --ds-color-border-accent-inverse: rgba(0, 0, 0, 0);
+  --ds-color-border-success-default: rgba(0, 0, 0, 0);
+  --ds-color-border-success-inverse: rgba(0, 0, 0, 0);
+  --ds-color-border-warning-default: rgba(0, 0, 0, 0);
+  --ds-color-border-warning-inverse: rgba(0, 0, 0, 0);
+  --ds-color-border-info-default: rgba(0, 0, 0, 0);
+  --ds-color-border-info-inverse: rgba(0, 0, 0, 0);
+  --ds-color-border-ui-default-default: rgba(0, 0, 0, 0);
+  --ds-color-border-ui-default-inverse: rgba(0, 0, 0, 0);
+  --ds-color-border-ui-hover-default: rgba(0, 0, 0, 0);
+  --ds-color-border-ui-hover-inverse: rgba(0, 0, 0, 0);
+  --ds-color-border-ui-active-default: rgba(0, 0, 0, 0);
+  --ds-color-border-ui-active-inverse: rgba(0, 0, 0, 0);
+  --ds-color-border-ui-focus-default: rgba(0, 0, 0, 0);
+  --ds-color-border-ui-focus-inverse: rgba(0, 0, 0, 0);
+  --ds-color-border-ui-disabled-default: rgba(0, 0, 0, 0);
+  --ds-color-border-ui-disabled-inverse: rgba(0, 0, 0, 0);
+  --ds-color-border-active-default: rgba(0, 0, 0, 0);
+  --ds-color-border-active-inverse: rgba(0, 0, 0, 0);
+  --ds-color-border-disabled-default: rgba(0, 0, 0, 0);
+  --ds-color-border-focus-default: rgba(0, 0, 0, 0);
+  --ds-color-brand-neutral-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-neutral-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-neutral-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-neutral-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-neutral-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-neutral-600: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-neutral-700: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-neutral-800: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-neutral-900: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-neutral-1000: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-gray-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-gray-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-gray-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-gray-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-gray-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-gray-600: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-gray-700: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-gray-800: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-gray-900: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-gray-1000: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-red-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-red-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-red-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-red-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-red-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-red-600: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-red-700: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-red-800: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-red-900: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-red-1000: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-yellow-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-yellow-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-yellow-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-yellow-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-yellow-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-yellow-600: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-yellow-700: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-yellow-800: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-yellow-900: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-yellow-1000: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-lime-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-lime-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-lime-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-lime-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-lime-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-lime-600: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-lime-700: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-lime-800: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-lime-900: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-lime-1000: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-green-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-green-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-green-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-green-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-green-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-green-600: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-green-700: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-green-800: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-green-900: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-green-1000: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-turquoise-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-turquoise-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-turquoise-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-turquoise-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-turquoise-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-turquoise-600: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-turquoise-700: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-turquoise-800: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-turquoise-900: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-turquoise-1000: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-cyan-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-cyan-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-cyan-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-cyan-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-cyan-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-cyan-600: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-cyan-700: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-cyan-800: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-cyan-900: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-cyan-1000: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-blue-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-blue-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-blue-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-blue-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-blue-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-blue-600: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-blue-700: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-blue-800: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-blue-900: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-blue-1000: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-navy-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-navy-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-navy-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-navy-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-navy-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-navy-600: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-navy-700: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-navy-800: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-navy-900: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-navy-1000: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-purple-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-purple-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-purple-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-purple-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-purple-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-purple-600: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-purple-700: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-purple-800: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-purple-900: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-purple-1000: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-pink-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-pink-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-pink-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-pink-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-pink-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-pink-600: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-pink-700: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-pink-800: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-pink-900: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-pink-1000: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-midnight-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-midnight-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-midnight-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-midnight-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-midnight-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-atlas-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-atlas-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-atlas-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-atlas-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-atlas-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-atlas-400-opacity-20: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-breeze-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-breeze-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-breeze-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-breeze-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-breeze-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-breeze-300-opacity-30: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-tropical-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-tropical-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-tropical-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-tropical-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-tropical-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-alpine-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-alpine-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-alpine-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-alpine-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-alpine-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-flamingo-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-flamingo-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-flamingo-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-flamingo-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-flamingo-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-canyon-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-canyon-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-canyon-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-canyon-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-canyon-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-goldcoast-100: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-goldcoast-200: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-goldcoast-300: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-goldcoast-400: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-goldcoast-500: rgba(0, 0, 0, 0); /* transparent */
+  --ds-color-brand-goldgray-100: rgba(0, 0, 0, 0);
+  --ds-color-brand-goldgray-200: rgba(0, 0, 0, 0);
+  --ds-color-brand-gold-100: rgba(0, 0, 0, 0);
+  --ds-color-brand-gold-200: rgba(0, 0, 0, 0);
+  --ds-color-brand-emerald: rgba(0, 0, 0, 0);
+  --ds-color-brand-sapphire: rgba(0, 0, 0, 0);
+  --ds-color-brand-ruby: rgba(0, 0, 0, 0);
+  --ds-color-brand-lounge: rgba(0, 0, 0, 0);
+  --ds-color-brand-loungeplus: rgba(0, 0, 0, 0);
+  --ds-color-container-accent-default: rgba(0, 0, 0, 0);
+  --ds-color-container-accent-inverse: rgba(0, 0, 0, 0);
+  --ds-color-container-emphasis-default: rgba(0, 0, 0, 0);
+  --ds-color-container-emphasis-inverse: rgba(0, 0, 0, 0);
+  --ds-color-container-error-default: rgba(0, 0, 0, 0);
+  --ds-color-container-error-inverse: rgba(0, 0, 0, 0);
+  --ds-color-container-info-default: rgba(0, 0, 0, 0);
+  --ds-color-container-info-inverse: rgba(0, 0, 0, 0);
+  --ds-color-container-primary-default: rgba(0, 0, 0, 0);
+  --ds-color-container-primary-inverse: rgba(0, 0, 0, 0);
+  --ds-color-container-secondary-default: rgba(0, 0, 0, 0);
+  --ds-color-container-secondary-inverse: rgba(0, 0, 0, 0);
+  --ds-color-container-subtle-default: rgba(0, 0, 0, 0);
+  --ds-color-container-subtle-inverse: rgba(0, 0, 0, 0);
+  --ds-color-container-success-default: rgba(0, 0, 0, 0);
+  --ds-color-container-success-inverse: rgba(0, 0, 0, 0);
+  --ds-color-container-tertiary-default: rgba(0, 0, 0, 0);
+  --ds-color-container-tertiary-inverse: rgba(0, 0, 0, 0);
+  --ds-color-container-warning-default: rgba(0, 0, 0, 0);
+  --ds-color-container-warning-inverse: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-primary-active-default: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-primary-active-inverse: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-primary-default-default: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-primary-default-inverse: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-primary-disabled-default: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-primary-disabled-inverse: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-primary-focus-default: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-primary-focus-inverse: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-primary-hover-default: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-primary-hover-inverse: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-secondary-active-default: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-secondary-active-inverse: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-secondary-default-default: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-secondary-default-inverse: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-secondary-disabled-default: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-secondary-disabled-inverse: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-secondary-focus-default: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-secondary-focus-inverse: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-secondary-hover-default: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-secondary-hover-inverse: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-tertiary-active-default: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-tertiary-active-inverse: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-tertiary-default-default: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-tertiary-default-inverse: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-tertiary-disabled-default: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-tertiary-disabled-inverse: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-tertiary-focus-default: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-tertiary-focus-inverse: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-tertiary-hover-default: rgba(0, 0, 0, 0);
+  --ds-color-container-ui-tertiary-hover-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-primary-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-primary-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-secondary-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-secondary-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-tertiary-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-tertiary-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-emphasis-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-emphasis-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-accent-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-accent-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-info-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-info-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-error-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-error-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-warning-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-warning-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-success-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-success-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-subtle-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-subtle-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-ui-primary-default-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-ui-primary-default-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-ui-primary-hover-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-ui-primary-hover-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-ui-primary-active-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-ui-primary-active-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-ui-primary-disabled-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-ui-primary-disabled-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-ui-primary-focus-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-ui-primary-focus-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-ui-secondary-active-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-ui-secondary-active-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-ui-secondary-default-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-ui-secondary-default-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-ui-secondary-disabled-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-ui-secondary-disabled-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-ui-secondary-focus-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-ui-secondary-focus-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-ui-secondary-hover-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-ui-secondary-hover-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-brand-red-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-brand-red-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-brand-yellow-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-brand-yellow-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-brand-pink-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-brand-pink-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-brand-purple-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-brand-purple-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-brand-lime-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-brand-lime-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-brand-green-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-brand-green-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-brand-turquoise-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-brand-turquoise-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-brand-navy-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-brand-navy-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-brand-blue-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-brand-blue-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-brand-cyan-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-brand-cyan-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-brand-gray-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-brand-gray-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-brand-neutral-default: rgba(0, 0, 0, 0);
+  --ds-color-icon-brand-neutral-inverse: rgba(0, 0, 0, 0);
+  --ds-color-icon-disabled-default: rgba(0, 0, 0, 0);
+  --ds-color-text-primary-default: rgba(0, 0, 0, 0);
+  --ds-color-text-primary-inverse: rgba(0, 0, 0, 0);
+  --ds-color-text-secondary-default: rgba(0, 0, 0, 0);
+  --ds-color-text-secondary-inverse: rgba(0, 0, 0, 0);
+  --ds-color-text-tertiary-default: rgba(0, 0, 0, 0);
+  --ds-color-text-tertiary-inverse: rgba(0, 0, 0, 0);
+  --ds-color-text-error-default: rgba(0, 0, 0, 0);
+  --ds-color-text-error-inverse: rgba(0, 0, 0, 0);
+  --ds-color-text-emphasis-default: rgba(0, 0, 0, 0);
+  --ds-color-text-emphasis-inverse: rgba(0, 0, 0, 0);
+  --ds-color-text-accent-default: rgba(0, 0, 0, 0);
+  --ds-color-text-accent-inverse: rgba(0, 0, 0, 0);
+  --ds-color-text-info-default: rgba(0, 0, 0, 0);
+  --ds-color-text-info-inverse: rgba(0, 0, 0, 0);
+  --ds-color-text-subtle-default: rgba(0, 0, 0, 0);
+  --ds-color-text-subtle-inverse: rgba(0, 0, 0, 0);
+  --ds-color-text-success-default: rgba(0, 0, 0, 0);
+  --ds-color-text-success-inverse: rgba(0, 0, 0, 0);
+  --ds-color-text-ui-active-default: rgba(0, 0, 0, 0);
+  --ds-color-text-ui-active-inverse: rgba(0, 0, 0, 0);
+  --ds-color-text-ui-default-default: rgba(0, 0, 0, 0);
+  --ds-color-text-ui-default-inverse: rgba(0, 0, 0, 0);
+  --ds-color-text-ui-disabled-default: rgba(0, 0, 0, 0);
+  --ds-color-text-ui-disabled-inverse: rgba(0, 0, 0, 0);
+  --ds-color-text-ui-focus-default: rgba(0, 0, 0, 0);
+  --ds-color-text-ui-focus-inverse: rgba(0, 0, 0, 0);
+  --ds-color-text-ui-hover-default: rgba(0, 0, 0, 0);
+  --ds-color-text-ui-hover-inverse: rgba(0, 0, 0, 0);
+  --ds-color-text-link-default: rgba(0, 0, 0, 0);
+  --ds-color-text-link-inverse: rgba(0, 0, 0, 0);
+  --ds-color-tier-alaska-mvp-default: #726e6c;
+  --ds-color-tier-alaska-mvp-inverse: #c5c1bf;
+  --ds-color-tier-alaska-mvpgold-default: #7f682e;
+  --ds-color-tier-alaska-mvpgold-inverse: #c5c1bf;
+  --ds-color-tier-alaska-mvpgold75k-default: #7f682e;
+  --ds-color-tier-alaska-mvpgold75k-inverse: #c5c1bf;
+  --ds-color-tier-alaska-mvpgold100k-default: #7f682e;
+  --ds-color-tier-alaska-mvpgold100k-inverse: #c5c1bf;
+  --ds-color-tier-alaska-lounge: rgba(0, 0, 0, 0);
+  --ds-color-tier-alaska-loungeplus: rgba(0, 0, 0, 0);
+  --ds-color-tier-fare-business-default: #005154;
+  --ds-color-tier-fare-business-inverse: rgba(0, 0, 0, 0);
+  --ds-color-tier-fare-economy-default: rgba(0, 0, 0, 0);
+  --ds-color-tier-fare-economy-inverse: rgba(0, 0, 0, 0);
+  --ds-color-tier-fare-first-class-default: #002c4e;
+  --ds-color-tier-fare-first-class-inverse: rgba(0, 0, 0, 0);
+  --ds-color-tier-fare-saver-default: rgba(0, 0, 0, 0);
+  --ds-color-tier-fare-saver-inverse: rgba(0, 0, 0, 0);
+  --ds-color-tier-oneworld-emerald: #139142;
+  --ds-color-tier-oneworld-sapphire: #015daa;
+  --ds-color-tier-oneworld-ruby: #a41d4a;
+  --ds-color-ui-default-default: rgba(0, 0, 0, 0);
+  --ds-color-ui-default-inverse: rgba(0, 0, 0, 0);
+  --ds-color-ui-hover-default: rgba(0, 0, 0, 0);
+  --ds-color-ui-hover-inverse: rgba(0, 0, 0, 0);
+  --ds-color-ui-active-default: rgba(0, 0, 0, 0);
+  --ds-color-ui-active-inverse: rgba(0, 0, 0, 0);
+  --ds-color-ui-disabled-default: rgba(0, 0, 0, 0);
+  --ds-color-ui-bkg-default-default: rgba(0, 0, 0, 0);
+  --ds-color-ui-bkg-default-inverse: rgba(0, 0, 0, 0);
+  --ds-color-ui-bkg-hover-default: rgba(0, 0, 0, 0);
+  --ds-color-ui-bkg-hover-inverse: rgba(0, 0, 0, 0);
+  --ds-color-utility-blue-default: rgba(0, 0, 0, 0);
+  --ds-color-utility-blue-inverse: rgba(0, 0, 0, 0);
+  --ds-color-utility-cyan-default: rgba(0, 0, 0, 0);
+  --ds-color-utility-cyan-inverse: rgba(0, 0, 0, 0);
+  --ds-color-utility-green-default: rgba(0, 0, 0, 0);
+  --ds-color-utility-green-inverse: rgba(0, 0, 0, 0);
+  --ds-color-utility-gray-default: rgba(0, 0, 0, 0);
+  --ds-color-utility-gray-inverse: rgba(0, 0, 0, 0);
+  --ds-color-utility-lime-default: rgba(0, 0, 0, 0);
+  --ds-color-utility-lime-inverse: rgba(0, 0, 0, 0);
+  --ds-color-utility-navy-default: rgba(0, 0, 0, 0);
+  --ds-color-utility-navy-inverse: rgba(0, 0, 0, 0);
+  --ds-color-utility-neutral-default: rgba(0, 0, 0, 0);
+  --ds-color-utility-neutral-inverse: rgba(0, 0, 0, 0);
+  --ds-color-utility-pink-default: rgba(0, 0, 0, 0);
+  --ds-color-utility-pink-inverse: rgba(0, 0, 0, 0);
+  --ds-color-utility-purple-default: rgba(0, 0, 0, 0);
+  --ds-color-utility-purple-inverse: rgba(0, 0, 0, 0);
+  --ds-color-utility-red-default: rgba(0, 0, 0, 0);
+  --ds-color-utility-red-inverse: rgba(0, 0, 0, 0);
+  --ds-color-utility-turquoise-default: rgba(0, 0, 0, 0);
+  --ds-color-utility-turquoise-inverse: rgba(0, 0, 0, 0);
+  --ds-color-utility-yellow-default: rgba(0, 0, 0, 0);
+  --ds-color-utility-yellow-inverse: rgba(0, 0, 0, 0);
+  --ds-color-utility-error-default: rgba(0, 0, 0, 0);
+  --ds-color-utility-error-inverse: rgba(0, 0, 0, 0);
+  --ds-color-utility-warning-default: rgba(0, 0, 0, 0);
+  --ds-color-utility-warning-inverse: rgba(0, 0, 0, 0);
+  --ds-color-utility-success-default: rgba(0, 0, 0, 0);
+  --ds-color-utility-success-inverse: rgba(0, 0, 0, 0);
+}
