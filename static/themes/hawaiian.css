@@ -1,0 +1,20 @@
+/**
+ * Do not edit directly
+ * Generated on Wed, 20 Nov 2024 02:47:18 GMT
+ */
+
+:root {
+  --ds-color-background-lightest: #f1f3f3;
+  --ds-color-border-ui-active-default: #ce0c88;
+  --ds-color-container-primary-default: #ffffff;
+  --ds-color-container-ui-primary-default-default: #ce0c88;
+  --ds-color-container-ui-primary-default-inverse: #f358b0;
+  --ds-color-container-ui-primary-active-default: #ce0c88;
+  --ds-color-container-ui-primary-active-inverse: #f358b0;
+  --ds-color-icon-primary-default: #463c8f;
+  --ds-color-icon-primary-inverse: #9b9dca;
+  --ds-color-text-primary-default: #000000;
+  --ds-color-text-primary-inverse: rgba(255, 255, 255, 0.87);
+  --ds-color-text-ui-default-default: #ce0c88;
+  --ds-color-text-ui-default-inverse: #f358b0;
+}
